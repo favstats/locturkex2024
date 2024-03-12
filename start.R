@@ -6,6 +6,26 @@ pacman::p_load(knitr, tidyverse, openxlsx, sf, rmarkdown, rvest)
 
 source("cntry.R")
 
+
+linkie <- function(.x, sets) {
+  download.file(glue::glue("https://github.com/favstats/meta_ad_reports/releases/download/{sets$cntry}-lifelong/{.x}.rds"), destfile = "data.rds", quiet = T)
+  
+  fin <- read_rds("data.rds")
+  
+  Sys.sleep(0.1)
+  file.remove("data.rds")
+  
+  return(fin)
+}
+
+linkiesf <- possibly(linkie,otherwise = NULL, quiet = T)
+
+spending_dat <- seq.Date(from = as.Date("2024-02-01"), to = Sys.Date(), by = "day") %>% 
+  map_dfr(~{linkiesf(.x, sets)})
+
+saveRDS(spending_dat, file = "data/spending_dat.rds")
+
+
 sets <- jsonlite::fromJSON("settings.json")
 
 full_cntry_list <- read_rds("https://github.com/favstats/meta_ad_reports/raw/main/cntry_list.rds") %>% 
@@ -24,8 +44,7 @@ city_list <- advertiser_dat %>%
   summarize(spend_30days_bf_march4_2024 = sum(spend_30days_bf_march4_2024)) %>% 
   arrange(desc(spend_30days_bf_march4_2024)) %>% 
   drop_na() %>% 
-  pull(city) %>% 
-  .[1]
+  pull(city)
 
 # city_list <- advertiser_dat$city
 

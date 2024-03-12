@@ -298,21 +298,7 @@ eval(parse(text = paste0("gt(the_table7, rowname_col = 'party_col') %>% fmt_mark
 ```{r, eval = T}
 try({
   
-linkie <- function(.x, sets) {
-    download.file(glue::glue("https://github.com/favstats/meta_ad_reports/releases/download/{sets$cntry}-lifelong/{.x}.rds"), destfile = "data.rds", quiet = T)
-    
-    fin <- read_rds("data.rds")
-    
-    Sys.sleep(0.1)
-    file.remove("data.rds")
-    
-    return(fin)
-}
-
-linkiesf <- possibly(linkie,otherwise = NULL, quiet = T)
-
-spending_dat <- seq.Date(from = as.Date("2024-02-01"), to = Sys.Date(), by = "day") %>% 
-  map_dfr_progress(~{linkiesf(.x, sets)})
+spending_dat <- readRDS("data/spending_dat.rds")
 
 
 var <- spending_dat %>% 

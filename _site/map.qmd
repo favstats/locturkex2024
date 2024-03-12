@@ -121,7 +121,7 @@ party_colors <- data.frame(
 # Add placeholders for columns 'spending', 'z', and 'url'
 # cities_data$z <- 1:nrow(cities_data)
 cities_data <- cities_data %>% 
-  mutate(url = paste0("https://favstats.github.io/locturkex2024/docs/", stringr::str_to_lower(cities_data$name))) %>% 
+  mutate(url = paste0("https://favstats.github.io/ys24/docs/", stringr::str_to_lower(cities_data$name))) %>% 
   left_join(party_colors)
 
 # function() {
