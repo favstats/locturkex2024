@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="How do political parties chase your vote, what do they want to keep hidden, and how much money do they spend on it? In the lead-up to the elections, we monitor political microtargeting.">
+
+<title>Targeting Dashboard - New Zealand - Demographics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/iconify-1.0.8/iconify-icon.min.js"></script>
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+<script src="site_libs/proj4js-2.3.15/proj4.js"></script>
+<link href="site_libs/highcharts-9.3.1/css/motion.css" rel="stylesheet">
+<script src="site_libs/highcharts-9.3.1/highcharts.js"></script>
+<script src="site_libs/highcharts-9.3.1/highcharts-3d.js"></script>
+<script src="site_libs/highcharts-9.3.1/highcharts-more.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/stock.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/map.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/data.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/exporting.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/offline-exporting.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/drilldown.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/item-series.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/overlapping-datalabels.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/annotations.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/export-data.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/funnel.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/heatmap.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/treemap.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/sankey.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/dependency-wheel.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/organization.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/solid-gauge.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/streamgraph.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/sunburst.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/vector.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/wordcloud.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/xrange.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/tilemap.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/venn.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/gantt.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/timeline.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/parallel-coordinates.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/bullet.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/coloraxis.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/dumbbell.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/lollipop.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/series-label.js"></script>
+<script src="site_libs/highcharts-9.3.1/plugins/motion.js"></script>
+<script src="site_libs/highcharts-9.3.1/custom/reset.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/boost.js"></script>
+<script src="site_libs/highchart-binding-0.9.4/highchart.js"></script>
+
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Targeting Dashboard - New Zealand</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text"><iconify-icon inline="" icon="ph:coins"></iconify-icon> Spending</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iconify-ph-users-three-thin--targeting" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text"><iconify-icon inline="" icon="ph:users-three-thin"></iconify-icon> Targeting</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-iconify-ph-users-three-thin--targeting">    
+        <li>
+    <a class="dropdown-item" href="./targeting.html" rel="" target="">
+ <span class="dropdown-text">Spending per Targeting</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./detailed.html" rel="" target="">
+ <span class="dropdown-text">Detailed Targeting</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./location.html" rel="" target="">
+ <span class="dropdown-text">Location</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./demographics.html" rel="" target="">
+ <span class="dropdown-text">Demographics</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text"><iconify-icon inline="" icon="ph:info-thin"></iconify-icon> About</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/favstats/betargex" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./demographics.html">Demographics</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./targeting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Spending per Targeting</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./detailed.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Detailed Targeting</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./location.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Location</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./demographics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Demographics</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#age-targeting" id="toc-age-targeting" class="nav-link active" data-scroll-target="#age-targeting">Age Targeting</a></li>
+  <li><a href="#gender-targeting" id="toc-gender-targeting" class="nav-link" data-scroll-target="#gender-targeting">Gender Targeting</a></li>
+  <li><a href="#language-targeting" id="toc-language-targeting" class="nav-link" data-scroll-target="#language-targeting">Language Targeting</a></li>
+  <li><a href="#targeting-based-on-employment-or-education-instituation" id="toc-targeting-based-on-employment-or-education-instituation" class="nav-link" data-scroll-target="#targeting-based-on-employment-or-education-instituation">Targeting based on Employment or Education Instituation</a></li>
+  <li><a href="#education-levels-targeting" id="toc-education-levels-targeting" class="nav-link" data-scroll-target="#education-levels-targeting">Education Levels Targeting</a></li>
+  <li><a href="#relationship-status-targeting" id="toc-relationship-status-targeting" class="nav-link" data-scroll-target="#relationship-status-targeting">Relationship Status Targeting</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Demographics</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="age-targeting" class="level2">
+<h2 class="anchored" data-anchor-id="age-targeting">Age Targeting</h2>
+<p>The following graphs illustrate how parties target different age groups and the percentage of the budget allocated to them.</p>
+<blockquote class="blockquote">
+<p>Note: targeting criteria may overlap, so the total may not necessarily be 100%.</p>
+</blockquote>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">9 Feb - 9 Mar 2024</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">3 Mar - 9 Mar 2024</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="cell-output-display">
+
+<div class="container">
+<div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-473dd190eba27fa899cb" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-473dd190eba27fa899cb">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"AKP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":100,"min":0},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"age_groups":"18-24","party":"AKP","spend_per":8107305.65029095,"total_budget":9418117,"perc":86.0820230868968,"spend_perlab":"8,107,306","y":86.0820230868968,"name":"18-24"},{"age_groups":"25-34","party":"AKP","spend_per":9178294.53021939,"total_budget":9418117,"perc":97.4536049002087,"spend_perlab":"9,178,295","y":97.4536049002087,"name":"25-34"},{"age_groups":"35-44","party":"AKP","spend_per":9195976.09436971,"total_budget":9418117,"perc":97.6413448077753,"spend_perlab":"9,195,976","y":97.6413448077753,"name":"35-44"},{"age_groups":"45-54","party":"AKP","spend_per":9165572.83521782,"total_budget":9418117,"perc":97.3185280583988,"spend_perlab":"9,165,573","y":97.3185280583988,"name":"45-54"},{"age_groups":"55-64","party":"AKP","spend_per":8835121.55464502,"total_budget":9418117,"perc":93.8098513178911,"spend_perlab":"8,835,122","y":93.8098513178911,"name":"55-64"},{"age_groups":"65+","party":"AKP","spend_per":8411933.10128404,"total_budget":9418117,"perc":89.3165066996305,"spend_perlab":"8,411,933","y":89.3165066996305,"name":"65+"}],"type":"bar","color":"#ff8700"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.age_groups}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this age group","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-8e2b0a80fb0d00630c28" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-8e2b0a80fb0d00630c28">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"CHP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":100,"min":0},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"age_groups":"18-24","party":"CHP","spend_per":2020036,"total_budget":2020535,"perc":99.975303570589,"spend_perlab":"2,020,036","y":99.975303570589,"name":"18-24"},{"age_groups":"25-34","party":"CHP","spend_per":2020285.5,"total_budget":2020535,"perc":99.9876517852945,"spend_perlab":"2,020,286","y":99.9876517852945,"name":"25-34"},{"age_groups":"35-44","party":"CHP","spend_per":2020535,"total_budget":2020535,"perc":100,"spend_perlab":"2,020,535","y":100,"name":"35-44"},{"age_groups":"45-54","party":"CHP","spend_per":2020535,"total_budget":2020535,"perc":100,"spend_perlab":"2,020,535","y":100,"name":"45-54"},{"age_groups":"55-64","party":"CHP","spend_per":2012764.34287482,"total_budget":2020535,"perc":99.6154158613842,"spend_perlab":"2,012,764","y":99.6154158613842,"name":"55-64"},{"age_groups":"65+","party":"CHP","spend_per":2000858.85718705,"total_budget":2020535,"perc":99.0261914387551,"spend_perlab":"2,000,859","y":99.0261914387551,"name":"65+"}],"type":"bar","color":"#ED1C24"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.age_groups}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this age group","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-ef1c64b988159190c6d2" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-ef1c64b988159190c6d2">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"Diğer partiler","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":100,"min":0},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"age_groups":"18-24","party":"Diğer partiler","spend_per":1165945.05370078,"total_budget":1169603,"perc":99.6872488956323,"spend_perlab":"1,165,945","y":99.6872488956323,"name":"18-24"},{"age_groups":"25-34","party":"Diğer partiler","spend_per":1169603,"total_budget":1169603,"perc":100,"spend_perlab":"1,169,603","y":100,"name":"25-34"},{"age_groups":"35-44","party":"Diğer partiler","spend_per":1169202.98738131,"total_budget":1169603,"perc":99.9657992824322,"spend_perlab":"1,169,203","y":99.9657992824322,"name":"35-44"},{"age_groups":"45-54","party":"Diğer partiler","spend_per":1168388.1736774,"total_budget":1169603,"perc":99.8961334467681,"spend_perlab":"1,168,388","y":99.8961334467681,"name":"45-54"},{"age_groups":"55-64","party":"Diğer partiler","spend_per":1167226.89120299,"total_budget":1169603,"perc":99.7968448441902,"spend_perlab":"1,167,227","y":99.7968448441902,"name":"55-64"},{"age_groups":"65+","party":"Diğer partiler","spend_per":1163280.76559542,"total_budget":1169603,"perc":99.4594546692699,"spend_perlab":"1,163,281","y":99.4594546692699,"name":"65+"}],"type":"bar","color":"#333333"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.age_groups}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this age group","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-d2c3379deeeb3ea0a3fa" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-d2c3379deeeb3ea0a3fa">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"İYİ","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":100,"min":0},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"age_groups":"18-24","party":"İYİ","spend_per":326392.220724926,"total_budget":351392,"perc":92.8855012990978,"spend_perlab":"326,392","y":92.8855012990978,"name":"18-24"},{"age_groups":"25-34","party":"İYİ","spend_per":351392,"total_budget":351392,"perc":100,"spend_perlab":"351,392","y":100,"name":"25-34"},{"age_groups":"35-44","party":"İYİ","spend_per":351392,"total_budget":351392,"perc":100,"spend_perlab":"351,392","y":100,"name":"35-44"},{"age_groups":"45-54","party":"İYİ","spend_per":351392,"total_budget":351392,"perc":100,"spend_perlab":"351,392","y":100,"name":"45-54"},{"age_groups":"55-64","party":"İYİ","spend_per":336667.535537134,"total_budget":351392,"perc":95.8096756719372,"spend_perlab":"336,668","y":95.8096756719372,"name":"55-64"},{"age_groups":"65+","party":"İYİ","spend_per":335031.483930148,"total_budget":351392,"perc":95.3440840799302,"spend_perlab":"335,031","y":95.3440840799302,"name":"65+"}],"type":"bar","color":"#fddb00"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.age_groups}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this age group","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-0b6227801b48e1986b79" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-0b6227801b48e1986b79">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"MHP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":100,"min":0},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"age_groups":"18-24","party":"MHP","spend_per":46753,"total_budget":46753,"perc":100,"spend_perlab":"46,753","y":100,"name":"18-24"},{"age_groups":"25-34","party":"MHP","spend_per":46753,"total_budget":46753,"perc":100,"spend_perlab":"46,753","y":100,"name":"25-34"},{"age_groups":"35-44","party":"MHP","spend_per":46753,"total_budget":46753,"perc":100,"spend_perlab":"46,753","y":100,"name":"35-44"},{"age_groups":"45-54","party":"MHP","spend_per":44152.9922552961,"total_budget":46753,"perc":94.4388429732768,"spend_perlab":"44,153","y":94.4388429732768,"name":"45-54"},{"age_groups":"55-64","party":"MHP","spend_per":40252.9806382403,"total_budget":46753,"perc":86.0971074331921,"spend_perlab":"40,253","y":86.0971074331921,"name":"55-64"},{"age_groups":"65+","party":"MHP","spend_per":20252.9806382403,"total_budget":46753,"perc":43.3191038826178,"spend_perlab":"20,253","y":43.3191038826178,"name":"65+"}],"type":"bar","color":"#870000"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.age_groups}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this age group","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-ba1182f72e5fbd69751d" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-ba1182f72e5fbd69751d">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"Yeşil Sol Parti","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":100,"min":0},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"age_groups":"18-24","party":"Yeşil Sol Parti","spend_per":1148,"total_budget":1148,"perc":100,"spend_perlab":"1,148","y":100,"name":"18-24"},{"age_groups":"25-34","party":"Yeşil Sol Parti","spend_per":1148,"total_budget":1148,"perc":100,"spend_perlab":"1,148","y":100,"name":"25-34"},{"age_groups":"35-44","party":"Yeşil Sol Parti","spend_per":1148,"total_budget":1148,"perc":100,"spend_perlab":"1,148","y":100,"name":"35-44"},{"age_groups":"45-54","party":"Yeşil Sol Parti","spend_per":1148,"total_budget":1148,"perc":100,"spend_perlab":"1,148","y":100,"name":"45-54"},{"age_groups":"55-64","party":"Yeşil Sol Parti","spend_per":1148,"total_budget":1148,"perc":100,"spend_perlab":"1,148","y":100,"name":"55-64"},{"age_groups":"65+","party":"Yeşil Sol Parti","spend_per":1148,"total_budget":1148,"perc":100,"spend_perlab":"1,148","y":100,"name":"65+"}],"type":"bar","color":"#388537"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.age_groups}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this age group","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="cell-output-display">
+
+<div class="container">
+<div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-72cd4ea82953fa3cfa99" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-72cd4ea82953fa3cfa99">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"AKP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":100,"min":0},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"age_groups":"18-24","party":"AKP","spend_per":2882580.1070796,"total_budget":3095340,"perc":93.1264451426854,"spend_perlab":"2,882,580","y":93.1264451426854,"name":"18-24"},{"age_groups":"25-34","party":"AKP","spend_per":3005756.54962973,"total_budget":3095340,"perc":97.1058607335455,"spend_perlab":"3,005,757","y":97.1058607335455,"name":"25-34"},{"age_groups":"35-44","party":"AKP","spend_per":3059064.72227402,"total_budget":3095340,"perc":98.8280680724581,"spend_perlab":"3,059,065","y":98.8280680724581,"name":"35-44"},{"age_groups":"45-54","party":"AKP","spend_per":3060892.68237203,"total_budget":3095340,"perc":98.8871233005753,"spend_perlab":"3,060,893","y":98.8871233005753,"name":"45-54"},{"age_groups":"55-64","party":"AKP","spend_per":3027194.20557383,"total_budget":3095340,"perc":97.7984391237742,"spend_perlab":"3,027,194","y":97.7984391237742,"name":"55-64"},{"age_groups":"65+","party":"AKP","spend_per":2948261.40856488,"total_budget":3095340,"perc":95.2483865606001,"spend_perlab":"2,948,261","y":95.2483865606001,"name":"65+"}],"type":"bar","color":"#ff8700"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.age_groups}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this age group","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-a6ce387fe436b202ad55" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-a6ce387fe436b202ad55">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"CHP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":100,"min":0},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"age_groups":"18-24","party":"CHP","spend_per":338954,"total_budget":339154,"perc":99.9410297387028,"spend_perlab":"338,954","y":99.9410297387028,"name":"18-24"},{"age_groups":"25-34","party":"CHP","spend_per":339054,"total_budget":339154,"perc":99.9705148693514,"spend_perlab":"339,054","y":99.9705148693514,"name":"25-34"},{"age_groups":"35-44","party":"CHP","spend_per":339154,"total_budget":339154,"perc":100,"spend_perlab":"339,154","y":100,"name":"35-44"},{"age_groups":"45-54","party":"CHP","spend_per":339154,"total_budget":339154,"perc":100,"spend_perlab":"339,154","y":100,"name":"45-54"},{"age_groups":"55-64","party":"CHP","spend_per":335386.068846076,"total_budget":339154,"perc":98.8890205765156,"spend_perlab":"335,386","y":98.8890205765156,"name":"55-64"},{"age_groups":"65+","party":"CHP","spend_per":329634.172115189,"total_budget":339154,"perc":97.1930663106403,"spend_perlab":"329,634","y":97.1930663106403,"name":"65+"}],"type":"bar","color":"#ED1C24"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.age_groups}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this age group","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-5704a8bebf426815096d" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-5704a8bebf426815096d">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"Diğer partiler","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":100,"min":0},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"age_groups":"18-24","party":"Diğer partiler","spend_per":238437.053700783,"total_budget":239095,"perc":99.7248180433646,"spend_perlab":"238,437","y":99.7248180433646,"name":"18-24"},{"age_groups":"25-34","party":"Diğer partiler","spend_per":239095,"total_budget":239095,"perc":100,"spend_perlab":"239,095","y":100,"name":"25-34"},{"age_groups":"35-44","party":"Diğer partiler","spend_per":239095,"total_budget":239095,"perc":100,"spend_perlab":"239,095","y":100,"name":"35-44"},{"age_groups":"45-54","party":"Diğer partiler","spend_per":239095,"total_budget":239095,"perc":100,"spend_perlab":"239,095","y":100,"name":"45-54"},{"age_groups":"55-64","party":"Diğer partiler","spend_per":238480.916787397,"total_budget":239095,"perc":99.7431635071403,"spend_perlab":"238,481","y":99.7431635071403,"name":"55-64"},{"age_groups":"65+","party":"Diğer partiler","spend_per":237559.791968493,"total_budget":239095,"perc":99.3579087678508,"spend_perlab":"237,560","y":99.3579087678508,"name":"65+"}],"type":"bar","color":"#333333"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.age_groups}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this age group","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-5e5f3dda237170ad61ec" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-5e5f3dda237170ad61ec">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"İYİ","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":100,"min":0},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"age_groups":"18-24","party":"İYİ","spend_per":154411,"total_budget":154411,"perc":100,"spend_perlab":"154,411","y":100,"name":"18-24"},{"age_groups":"25-34","party":"İYİ","spend_per":154411,"total_budget":154411,"perc":100,"spend_perlab":"154,411","y":100,"name":"25-34"},{"age_groups":"35-44","party":"İYİ","spend_per":154411,"total_budget":154411,"perc":100,"spend_perlab":"154,411","y":100,"name":"35-44"},{"age_groups":"45-54","party":"İYİ","spend_per":154411,"total_budget":154411,"perc":100,"spend_perlab":"154,411","y":100,"name":"45-54"},{"age_groups":"55-64","party":"İYİ","spend_per":139686.52016755,"total_budget":154411,"perc":90.4640991688089,"spend_perlab":"139,687","y":90.4640991688089,"name":"55-64"},{"age_groups":"65+","party":"İYİ","spend_per":138050.466852833,"total_budget":154411,"perc":89.4045546320099,"spend_perlab":"138,050","y":89.4045546320099,"name":"65+"}],"type":"bar","color":"#fddb00"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.age_groups}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this age group","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-5d73f7e7e4d316f056ef" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-5d73f7e7e4d316f056ef">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"MHP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":100,"min":0},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"age_groups":"18-24","party":"MHP","spend_per":17503,"total_budget":17503,"perc":100,"spend_perlab":"17,503","y":100,"name":"18-24"},{"age_groups":"25-34","party":"MHP","spend_per":17503,"total_budget":17503,"perc":100,"spend_perlab":"17,503","y":100,"name":"25-34"},{"age_groups":"35-44","party":"MHP","spend_per":17503,"total_budget":17503,"perc":100,"spend_perlab":"17,503","y":100,"name":"35-44"},{"age_groups":"45-54","party":"MHP","spend_per":17503,"total_budget":17503,"perc":100,"spend_perlab":"17,503","y":100,"name":"45-54"},{"age_groups":"55-64","party":"MHP","spend_per":17503,"total_budget":17503,"perc":100,"spend_perlab":"17,503","y":100,"name":"55-64"},{"age_groups":"65+","party":"MHP","spend_per":1626,"total_budget":17503,"perc":9.28983602810947,"spend_perlab":"1,626","y":9.28983602810947,"name":"65+"}],"type":"bar","color":"#870000"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.age_groups}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this age group","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-2ffb45ac4c3a66b03564" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-2ffb45ac4c3a66b03564">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"Yeşil Sol Parti","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":100,"min":0},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"age_groups":"18-24","party":"Yeşil Sol Parti","spend_per":1148,"total_budget":1148,"perc":100,"spend_perlab":"1,148","y":100,"name":"18-24"},{"age_groups":"25-34","party":"Yeşil Sol Parti","spend_per":1148,"total_budget":1148,"perc":100,"spend_perlab":"1,148","y":100,"name":"25-34"},{"age_groups":"35-44","party":"Yeşil Sol Parti","spend_per":1148,"total_budget":1148,"perc":100,"spend_perlab":"1,148","y":100,"name":"35-44"},{"age_groups":"45-54","party":"Yeşil Sol Parti","spend_per":1148,"total_budget":1148,"perc":100,"spend_perlab":"1,148","y":100,"name":"45-54"},{"age_groups":"55-64","party":"Yeşil Sol Parti","spend_per":1148,"total_budget":1148,"perc":100,"spend_perlab":"1,148","y":100,"name":"55-64"},{"age_groups":"65+","party":"Yeşil Sol Parti","spend_per":1148,"total_budget":1148,"perc":100,"spend_perlab":"1,148","y":100,"name":"65+"}],"type":"bar","color":"#388537"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.age_groups}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this age group","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="gender-targeting" class="level2">
+<h2 class="anchored" data-anchor-id="gender-targeting">Gender Targeting</h2>
+<p>De onderstaande grafieken laten zien hoe partijen gender als focusgroep gebruiken en welk percentage van het budget daaraan werd uitgegeven.</p>
+<blockquote class="blockquote">
+<p>Note: targeting criteria may overlap, so the total may not necessarily be 100%.</p>
+</blockquote>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">9 Feb - 9 Mar 2024</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">3 Mar - 9 Mar 2024</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="cell-output-display">
+
+<div class="container">
+<div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-8dc20509d8064c8f2eeb" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-8dc20509d8064c8f2eeb">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"AKP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":4.65591592007013},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"Men","spend_per":0,"total_budget":9418117,"perc":0,"party":"AKP","percsum":0.0211465979353542,"spend_perlab":"0","y":0,"name":"Men"},{"value":"Women","spend_per":199161.133507125,"total_budget":9418117,"perc":2.11465979353542,"party":"AKP","percsum":0.0211465979353542,"spend_perlab":"199,161","y":2.11465979353542,"name":"Women"}],"type":"bar","color":"#ff8700"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this gender","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-effb25981b61d7fff992" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-effb25981b61d7fff992">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"CHP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":4.65591592007013},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"Men","spend_per":0,"total_budget":2020535,"perc":0,"party":"CHP","percsum":0.0285034876283235,"spend_perlab":"0","y":0,"name":"Men"},{"value":"Women","spend_per":57592.2943750947,"total_budget":2020535,"perc":2.85034876283235,"party":"CHP","percsum":0.0285034876283235,"spend_perlab":"57,592","y":2.85034876283235,"name":"Women"}],"type":"bar","color":"#ED1C24"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this gender","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-692a7d8d5dfd4b3a31d0" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-692a7d8d5dfd4b3a31d0">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"İYİ","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":4.65591592007013},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"Men","spend_per":0,"total_budget":351392,"perc":0,"party":"İYİ","percsum":0.0465591592007013,"spend_perlab":"0","y":0,"name":"Men"},{"value":"Women","spend_per":16360.5160698528,"total_budget":351392,"perc":4.65591592007013,"party":"İYİ","percsum":0.0465591592007013,"spend_perlab":"16,361","y":4.65591592007013,"name":"Women"}],"type":"bar","color":"#fddb00"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this gender","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="cell-output-display">
+
+<div class="container">
+<div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-50bd9f7385fcb757aa0f" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-50bd9f7385fcb757aa0f">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"AKP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":10.5954453679901},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"Men","spend_per":0,"total_budget":3095340,"perc":0,"party":"AKP","percsum":0.014999457646846,"spend_perlab":"0","y":0,"name":"Men"},{"value":"Women","spend_per":46428.4212325884,"total_budget":3095340,"perc":1.4999457646846,"party":"AKP","percsum":0.014999457646846,"spend_perlab":"46,428","y":1.4999457646846,"name":"Women"}],"type":"bar","color":"#ff8700"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this gender","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-59bae5f05e372484c222" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-59bae5f05e372484c222">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"CHP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":10.5954453679901},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"Men","spend_per":0,"total_budget":339154,"perc":0,"party":"CHP","percsum":0.00408765684984367,"spend_perlab":"0","y":0,"name":"Men"},{"value":"Women","spend_per":1386.34517125188,"total_budget":339154,"perc":0.408765684984367,"party":"CHP","percsum":0.00408765684984367,"spend_perlab":"1,386","y":0.408765684984367,"name":"Women"}],"type":"bar","color":"#ED1C24"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this gender","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-72096c75a8756dbb2cbc" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-72096c75a8756dbb2cbc">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"İYİ","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":10.5954453679901},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"Men","spend_per":0,"total_budget":154411,"perc":0,"party":"İYİ","percsum":0.105954453679901,"spend_perlab":"0","y":0,"name":"Men"},{"value":"Women","spend_per":16360.5331471672,"total_budget":154411,"perc":10.5954453679901,"party":"İYİ","percsum":0.105954453679901,"spend_perlab":"16,361","y":10.5954453679901,"name":"Women"}],"type":"bar","color":"#fddb00"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this gender","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="language-targeting" class="level2">
+<h2 class="anchored" data-anchor-id="language-targeting">Language Targeting</h2>
+<p>The following graphs show how parties use different languages as focus groups and the percentage of the budget allocated to them.</p>
+<blockquote class="blockquote">
+<p>Note: targeting criteria may overlap, so the total may not necessarily be 100%.</p>
+</blockquote>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">9 Feb - 9 Mar 2024</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">3 Mar - 9 Mar 2024</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div class="cell-output-display">
+
+<div class="container">
+<div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-111e9fbca04bd7115b51" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-111e9fbca04bd7115b51">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"AKP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":63.0616001561225},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"English (UK)","spend_per":53039.3238726203,"total_budget":9418117,"perc":0.563162720028008,"party":"AKP","percsum":0.641879255961785,"spend_perlab":"53,039","y":0.563162720028008,"name":"English (UK)"},{"value":"English (US)","spend_per":53039.3238726203,"total_budget":9418117,"perc":0.563162720028008,"party":"AKP","percsum":0.641879255961785,"spend_perlab":"53,039","y":0.563162720028008,"name":"English (US)"},{"value":"Turkish","spend_per":5939215.2847758,"total_budget":9418117,"perc":63.0616001561225,"party":"AKP","percsum":0.641879255961785,"spend_perlab":"5,939,215","y":63.0616001561225,"name":"Turkish"}],"type":"bar","color":"#ff8700"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this language","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-d6d930d4dcf600e3d500" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-d6d930d4dcf600e3d500">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"CHP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":63.0616001561225},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"Turkish","spend_per":401017.955725502,"total_budget":2020535,"perc":19.8471175072692,"party":"CHP","percsum":0.198471175072692,"spend_perlab":"401,018","y":19.8471175072692,"name":"Turkish"}],"type":"bar","color":"#ED1C24"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this language","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-6332bc97bbf832314b57" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-6332bc97bbf832314b57">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"İYİ","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":63.0616001561225},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"Turkish","spend_per":132618.408887012,"total_budget":351392,"perc":37.7408731237513,"party":"İYİ","percsum":0.377408731237513,"spend_perlab":"132,618","y":37.7408731237513,"name":"Turkish"}],"type":"bar","color":"#fddb00"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this language","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div class="cell-output-display">
+
+<div class="container">
+<div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-974c053e9d57bc867c76" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-974c053e9d57bc867c76">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"AKP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":46.1030468712853},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"English (UK)","spend_per":53039.3228438074,"total_budget":3095340,"perc":1.71352170823908,"party":"AKP","percsum":0.495300902877634,"spend_perlab":"53,039","y":1.71352170823908,"name":"English (UK)"},{"value":"English (US)","spend_per":53039.3228438074,"total_budget":3095340,"perc":1.71352170823908,"party":"AKP","percsum":0.495300902877634,"spend_perlab":"53,039","y":1.71352170823908,"name":"English (US)"},{"value":"Turkish","spend_per":1427046.05102564,"total_budget":3095340,"perc":46.1030468712853,"party":"AKP","percsum":0.495300902877634,"spend_perlab":"1,427,046","y":46.1030468712853,"name":"Turkish"}],"type":"bar","color":"#ff8700"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this language","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-1259d4b64788c9295ff6" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-1259d4b64788c9295ff6">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"CHP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":46.1030468712853},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"Turkish","spend_per":55635.2980033659,"total_budget":339154,"perc":16.4041403030381,"party":"CHP","percsum":0.164041403030381,"spend_perlab":"55,635","y":16.4041403030381,"name":"Turkish"}],"type":"bar","color":"#ED1C24"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this language","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-33c13d56184b67efce32" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-33c13d56184b67efce32">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"İYİ","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":46.1030468712853},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"Turkish","spend_per":9478.91366292061,"total_budget":154411,"perc":6.13875544029934,"party":"İYİ","percsum":0.0613875544029934,"spend_perlab":"9,479","y":6.13875544029934,"name":"Turkish"}],"type":"bar","color":"#fddb00"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this language","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="targeting-based-on-employment-or-education-instituation" class="level2">
+<h2 class="anchored" data-anchor-id="targeting-based-on-employment-or-education-instituation">Targeting based on Employment or Education Instituation</h2>
+<p>The following graphs depict how parties utilize various job sectors and types of education as focus groups and the percentage of the budget allocated to them. The next graph focuses on educational levels.</p>
+<blockquote class="blockquote">
+<p>Note: targeting criteria may overlap, so the total may not necessarily be 100%.</p>
+</blockquote>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">9 Feb - 9 Mar 2024</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">3 Mar - 9 Mar 2024</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div class="cell-output-display">
+
+<div class="container">
+<div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-cbe2e5fe85a9ff2d43bc" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-cbe2e5fe85a9ff2d43bc">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"CHP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":5.44322328740414},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"Domestic worker","spend_per":109982.231650151,"total_budget":2020535,"perc":5.44322328740414,"party":"CHP","spend_perlab":"109,982","y":5.44322328740414,"name":"Domestic worker"},{"value":"Cleaning and maintenance services","spend_per":66972.8227365791,"total_budget":2020535,"perc":3.31460839513194,"party":"CHP","spend_perlab":"66,973","y":3.31460839513194,"name":"Cleaning and maintenance services"},{"value":"Construction and extraction","spend_per":66972.8227365791,"total_budget":2020535,"perc":3.31460839513194,"party":"CHP","spend_perlab":"66,973","y":3.31460839513194,"name":"Construction and extraction"},{"value":"Farming, fishing and forestry","spend_per":66972.8227365791,"total_budget":2020535,"perc":3.31460839513194,"party":"CHP","spend_perlab":"66,973","y":3.31460839513194,"name":"Farming, fishing and forestry"},{"value":"Installation and repair services","spend_per":66972.8227365791,"total_budget":2020535,"perc":3.31460839513194,"party":"CHP","spend_perlab":"66,973","y":3.31460839513194,"name":"Installation and repair services"},{"value":"Small business-to-business enterprise employees (10-200 employees)","spend_per":66972.8227365791,"total_budget":2020535,"perc":3.31460839513194,"party":"CHP","spend_perlab":"66,973","y":3.31460839513194,"name":"Small business-to-business enterprise employees (10-200 employees)"},{"value":"Environmentalism","spend_per":35964.1107296189,"total_budget":2020535,"perc":1.77993010413672,"party":"CHP","spend_perlab":"35,964","y":1.77993010413672,"name":"Environmentalism"}],"type":"bar","color":"#ED1C24"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this job/education (sector)","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div class="cell-output-display">
+
+<div class="container">
+<div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-c1a9d5b1c7fb861f2288" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-c1a9d5b1c7fb861f2288">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"AKP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":2.74796342806244},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"Jazz","spend_per":53039.3228438074,"total_budget":3095340,"perc":1.71352170823908,"party":"AKP","spend_perlab":"53,039","y":1.71352170823908,"name":"Jazz"},{"value":"Jazz Musician","spend_per":53039.3228438074,"total_budget":3095340,"perc":1.71352170823908,"party":"AKP","spend_perlab":"53,039","y":1.71352170823908,"name":"Jazz Musician"}],"type":"bar","color":"#ff8700"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this job (sector)","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-312332520a6223ad10a8" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-312332520a6223ad10a8">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"CHP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":2.74796342806244},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"At high school","spend_per":9319.82788481089,"total_budget":339154,"perc":2.74796342806244,"party":"CHP","spend_perlab":"9,320","y":2.74796342806244,"name":"At high school"},{"value":"At university","spend_per":9319.82788481089,"total_budget":339154,"perc":2.74796342806244,"party":"CHP","spend_perlab":"9,320","y":2.74796342806244,"name":"At university"},{"value":"Foundation degree","spend_per":9319.82788481089,"total_budget":339154,"perc":2.74796342806244,"party":"CHP","spend_perlab":"9,320","y":2.74796342806244,"name":"Foundation degree"},{"value":"High school leaver","spend_per":9319.82788481089,"total_budget":339154,"perc":2.74796342806244,"party":"CHP","spend_perlab":"9,320","y":2.74796342806244,"name":"High school leaver"},{"value":"Some university","spend_per":9319.82788481089,"total_budget":339154,"perc":2.74796342806244,"party":"CHP","spend_perlab":"9,320","y":2.74796342806244,"name":"Some university"},{"value":"University graduate","spend_per":9319.82788481089,"total_budget":339154,"perc":2.74796342806244,"party":"CHP","spend_perlab":"9,320","y":2.74796342806244,"name":"University graduate"}],"type":"bar","color":"#ED1C24"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this job (sector)","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="education-levels-targeting" class="level2">
+<h2 class="anchored" data-anchor-id="education-levels-targeting">Education Levels Targeting</h2>
+<p>The graphs below illustrate how parties target various education levels as focus groups and the percentage of the budget allocated to each.</p>
+<blockquote class="blockquote">
+<p>Note: targeting criteria may overlap, so the total may not necessarily be 100%.</p>
+</blockquote>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">9 Feb - 9 Mar 2024</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">3 Mar - 9 Mar 2024</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<div class="cell-output-display">
+
+<div class="container">
+<div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-1cb534f115f5a07724e0" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-1cb534f115f5a07724e0">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"CHP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":0.949112131833908},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"Professional degree","spend_per":19177.1428129503,"total_budget":2020535,"perc":0.949112131833908,"party":"CHP","spend_perlab":"19,177","y":0.949112131833908,"name":"Professional degree"},{"value":"Some high school","spend_per":19177.1428129503,"total_budget":2020535,"perc":0.949112131833908,"party":"CHP","spend_perlab":"19,177","y":0.949112131833908,"name":"Some high school"}],"type":"bar","color":"#ED1C24"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this education level","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<div class="cell-output-display">
+
+<div class="container">
+<div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-f8173b1f3a32dd8dd136" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-f8173b1f3a32dd8dd136">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"CHP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":2.74796342806244},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"Professional degree","spend_per":9319.82788481089,"total_budget":339154,"perc":2.74796342806244,"party":"CHP","spend_perlab":"9,320","y":2.74796342806244,"name":"Professional degree"},{"value":"Some high school","spend_per":9319.82788481089,"total_budget":339154,"perc":2.74796342806244,"party":"CHP","spend_perlab":"9,320","y":2.74796342806244,"name":"Some high school"}],"type":"bar","color":"#ED1C24"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this education level","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="relationship-status-targeting" class="level2">
+<h2 class="anchored" data-anchor-id="relationship-status-targeting">Relationship Status Targeting</h2>
+<p>The following graphs reveal how political parties utilize different relationship statuses as focus groups and the percentage of the budget allocated to them.</p>
+<blockquote class="blockquote">
+<p>Note: targeting criteria may overlap, so the total may not necessarily be 100%.</p>
+</blockquote>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true">9 Feb - 9 Mar 2024</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false">3 Mar - 9 Mar 2024</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
+<div class="cell-output-display">
+
+<div class="container">
+<div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-d340e775d265f77f34c6" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-d340e775d265f77f34c6">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"AKP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":9.08605340046308},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"Parents (All)","spend_per":855735.139938092,"total_budget":9418117,"perc":9.08605340046308,"party":"AKP","spend_perlab":"855,735","y":9.08605340046308,"name":"Parents (All)"},{"value":"Parents with pre-schoolers (3-5 years)","spend_per":299286.221852126,"total_budget":9418117,"perc":3.17777133000287,"party":"AKP","spend_perlab":"299,286","y":3.17777133000287,"name":"Parents with pre-schoolers (3-5 years)"},{"value":"Parents with primary school-age children (6-8 years).","spend_per":299286.221852126,"total_budget":9418117,"perc":3.17777133000287,"party":"AKP","spend_perlab":"299,286","y":3.17777133000287,"name":"Parents with primary school-age children (6-8 years)."},{"value":"Parents with pre-teens (aged 9-12)","spend_per":261614.679101568,"total_budget":9418117,"perc":2.77778115414757,"party":"AKP","spend_perlab":"261,615","y":2.77778115414757,"name":"Parents with pre-teens (aged 9-12)"},{"value":"Parents with teenagers (aged 13-17)","spend_per":222963.772210782,"total_budget":9418117,"perc":2.36739225272718,"party":"AKP","spend_perlab":"222,964","y":2.36739225272718,"name":"Parents with teenagers (aged 13-17)"},{"value":"Parents (up to 12 months)","spend_per":149259.910898082,"total_budget":9418117,"perc":1.58481691083347,"party":"AKP","spend_perlab":"149,260","y":1.58481691083347,"name":"Parents (up to 12 months)"}],"type":"bar","color":"#ff8700"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this relationship status","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-d6fe6630800109cb57e0" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-d6fe6630800109cb57e0">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"CHP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":9.08605340046308},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"Parents with pre-schoolers (3-5 years)","spend_per":33258.6791831872,"total_budget":2020535,"perc":1.64603331212709,"party":"CHP","spend_perlab":"33,259","y":1.64603331212709,"name":"Parents with pre-schoolers (3-5 years)"},{"value":"Parents with toddlers (aged 1-2)","spend_per":33258.6791831872,"total_budget":2020535,"perc":1.64603331212709,"party":"CHP","spend_perlab":"33,259","y":1.64603331212709,"name":"Parents with toddlers (aged 1-2)"}],"type":"bar","color":"#ED1C24"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this relationship status","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
+<div class="cell-output-display">
+
+<div class="container">
+<div>
+<div class="row">
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-fd4a81536844bb20ce80" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-fd4a81536844bb20ce80">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"AKP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":13.4548958217874},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"Parents (All)","spend_per":416474.772330115,"total_budget":3095340,"perc":13.4548958217874,"party":"AKP","spend_perlab":"416,475","y":13.4548958217874,"name":"Parents (All)"},{"value":"Parents with pre-schoolers (3-5 years)","spend_per":162887.968733556,"total_budget":3095340,"perc":5.26236112134874,"party":"AKP","spend_perlab":"162,888","y":5.26236112134874,"name":"Parents with pre-schoolers (3-5 years)"},{"value":"Parents with primary school-age children (6-8 years).","spend_per":162887.968733556,"total_budget":3095340,"perc":5.26236112134874,"party":"AKP","spend_perlab":"162,888","y":5.26236112134874,"name":"Parents with primary school-age children (6-8 years)."},{"value":"Parents with pre-teens (aged 9-12)","spend_per":160223.578590699,"total_budget":3095340,"perc":5.17628365836061,"party":"AKP","spend_perlab":"160,224","y":5.17628365836061,"name":"Parents with pre-teens (aged 9-12)"},{"value":"Parents (up to 12 months)","spend_per":149259.908002864,"total_budget":3095340,"perc":4.82208442377458,"party":"AKP","spend_perlab":"149,260","y":4.82208442377458,"name":"Parents (up to 12 months)"},{"value":"Parents with teenagers (aged 13-17)","spend_per":108246.405803843,"total_budget":3095340,"perc":3.4970764376076,"party":"AKP","spend_perlab":"108,246","y":3.4970764376076,"name":"Parents with teenagers (aged 13-17)"},{"value":"Parents with adult children (aged 18-26)","spend_per":100507.335388899,"total_budget":3095340,"perc":3.24705316342949,"party":"AKP","spend_perlab":"100,507","y":3.24705316342949,"name":"Parents with adult children (aged 18-26)"}],"type":"bar","color":"#ff8700"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this relationship status","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+<div style="width: 50%; float: left;">
+<div id="htmlwidget-a13064062f7b8ce31a8f" style="width:100%;height:300px;" class="highchart html-widget "></div>
+<script type="application/json" data-for="htmlwidget-a13064062f7b8ce31a8f">{"x":{"hc_opts":{"chart":{"reflow":true,"height":300},"title":{"text":"CHP","align":"left","style":{"fontWeight":"bold"}},"yAxis":{"title":{"text":"% party budget spent on targeting method"},"type":"linear","max":13.4548958217874},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"bar":{"horizontal":true,"stacking":"normal"}},"series":[{"group":"group","data":[{"value":"Parents (All)","spend_per":9319.82788481089,"total_budget":339154,"perc":2.74796342806244,"party":"CHP","spend_perlab":"9,320","y":2.74796342806244,"name":"Parents (All)"},{"value":"Parents (up to 12 months)","spend_per":9319.82788481089,"total_budget":339154,"perc":2.74796342806244,"party":"CHP","spend_perlab":"9,320","y":2.74796342806244,"name":"Parents (up to 12 months)"},{"value":"Parents with adult children (aged 18-26)","spend_per":9319.82788481089,"total_budget":339154,"perc":2.74796342806244,"party":"CHP","spend_perlab":"9,320","y":2.74796342806244,"name":"Parents with adult children (aged 18-26)"},{"value":"Parents with pre-schoolers (3-5 years)","spend_per":9319.82788481089,"total_budget":339154,"perc":2.74796342806244,"party":"CHP","spend_perlab":"9,320","y":2.74796342806244,"name":"Parents with pre-schoolers (3-5 years)"},{"value":"Parents with pre-teens (aged 9-12)","spend_per":9319.82788481089,"total_budget":339154,"perc":2.74796342806244,"party":"CHP","spend_perlab":"9,320","y":2.74796342806244,"name":"Parents with pre-teens (aged 9-12)"},{"value":"Parents with primary school-age children (6-8 years).","spend_per":9319.82788481089,"total_budget":339154,"perc":2.74796342806244,"party":"CHP","spend_perlab":"9,320","y":2.74796342806244,"name":"Parents with primary school-age children (6-8 years)."},{"value":"Parents with teenagers (aged 13-17)","spend_per":9319.82788481089,"total_budget":339154,"perc":2.74796342806244,"party":"CHP","spend_perlab":"9,320","y":2.74796342806244,"name":"Parents with teenagers (aged 13-17)"},{"value":"Parents with toddlers (aged 1-2)","spend_per":9319.82788481089,"total_budget":339154,"perc":2.74796342806244,"party":"CHP","spend_perlab":"9,320","y":2.74796342806244,"name":"Parents with toddlers (aged 1-2)"},{"value":"Unspecified","spend_per":9319.82788481089,"total_budget":339154,"perc":2.74796342806244,"party":"CHP","spend_perlab":"9,320","y":2.74796342806244,"name":"Unspecified"}],"type":"bar","color":"#ED1C24"}],"xAxis":{"type":"category","title":"","labels":{"style":{"fontSize":"10px"}}},"tooltip":{"pointFormat":"<b>{point.value}<\/b><br>% of total budget spent: {point.y:.1f}%<br>a total of ₺{point.spend_perlab} on this relationship status","headerFormat":""}},"theme":{"colors":["#0266C8","#F90101","#F2B50F","#00933B"],"chart":{"style":{"fontFamily":"Roboto","color":"#444444"}},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Roboto","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
