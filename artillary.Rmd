@@ -17,6 +17,9 @@ cities_data <- data.frame(
   url = c("http://example.com/istanbul", "http://example.com/ankara", "http://example.com/izmir")
 )
 
+# function() {
+#   updateParentIframe(this.options.url); // Assuming this.options.url contains the URL to set in the parent iframe
+# }
 
 hcmap("countries/tr/tr-all", showInLegend = FALSE) %>%
   hc_add_series(
@@ -29,11 +32,11 @@ hcmap("countries/tr/tr-all", showInLegend = FALSE) %>%
   hc_mapNavigation(enabled = TRUE) %>%
   hc_title(text = "Spending by City in Turkey") %>%
   hc_plotOptions(series = list(
-    cursor = "pointer",
-    point = list(
+  cursor = "pointer",
+  point = list(
       events = list(
         click = JS("function() { 
-          var iframe = document.getElementById('iframeDisplay');
+          var iframe = window.parent.document.getElementById('iframeDisplay');
           if(iframe) {
             iframe.src = this.options.url; 
           } else {
@@ -41,8 +44,9 @@ hcmap("countries/tr/tr-all", showInLegend = FALSE) %>%
           }
         }")
       )
-    )
-  ))
+  )
+))
+
 
 
 ```
