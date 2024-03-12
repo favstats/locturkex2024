@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Targeting Dashboard - New Zealand -</title>
+<title>Turkish Local Elections 2024 -</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Targeting Dashboard - New Zealand</span>
+    <span class="navbar-title">Turkish Local Elections 2024</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -81,6 +81,14 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./map.html" rel="" target="">
+ <span class="menu-text"><iconify-icon inline="" icon="ph:map-trifold-thin"></iconify-icon> Map</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./blog.html" rel="" target="">
+ <span class="menu-text"><iconify-icon inline="" icon="ph:note-pencil-thin"></iconify-icon> Blog</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text"><iconify-icon inline="" icon="ph:coins"></iconify-icon> Spending</span></a>
@@ -136,6 +144,30 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 220,001 × 39
+   page_id       no_data tstamp              value num_ads total_spend_pct type 
+   &lt;chr&gt;         &lt;lgl&gt;   &lt;dttm&gt;              &lt;chr&gt;   &lt;int&gt;           &lt;dbl&gt; &lt;chr&gt;
+ 1 1.2210260664… TRUE    2024-03-12 15:59:12 &lt;NA&gt;       NA          NA     &lt;NA&gt; 
+ 2 100022229343… TRUE    2024-03-12 15:59:12 &lt;NA&gt;       NA          NA     &lt;NA&gt; 
+ 3 100102041529… NA      2024-03-12 15:59:12 All         7           1     gend…
+ 4 100102041529… NA      2024-03-12 15:59:12 Women       0           0     gend…
+ 5 100102041529… NA      2024-03-12 15:59:12 Men         0           0     gend…
+ 6 100102041529… NA      2024-03-12 15:59:12 Marm…       2           0.248 loca…
+ 7 100102041529… NA      2024-03-12 15:59:12 Turk…       5           0.752 loca…
+ 8 100102041529… NA      2024-03-12 15:59:12 Muğl…       2           0.248 loca…
+ 9 100102041529… NA      2024-03-12 15:59:12 13          0           0     age  
+10 100102041529… NA      2024-03-12 15:59:12 14          0           0     age  
+# ℹ 219,991 more rows
+# ℹ 32 more variables: location_type &lt;chr&gt;, num_obfuscated &lt;int&gt;,
+#   is_exclusion &lt;lgl&gt;, detailed_type &lt;chr&gt;, ds &lt;chr&gt;, main_currency &lt;chr&gt;,
+#   total_num_ads &lt;int&gt;, total_spend_formatted &lt;dbl&gt;,
+#   is_30_day_available &lt;lgl&gt;, is_90_day_available &lt;lgl&gt;,
+#   custom_audience_type &lt;chr&gt;, page_name &lt;chr&gt;, party &lt;chr&gt;, sources &lt;chr&gt;,
+#   cntry &lt;chr&gt;, partyfacts_id &lt;chr&gt;, country &lt;chr&gt;, left_right &lt;dbl&gt;, …</code></pre>
+</div>
+</div>
 <section id="methodology" class="level3">
 <h3 class="anchored" data-anchor-id="methodology">Methodology</h3>
 <p>In collaboration with <a href="https://whotargets.me/">Who Targets Me</a>, we monitored 6253 political advertisers to better understand how campaigns use different targeting methods made available by Meta. To do this, we used data from the <a href="https://www.facebook.com/ads/library/">Meta Ad Library</a>, using the new ‘Audience’ data which gives some detail on how pages target their ads.</p>

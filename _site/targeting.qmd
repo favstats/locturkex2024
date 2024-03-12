@@ -1,10 +1,12 @@
 ---
-title: "Spending per Targeting"
+title: Spending per Targeting
 description-meta: "How do political parties chase your vote, what do they want to keep hidden, and how much money do they spend on it? In the lead-up to the elections, we monitor political microtargeting."
 format:
   html:
     toc: true
     toc-location: right
+params:
+  the_city: !expr "all"
 ---
 
 
@@ -37,7 +39,7 @@ source(here::here("party_utils.R"))
 ```
 
 
-
+Data for: `r stringr::str_to_title(params$the_city)`
 
 These charts show the groups that political parties target with their advertisements leading up to the elections, according to the latest data. The focus is on Meta's platforms (Facebook and Instagram) because they offer the most detailed targeting options for political advertisements.
 

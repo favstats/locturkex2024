@@ -3,6 +3,8 @@ title: " "
 format:
   html:
     theme: lumen
+params:
+  the_city: !expr "all"
 ---
 
 ```{r, echo = F, warning=F, message=F}

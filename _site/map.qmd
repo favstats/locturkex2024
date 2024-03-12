@@ -1,22 +1,128 @@
 ---
-title: "Selection"
-format: html
-editor: visual
+format: 
+  html:
+    page-layout: full
 ---
 
+```{css, echo = F, message=F, warning=F}
+.highcharts-container {
+  height: 100vh !important;
+  width: 100vw !important;
+}
 
+```
 
 ```{r cars, echo = F, message=F, warning=F}
+
 library(highcharter)
+library(tidyverse)
+
+
+advertiser_dat <- readr::read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTVkw2cJ5IqeOTBKOfBXpDZDftW9g_nlN-ZKdqDK42wvcxZYHbkVBKDsxfB8r7V88RVef3zHIxBbDOw/pub?output=csv") %>% 
+  janitor::clean_names()# %>% 
+
+cityyyy <- advertiser_dat %>% 
+  group_by(city) %>% 
+  summarize(spend_30days_bf_march4_2024 = sum(spend_30days_bf_march4_2024)) %>% 
+  arrange(desc(spend_30days_bf_march4_2024)) %>% 
+  drop_na() %>% 
+  mutate(city = str_to_title(city))
+
+
+      out <- "TR" %>% 
+        map(~{
+          .x %>% 
+            paste0(c("-last_30_days"))
+        }) %>% 
+        unlist() %>% 
+        # keep(~str_detect(.x, tf)) %>% 
+        # .[100:120] %>% 
+        map_dfr_progress(~{
+          the_assets <- httr::GET(paste0("https://github.com/favstats/meta_ad_targeting/releases/expanded_assets/", .x))
+          
+          the_assets %>% httr::content() %>% 
+            rvest::html_elements(".Box-row") %>% 
+            rvest::html_text()  %>%
+            tibble(raw = .)   %>%
+            # Split the raw column into separate lines
+            mutate(raw = strsplit(as.character(raw), "\n")) %>%
+            # Extract the relevant lines for filename, file size, and timestamp
+            transmute(
+              filename = sapply(raw, function(x) trimws(x[3])),
+              file_size = sapply(raw, function(x) trimws(x[6])),
+              timestamp = sapply(raw, function(x) trimws(x[7]))
+            ) %>% 
+            filter(filename != "Source code") %>% 
+            mutate(release = .x) %>% 
+            mutate_all(as.character)
+        })
+      
+      thosearethere <- out %>% 
+        rename(tag = release,
+               file_name = filename)  %>% 
+        arrange(desc(tag)) %>% 
+        separate(tag, into = c("cntry", "tframe"), remove = F, sep = "-") %>%
+        # filter(cntry == sets$cntry) %>% 
+        mutate(ds  = str_remove(file_name, "\\.rds|\\.zip|\\.parquet")) %>% 
+        distinct(cntry, ds, tframe) %>% 
+        drop_na(ds) %>% 
+        arrange(desc(ds))
+      
+      # try({
+      election_dat30 <- arrow::read_parquet(paste0("https://github.com/favstats/meta_ad_targeting/releases/download/", "TR", "-last_", 30,"_days/", thosearethere$ds[1], ".parquet"))  %>% 
+      left_join(advertiser_dat %>% select(page_id, party2 = party, official, page_type, city, notes) %>% mutate(page_id = as.character(page_id)) %>% 
+                  distinct(page_id, .keep_all = T)) %>% 
+      mutate(party = ifelse(is.na(party2), party, party2)) %>% 
+        distinct(page_id, party, .keep_all = T) %>% 
+          select(page_id, party, total_spend_formatted, city)  %>% 
+  group_by(party, city) %>% 
+  summarize(party_spend = sum(total_spend_formatted)) %>% 
+  arrange(desc(party_spend)) %>% 
+  drop_na() %>% 
+  mutate(city = str_to_title(city)) %>% 
+  group_by(city) %>% 
+  arrange(desc(party_spend)) %>% 
+  slice(1) %>% 
+        rename(name = city)
+      # })
+      
+
+# advertiser_dat %>% 
+#   group_by(party, city) %>% 
+#   summarize(spend_30days_bf_march4_2024 = sum(spend_30days_bf_march4_2024)) %>% 
+#   arrange(desc(spend_30days_bf_march4_2024)) %>% 
+#   drop_na() %>% 
+#   mutate(city = str_to_title(city)) %>% 
+#   group_by(city) %>% 
+#   arrange(desc(party_spend)) %>% 
+#   slice(1) 
 
 cities_data <- data.frame(
-  name = c("Istanbul", "Ankara", "Izmir"),
-  lat = c(41.0082, 39.9334, 38.4192),
-  lon = c(28.9784, 32.8597, 27.1287),
-  spending = c(1200000, 800000, 600000), # Arbitrary spending amounts
-  z = c(1,2,3),
-  url = c("https://favstats.github.io/locturkex2024/", "https://favstats.github.io/locturkex2024/docs", "https://favstats.github.io/locturkex2024/docs/location")
+  name = c("Istanbul", "Antalya", "Izmir", "Ankara", "Adana", "Samsun", "Manisa", "Bursa", "Aydın", "Mersin", "Kocaeli", "Hatay", "Yozgat", "Çanakkale", "Kırklareli", "Muğla", "Eskişehir", "Malatya", "Balıkesir", "Afyonkarahisar", "Ordu", "Sakarya", "Sivas", "Pamukkale", "Niğde", "Trabzon", "Denizli"),
+  lat = c(41.0082, 36.9081, 38.4192, 39.9334, 37.000000, 41.2778, 38.6128, 40.1828, 37.8500, 36.8000, 40.7667, 36.2167, 39.8167, 40.1500, 41.7333, 37.0667, 39.7778, 38.3500, 39.0667, 38.7500, 40.9750, 40.7500, 39.7500, 37.7833, 37.9667, 41.0000, 37.7500),
+  lon = c(28.9784, 30.6956, 27.1287, 32.8597, 35.321335, 36.2397, 27.4442, 29.0609, 27.8451, 34.6756, 29.9167 , 36.3667, 34.8000, 26.6667, 27.8333, 28.3667, 30.5189, 38.3228, 27.8861, 30.5333, 37.8500, 30.4500, 37.0167, 33.7167, 35.3167, 40.4500, 28.1167)) %>% 
+  left_join(cityyyy %>% rename(name = city, z = spend_30days_bf_march4_2024)) %>% 
+  left_join(election_dat30)
+
+# color_dat <-
+  # readRDS("../data/color_dat.rds") %>% 
+  # right_join(advertiser_dat %>% count(party)) %>% 
+  #   dput()
+  
+
+
+party_colors <- data.frame(
+  party = c("MHP", "AKP", "CHP", "İYİ", "BAĞIMSIZ TÜRKİYE", "DEMOKRAT", "DEVA", "Diğ", 
+            "Independent", "SAADET", "YENİDEN REFAH"),
+  color = c("#870000", "#FDC400", "#D70000", "#0087DC", "#FFFFFF", "#008000", "#0000FF", "#A9A9A9", 
+             "#808080", "#FFC0CB", "#800080")
 )
+
+# Add placeholders for columns 'spending', 'z', and 'url'
+# cities_data$z <- 1:nrow(cities_data)
+cities_data <- cities_data %>% 
+  mutate(url = paste0("https://favstats.github.io/locturkex2024/docs/", stringr::str_to_lower(cities_data$name))) %>% 
+  left_join(party_colors)
 
 # function() {
 #   updateParentIframe(this.options.url); // Assuming this.options.url contains the URL to set in the parent iframe
@@ -27,11 +133,13 @@ hcmap("countries/tr/tr-all", showInLegend = FALSE) %>%
     data = cities_data, 
     type = "mapbubble",
     name = "Cities", 
-    minSize = "1%",
-    maxSize = "5%"
+    minSize = "3%",
+    maxSize = "12%"
   ) %>%
   hc_mapNavigation(enabled = TRUE) %>%
-  hc_title(text = "Spending by City in Turkey") %>%
+  hc_tooltip(useHTML = T,headerFormat='',
+             pointFormat = paste('City: {point.name}<br> Spending: {point.z} <br> Largest Spender: {point.party}')) %>% 
+  hc_title(text = "Click on Any City to See More") %>%
   hc_plotOptions(series = list(
   cursor = "pointer",
   point = list(
@@ -46,8 +154,30 @@ hcmap("countries/tr/tr-all", showInLegend = FALSE) %>%
         }")
       )
   )
-))
+)) %>% 
+hc_legend(enabled = F)
 
 
 
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

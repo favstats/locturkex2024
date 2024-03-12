@@ -1,11 +1,6 @@
-# 
-# print("hello")
-# 
-# print(getwd())
-# getwd()
-# setwd("_site")
 
 library(httr)
+library(tidyverse)
 
 custom <- F
 
@@ -81,6 +76,14 @@ if(!exists("thedat")){
 
 ###### get colors ####
 if(!custom){
+  
+  party_colors <- data.frame(
+    party = c("MHP", "AKP", "CHP", "İYİ", "BAĞIMSIZ TÜRKİYE", "DEMOKRAT", "DEVA", "Diğ", 
+              "Independent", "SAADET", "YENİDEN REFAH"),
+    color = c("#870000", "#FDC400", "#D70000", "#0087DC", "#FFFFFF", "#008000", "#0000FF", "#A9A9A9", 
+              "#808080", "#FFC0CB", "#800080")
+  )
+  
   if(sets$cntry %in% country_codes & nrow(thedat)!=0){
     res <- GET(url = paste0("https://data-api.whotargets.me/entities?%24client%5BwithCountries%5D=true&countries.alpha2%5B%24in%5D%5B0%5D=", str_to_lower(sets$cntry)))
     color_dat <- content(res) %>% 
@@ -91,8 +94,10 @@ if(!custom){
       ## this is a speccial UK thing
       rename(party = name) %>% 
       select(party, short_name, contains("color")) %>% 
+      bind_rows(party_colors) %>% 
+      distinct(party, .keep_all = T) %>% 
       setColors() %>% 
-      rename(colors = color)
+      rename(colors = color) 
     
   } else {
     polsample <- readRDS(here::here("data/polsample.rds"))
@@ -148,6 +153,10 @@ if(custom){
     left_join(all_dat %>% distinct(page_id, party))
 }
 
+advertiser_dat <- readr::read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTVkw2cJ5IqeOTBKOfBXpDZDftW9g_nlN-ZKdqDK42wvcxZYHbkVBKDsxfB8r7V88RVef3zHIxBbDOw/pub?output=csv") %>% 
+  janitor::clean_names()# %>% 
+# count(city, sort = T)
+
 if(!exists("election_dat30")){
   out <- sets$cntry %>% 
     map(~{
@@ -192,7 +201,17 @@ if(!exists("election_dat30")){
   # try({
     election_dat30 <- arrow::read_parquet(paste0("https://github.com/favstats/meta_ad_targeting/releases/download/", sets$cntry, "-last_", 30,"_days/", thosearethere$ds[1], ".parquet"))
   # })
-  
+    
+
+    
+    election_dat30 <- election_dat30 %>% 
+      # slice(6855) %>% #View()
+      # filter(page_id == "101510914946267") %>%
+      left_join(advertiser_dat %>% select(page_id, party2 = party, official, page_type, city, notes) %>% mutate(page_id = as.character(page_id)) %>% 
+                  distinct(page_id, .keep_all = T)) %>% 
+      mutate(party = ifelse(is.na(party2), party, party2))
+    
+  print(election_dat30)
 }
 
 if(!exists("election_dat7")){
@@ -237,6 +256,14 @@ if(!exists("election_dat7")){
   # try({
   election_dat7 <- arrow::read_parquet(paste0("https://github.com/favstats/meta_ad_targeting/releases/download/", sets$cntry, "-last_", 7,"_days/", thosearethere$ds[1], ".parquet"))
   # })
+  
+  election_dat7 <- election_dat7 %>% 
+    # slice(6855) %>% #View()
+    # filter(page_id == "101510914946267") %>%
+    left_join(advertiser_dat %>% select(page_id, party2 = party, official, page_type, city, notes) %>% mutate(page_id = as.character(page_id)) %>% 
+                distinct(page_id, .keep_all = T)) %>% 
+    mutate(party = ifelse(is.na(party2), party, party2))
+  
 }
 # print("hello2")
 
@@ -384,11 +411,22 @@ last30days_string <- paste0(create_date(begin30), " - ", create_date(fin), " ", 
 # Sys.setlocale("LC_TIME", "C")
 # print("oo")
 
+the_city <- params$the_city
+if(the_city!="all"){
+  
+  election_dat30 <- election_dat30 %>% 
+    filter(city == the_city)
+  
+  election_dat7 <- election_dat7 %>% 
+    filter(city == the_city)
+  
+}
+
 election_dat30 <- election_dat30 %>% 
-  filter(party != "Dismissed")
+  filter(party != "Dismissed") 
 
 election_dat7 <- election_dat7 %>% 
-  filter(party != "Dismissed")
+  filter(party != "Dismissed") 
 
 if(nrow(election_dat30)!=0){
   

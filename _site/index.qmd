@@ -1,6 +1,8 @@
 ---
-title: Spending
+title: Spending - `r stringr::str_to_title(params$the_city)`
 description-meta: "How do political parties chase your vote, what do they want to keep hidden, and how much money do they spend on it? In the lead-up to the elections, we monitor political microtargeting."
+params:
+  the_city: !expr "all"
 ---
 
 ```{r setup, include=FALSE}
@@ -40,6 +42,10 @@ total_spend_id <- election_dat30 %>%
   group_by(party) %>%
   summarize(total_spend_formatted = sum(total_spend_formatted)) %>%
   ungroup()
+
+# election_dat30 %>% 
+#   count(city)
+
 ```
 
 
@@ -289,8 +295,9 @@ eval(parse(text = paste0("gt(the_table7, rowname_col = 'party_col') %>% fmt_mark
 
 ### Over Time
 
-```{r, eval = F}
-
+```{r, eval = T}
+try({
+  
 linkie <- function(.x, sets) {
     download.file(glue::glue("https://github.com/favstats/meta_ad_reports/releases/download/{sets$cntry}-lifelong/{.x}.rds"), destfile = "data.rds", quiet = T)
     
@@ -304,7 +311,7 @@ linkie <- function(.x, sets) {
 
 linkiesf <- possibly(linkie,otherwise = NULL, quiet = T)
 
-spending_dat <- seq.Date(from = as.Date("2024-01-01"), to = Sys.Date(), by = "day") %>% 
+spending_dat <- seq.Date(from = as.Date("2024-02-01"), to = Sys.Date(), by = "day") %>% 
   map_dfr_progress(~{linkiesf(.x, sets)})
 
 
@@ -360,6 +367,7 @@ hc_data_dafb %>%
     }")
   )  
 
+})
 ```
 
 

@@ -11,10 +11,12 @@ knitr::opts_chunk$set(echo = F, warning = F, message = F)
 ```{r, echo=F}
 library(tidyverse)
 # Sample dataframe with iso2c and country variables
-df <-
-    read_rds("https://github.com/favstats/meta_ad_reports/raw/main/cntry_list.rds") %>%
-    rename(iso2c = iso2,
-           country = cntry) 
+df <- readr::read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTVkw2cJ5IqeOTBKOfBXpDZDftW9g_nlN-ZKdqDK42wvcxZYHbkVBKDsxfB8r7V88RVef3zHIxBbDOw/pub?output=csv") %>% 
+  janitor::clean_names() %>%  
+  mutate(iso2c = city,
+         country = str_to_title(iso2c)) %>% 
+      distinct(iso2c, country) %>% 
+      drop_na()
 
 # Generate HTML code
 html_code <- sprintf('<div id="overlay">

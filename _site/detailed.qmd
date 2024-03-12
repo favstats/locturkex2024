@@ -1,10 +1,12 @@
 ---
-title: "Detailed Targeting"
+title: Detailed Targeting 
 description-meta: "How do political parties chase your vote, what do they want to keep hidden, and how much money do they spend on it? In the lead-up to the elections, we monitor political microtargeting."
 format:
   html:
     toc: true
     toc-location: right
+params:
+  the_city: !expr "all"
 ---
 
 
@@ -34,6 +36,7 @@ source(here::here("utils.R"))
 source(here::here("party_utils.R"))
 ```
 
+Data for: `r stringr::str_to_title(params$the_city)`
 
 ## Top Targeted Audiences
 

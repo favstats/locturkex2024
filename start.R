@@ -14,10 +14,25 @@ full_cntry_list <- read_rds("https://github.com/favstats/meta_ad_reports/raw/mai
   sample_n(n()) %>% 
   filter(iso2c == "TR")
 
-# cntryy <- "NL"
+cntryy <- "TR"
 
-for (cntryy in full_cntry_list$iso2c) {
+advertiser_dat <- readr::read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTVkw2cJ5IqeOTBKOfBXpDZDftW9g_nlN-ZKdqDK42wvcxZYHbkVBKDsxfB8r7V88RVef3zHIxBbDOw/pub?output=csv") %>% 
+  janitor::clean_names()# %>% 
+
+city_list <- advertiser_dat %>% 
+  group_by(city) %>% 
+  summarize(spend_30days_bf_march4_2024 = sum(spend_30days_bf_march4_2024)) %>% 
+  arrange(desc(spend_30days_bf_march4_2024)) %>% 
+  drop_na() %>% 
+  pull(city) %>% 
+  .[1]
+
+# city_list <- advertiser_dat$city
+
+for (cities in city_list) {
   # print(cntryy)
+  
+  the_city <- cities
   
   try({
     
@@ -29,25 +44,26 @@ for (cntryy in full_cntry_list$iso2c) {
     # Sys.sleep(5)
     
     
-    title_txt <- read_lines("_quarto.yml")
-    title_txt[which(str_detect(title_txt, "title"))[1]] <- glue::glue("  title: \"Targeting Dashboard - {sets$the_country}\"")
-    # title_txt[which(str_detect(title_txt, "output-dir"))[1]] <- glue::glue("  output-dir: ../docs/{sets$cntry}")  
-    # Sys.sleep(1)
-    write_lines(title_txt, "_site/_quarto.yml")
+    # title_txt <- read_lines("_quarto.yml")
+    # title_txt[which(str_detect(title_txt, "title"))[1]] <- glue::glue("  title: \"Targeting Dashboard - {sets$the_country}\"")
+    # # title_txt[which(str_detect(title_txt, "output-dir"))[1]] <- glue::glue("  output-dir: ../docs/{sets$cntry}")  
+    # # Sys.sleep(1)
+    # write_lines(title_txt, "_site/_quarto.yml")
     
     
     # all_dat <- readRDS("data/all_dat.rds")
     # color_dat <- readRDS("data/color_dat.rds")
     
     color_dat <- tibble()
-    
+    already_happened <- F
     if(read_lines("cntry.R") %>% length() > 5){
       election_dat30 <- readRDS("data/election_dat30.rds")  %>% 
         select(-contains("party")) %>%
         left_join(all_dat %>% select(page_id, party))
+      already_happened <- T
     }
     
-    if(!exists("election_dat30")){
+    if(!already_happened){
       out <- sets$cntry %>% 
         map(~{
           .x %>% 
@@ -134,39 +150,50 @@ for (cntryy in full_cntry_list$iso2c) {
       
       if(nrow(election_dat30)!=0){
         
+        
+        print("election_dat30 is not 0")
         # Sys.sleep(60*7)
         # all_dat <- readRDS("data/all_dat.rds")
         
         write_lines(nrow(distinct(election_dat30, internal_id)), file = "n_advertisers.txt")
-        render_it <- possibly(quarto::quarto_render, otherwise = NULL, quiet = F)
-        dir("_site", full.names = T) %>% keep(~str_detect(.x, "qmd")) %>% walk(render_it)
         
-        # dir("docs", full.names = T) %>% 
-        #   keep(~str_detect(.x, "site|files")) %>% 
-        #   walk(~fs::dir_copy(.x, str_replace(.x, "docs/", glue::glue("docs/")), overwrite = T))
-        # 
-        # dir("docs", full.names = T) %>% 
-        #   keep(~str_detect(.x, "html|json|logo")) %>% 
-        #   walk(~fs::file_copy(.x, str_replace(.x, "docs/", glue::glue("docs/")), overwrite = T))
+        params <- list(the_city = the_city)
+        # params_json <- jsonlite::toJSON(params, auto_unbox = TRUE)
+        
+        render_it <- possibly(quarto::quarto_render, otherwise = NULL, quiet = F)
+        dir("_site", full.names = T) %>% keep(~str_detect(.x, "qmd")) %>% walk(~render_it(.x, execute_params = params))
+        # dir("_site", full.names = T) %>% keep(~str_detect(.x, "index")) %>% walk(~render_it(.x, execute_params = params))
+        
+        if(!(fs::dir_exists( glue::glue("docs/{the_city}/")))){
+          fs::dir_create( glue::glue("docs/{the_city}/"))
+        }
+        
+        dir("docs", full.names = T) %>%
+          keep(~str_detect(.x, "site|files")) %>%
+          walk(~fs::dir_copy(.x, str_replace(.x, "docs/", glue::glue("docs/{the_city}/")), overwrite = T))
+
+        dir("docs", full.names = T) %>%
+          keep(~str_detect(.x, "html|json|logo")) %>%
+          walk(~fs::file_copy(.x, str_replace(.x, "docs/", glue::glue("docs/{the_city}/")), overwrite = T))
         
         knitr::knit("README.Rmd")
         
-        rmarkdown::render("logs/overview.Rmd")
-        
-        file.copy(from = "logs/overview.html", to = glue::glue("docs/overview.html"), overwrite = T)
+  
         
         unlink("node_modules", recursive = T, force = T)
         unlink("out", recursive = T, force = T)
         
-        dir("docs", full.names = T) %>% 
-          keep(~str_detect(.x, "site|files")) %>% 
+        dir("docs", full.names = T) %>%
+          keep(~str_detect(.x, "site|files")) %>%
           walk(fs::dir_delete)
-        
-        dir("docs", full.names = T) %>% 
-          keep(~str_detect(.x, "html|json")) %>% 
+
+        dir("docs", full.names = T) %>%
+          keep(~str_detect(.x, "html|json")) %>%
           walk(fs::file_delete)
         
       } else {
+        
+        print("election_dat30 is 0")
         
         rmarkdown::render("logs/index.Rmd")
         dir.create(glue::glue("docs/{sets$cntry}"), recursive = T)
@@ -185,13 +212,13 @@ for (cntryy in full_cntry_list$iso2c) {
     
   })
   
-  dir("docs", full.names = T) %>% 
-    keep(~str_detect(.x, "site|files")) %>% 
-    walk(fs::dir_delete)
-  
-  dir("docs", full.names = T) %>% 
-    keep(~str_detect(.x, "html|json")) %>% 
-    walk(fs::file_delete)
+  # dir("docs", full.names = T) %>% 
+  #   keep(~str_detect(.x, "site|files")) %>% 
+  #   walk(fs::dir_delete)
+  # 
+  # dir("docs", full.names = T) %>% 
+  #   keep(~str_detect(.x, "html|json")) %>% 
+  #   walk(fs::file_delete)
   
   # file.remove("_site/_quarto.yml")
   
@@ -199,6 +226,12 @@ for (cntryy in full_cntry_list$iso2c) {
   
 }
 
+params <- list(the_city = "all")
+rmarkdown::render("logs/overview.Rmd", params = params)
+
+file.copy(from = "logs/overview.html", to = glue::glue("docs/overview.html"), overwrite = T)
+
+dir("_site", full.names = T) %>% keep(~str_detect(.x, "qmd")) %>% walk(~render_it(.x, execute_params = params))
 
 rmarkdown::render("index.Rmd")
 # dir.create(glue::glue("docs/{sets$cntry}"), recursive = T)
