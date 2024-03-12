@@ -289,7 +289,7 @@ eval(parse(text = paste0("gt(the_table7, rowname_col = 'party_col') %>% fmt_mark
 
 ### Over Time
 
-```{r, eval = T}
+```{r, eval = F}
 
 linkie <- function(.x, sets) {
     download.file(glue::glue("https://github.com/favstats/meta_ad_reports/releases/download/{sets$cntry}-lifelong/{.x}.rds"), destfile = "data.rds", quiet = T)

@@ -6,6 +6,10 @@ website:
   title: "Targeting Dashboard - New Zealand"
   navbar:
     left:
+      - href: map.qmd
+        text: Map
+      - href: blog.qmd
+        text: Blog
       - href: index.qmd
         text: "{{< iconify ph coins >}} Spending"
       - sidebar:targeting
