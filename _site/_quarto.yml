@@ -11,7 +11,7 @@ website:
       - href: blog.qmd
         text: "{{< iconify ph note-pencil-thin >}} Blog"
       - href: index.qmd
-        text: "{{< iconify ph coins >}} Spending"
+        text: "{{< iconify ph coins-thin >}} Spending"
       - sidebar:targeting
       - href: about.qmd
         text: "{{< iconify ph info-thin >}} About"
