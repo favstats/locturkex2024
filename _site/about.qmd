@@ -15,7 +15,6 @@ library(tidyverse)
 library(rvest)
 library(htmltools)
 sets <- jsonlite::fromJSON(here::here("settings.json"))
-
 source(here::here("party_utils.R"))
 ```
 

@@ -412,15 +412,22 @@ last30days_string <- paste0(create_date(begin30), " - ", create_date(fin), " ", 
 # print("oo")
 
 the_city <- params$the_city
-if(the_city!="all"){
-  
-  election_dat30 <- election_dat30 %>% 
-    filter(city == the_city)
-  
-  election_dat7 <- election_dat7 %>% 
-    filter(city == the_city)
+# print(the_city)
+if(class(the_city)=="character"){
+  if(length(the_city)!=0){
+    if(the_city!="all"){
+      
+      election_dat30 <- election_dat30 %>% 
+        filter(city == the_city)
+      
+      election_dat7 <- election_dat7 %>% 
+        filter(city == the_city)
+      
+    }
+  }
   
 }
+
 
 election_dat30 <- election_dat30 %>% 
   filter(party != "Dismissed") 

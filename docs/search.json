@@ -18,7 +18,7 @@
     "href": "demographics.html",
     "title": "Demographics",
     "section": "",
-    "text": "Data for: All"
+    "text": "Data for: .Primitive(“All”) , !Expr"
   },
   {
     "objectID": "demographics.html#age-targeting",
@@ -67,7 +67,7 @@
     "href": "detailed.html",
     "title": "Detailed Targeting",
     "section": "",
-    "text": "Data for: All"
+    "text": "Data for: .Primitive(“All”) , !Expr"
   },
   {
     "objectID": "detailed.html#top-targeted-audiences",
@@ -102,7 +102,7 @@
     "href": "location.html",
     "title": "Location",
     "section": "",
-    "text": "Data for: All"
+    "text": "Data for: .Primitive(“All”) , !Expr"
   },
   {
     "objectID": "location.html#geographical-targeting",
@@ -123,6 +123,6 @@
     "href": "targeting.html",
     "title": "Spending per Targeting",
     "section": "",
-    "text": "Data for: All\nThese charts show the groups that political parties target with their advertisements leading up to the elections, according to the latest data. The focus is on Meta’s platforms (Facebook and Instagram) because they offer the most detailed targeting options for political advertisements.\nHow much did the campaigns of political parties spend on different audiences? The charts below show both the total and the expenditures per party.\n\nNote: Different targeting criteria may overlap, so the outcome may not necessarily add up to 100%.\n\n\n9 Feb - 9 Mar 20243 Mar - 9 Mar 2024\n\n\n\nTotalBy Party\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTotalBy Party"
+    "text": "Data for: .Primitive(“All”) , !Expr\nThese charts show the groups that political parties target with their advertisements leading up to the elections, according to the latest data. The focus is on Meta’s platforms (Facebook and Instagram) because they offer the most detailed targeting options for political advertisements.\nHow much did the campaigns of political parties spend on different audiences? The charts below show both the total and the expenditures per party.\n\nNote: Different targeting criteria may overlap, so the outcome may not necessarily add up to 100%.\n\n\n9 Feb - 9 Mar 20243 Mar - 9 Mar 2024\n\n\n\nTotalBy Party\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTotalBy Party"
   }
 ]
