@@ -32,6 +32,11 @@ options(scipen = 999)
 # 
 # options(highcharter.lang = hcoptslang)
 
+# if(params$the_city != "all"){
+#   params$the_city( <- "all")
+# }
+
+# params$the_city <- "all"
 
 source(here::here("utils.R"))
 source(here::here("party_utils.R"))
@@ -298,7 +303,7 @@ eval(parse(text = paste0("gt(the_table7, rowname_col = 'party_col') %>% fmt_mark
 ```{r, eval = T}
 try({
   
-spending_dat <- readRDS("../data/spending_dat.rds")
+spending_dat <- readRDS(here::here("data/spending_dat.rds"))
 
 
 var <- spending_dat %>% 

@@ -80,7 +80,7 @@ if(!custom){
   party_colors <- data.frame(
     party = c("MHP", "AKP", "CHP", "İYİ", "BAĞIMSIZ TÜRKİYE", "DEMOKRAT", "DEVA", "Diğ", 
               "Independent", "SAADET", "YENİDEN REFAH"),
-    color = c("#870000", "#FDC400", "#D70000", "#0087DC", "#FFFFFF", "#008000", "#0000FF", "#A9A9A9", 
+    color = c("#870000", "#FDC400", "#D70000", "#0087DC", "#f34ada", "#008000", "#0000FF", "#A9A9A9", 
               "#808080", "#FFC0CB", "#800080")
   )
   
@@ -281,8 +281,8 @@ if(sets$cntry %in% country_codes & nrow(thedat)!=0){
       # count(party)
       left_join(color_dat %>% set_names(c("long_name", "party", "colors"))) %>% 
       select(-colors) %>% 
-      mutate(party = long_name) %>% 
-      filter(party %in% color_dat$party)
+      filter(party %in% color_dat$party) %>% 
+      mutate(party = ifelse(!is.na(long_name), long_name, party)) 
     
     
     election_dat7 <- election_dat7 %>%
