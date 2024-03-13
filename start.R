@@ -36,6 +36,9 @@ full_cntry_list <- read_rds("https://github.com/favstats/meta_ad_reports/raw/mai
 
 cntryy <- "TR"
 
+render_it <- possibly(quarto::quarto_render, otherwise = NULL, quiet = F)
+
+
 advertiser_dat <- readr::read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTVkw2cJ5IqeOTBKOfBXpDZDftW9g_nlN-ZKdqDK42wvcxZYHbkVBKDsxfB8r7V88RVef3zHIxBbDOw/pub?output=csv") %>% 
   janitor::clean_names()# %>% 
 
@@ -181,7 +184,6 @@ city_list %>%
           params <- list(the_city = the_city)
           # params_json <- jsonlite::toJSON(params, auto_unbox = TRUE)
           
-          render_it <- possibly(quarto::quarto_render, otherwise = NULL, quiet = F)
           dir("_site", full.names = T) %>% keep(~str_detect(.x, "qmd")) %>% walk(~render_it(.x, execute_params = params))
           # dir("_site", full.names = T) %>% keep(~str_detect(.x, "index")) %>% walk(~render_it(.x, execute_params = params))
           
@@ -197,7 +199,6 @@ city_list %>%
             keep(~str_detect(.x, "html|json|logo")) %>%
             walk(~fs::file_copy(.x, str_replace(.x, "docs/", glue::glue("docs/{the_city}/")), overwrite = T))
           
-          knitr::knit("README.Rmd")
           
           
           
@@ -250,6 +251,8 @@ city_list %>%
 
 
 # }
+
+knitr::knit("README.Rmd")
 
 params <- list(the_city = "all")
 rmarkdown::render("logs/overview.Rmd", params = params)
