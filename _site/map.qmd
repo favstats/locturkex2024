@@ -10,7 +10,55 @@ format:
   width: 100vw !important;
 }
 
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .show-data-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff; /* Blue shade */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0, 123, 255, 0.5); /* Add some shadow for depth */
+        }
+
+        .show-data-btn:hover, .show-data-btn:focus {
+            background-color: #0056b3; /* Darker blue on hover/focus */
+            transform: translateY(-2px); /* Slight raise effect */
+            box-shadow: 0 4px 6px rgba(0, 123, 255, 0.6); /* Enhanced shadow on hover/focus */
+        }
+
+        .show-data-btn:active {
+            background-color: #004089; /* Even darker blue on active/click */
+            transform: translateY(1px); /* Press down effect */
+            box-shadow: 0 2px 3px rgba(0, 123, 255, 0.5); /* Subdued shadow to simulate press */
+        }
 ```
+
+
+<script>
+    function changeParentIframeURL() {
+        var newURL = "https://favstats.github.io/ys24/docs";
+        // Check if running in an iframe and if the parent is accessible
+        if (window.self !== window.top) {
+            try {
+                iframe = window.parent.document.getElementById('iframeDisplay');
+                iframe.src = newURL; 
+            } catch (e) {
+                console.error("Error changing parent iframe URL: ", e);
+            }
+        } 
+    }
+</script>
+
+
+
+
 
 ```{r cars, echo = F, message=F, warning=F}
 
@@ -166,7 +214,12 @@ hc_legend(enabled = F)
 
 
 
+```{r, echo = F, warning = F, message=F}
+shiny::HTML('<div class="button-container">
+    <button class="show-data-btn" onclick="changeParentIframeURL()">Show all data</button>
+</div>')
 
+```
 
 
 
