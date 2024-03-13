@@ -13,7 +13,7 @@ browser_title <- "<title>Turkish Election Dashboard</title>"
 writeLines(browser_title, "header.html")
 ```
 
-
+<title>Turkish Election Dashboard</title>
 
 ```{r, echo=F}
 library(tidyverse)

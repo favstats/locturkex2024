@@ -61,6 +61,49 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+<script src="site_libs/proj4js-2.3.15/proj4.js"></script>
+<link href="site_libs/highcharts-9.3.1/css/motion.css" rel="stylesheet">
+<script src="site_libs/highcharts-9.3.1/highcharts.js"></script>
+<script src="site_libs/highcharts-9.3.1/highcharts-3d.js"></script>
+<script src="site_libs/highcharts-9.3.1/highcharts-more.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/stock.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/map.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/data.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/exporting.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/offline-exporting.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/drilldown.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/item-series.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/overlapping-datalabels.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/annotations.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/export-data.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/funnel.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/heatmap.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/treemap.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/sankey.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/dependency-wheel.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/organization.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/solid-gauge.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/streamgraph.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/sunburst.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/vector.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/wordcloud.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/xrange.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/tilemap.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/venn.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/gantt.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/timeline.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/parallel-coordinates.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/bullet.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/coloraxis.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/dumbbell.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/lollipop.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/series-label.js"></script>
+<script src="site_libs/highcharts-9.3.1/plugins/motion.js"></script>
+<script src="site_libs/highcharts-9.3.1/custom/reset.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/boost.js"></script>
+<script src="site_libs/highchart-binding-0.9.4/highchart.js"></script>
 
 
 </head>
@@ -169,24 +212,24 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="yfwcrkfjtk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="izssfvdiwr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#yfwcrkfjtk table {
+#izssfvdiwr table {
   font-family: Chivo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#yfwcrkfjtk thead, #yfwcrkfjtk tbody, #yfwcrkfjtk tfoot, #yfwcrkfjtk tr, #yfwcrkfjtk td, #yfwcrkfjtk th {
+#izssfvdiwr thead, #izssfvdiwr tbody, #izssfvdiwr tfoot, #izssfvdiwr tr, #izssfvdiwr td, #izssfvdiwr th {
   border-style: none;
 }
 
-#yfwcrkfjtk p {
+#izssfvdiwr p {
   margin: 0;
   padding: 0;
 }
 
-#yfwcrkfjtk .gt_table {
+#izssfvdiwr .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -212,12 +255,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#yfwcrkfjtk .gt_caption {
+#izssfvdiwr .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#yfwcrkfjtk .gt_title {
+#izssfvdiwr .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -229,7 +272,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#yfwcrkfjtk .gt_subtitle {
+#izssfvdiwr .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -241,7 +284,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#yfwcrkfjtk .gt_heading {
+#izssfvdiwr .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -253,13 +296,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#yfwcrkfjtk .gt_bottom_border {
+#izssfvdiwr .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#yfwcrkfjtk .gt_col_headings {
+#izssfvdiwr .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -274,7 +317,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#yfwcrkfjtk .gt_col_heading {
+#izssfvdiwr .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 80%;
@@ -294,7 +337,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#yfwcrkfjtk .gt_column_spanner_outer {
+#izssfvdiwr .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 80%;
@@ -306,15 +349,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#yfwcrkfjtk .gt_column_spanner_outer:first-child {
+#izssfvdiwr .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#yfwcrkfjtk .gt_column_spanner_outer:last-child {
+#izssfvdiwr .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#yfwcrkfjtk .gt_column_spanner {
+#izssfvdiwr .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -326,11 +369,11 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#yfwcrkfjtk .gt_spanner_row {
+#izssfvdiwr .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#yfwcrkfjtk .gt_group_heading {
+#izssfvdiwr .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -356,7 +399,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#yfwcrkfjtk .gt_empty_group_heading {
+#izssfvdiwr .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -371,15 +414,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#yfwcrkfjtk .gt_from_md > :first-child {
+#izssfvdiwr .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#yfwcrkfjtk .gt_from_md > :last-child {
+#izssfvdiwr .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#yfwcrkfjtk .gt_row {
+#izssfvdiwr .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -398,7 +441,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#yfwcrkfjtk .gt_stub {
+#izssfvdiwr .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 80%;
@@ -411,7 +454,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#yfwcrkfjtk .gt_stub_row_group {
+#izssfvdiwr .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -425,15 +468,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#yfwcrkfjtk .gt_row_group_first td {
+#izssfvdiwr .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#yfwcrkfjtk .gt_row_group_first th {
+#izssfvdiwr .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#yfwcrkfjtk .gt_summary_row {
+#izssfvdiwr .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -443,16 +486,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#yfwcrkfjtk .gt_first_summary_row {
+#izssfvdiwr .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#yfwcrkfjtk .gt_first_summary_row.thick {
+#izssfvdiwr .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#yfwcrkfjtk .gt_last_summary_row {
+#izssfvdiwr .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -462,7 +505,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#yfwcrkfjtk .gt_grand_summary_row {
+#izssfvdiwr .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -472,7 +515,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#yfwcrkfjtk .gt_first_grand_summary_row {
+#izssfvdiwr .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -482,7 +525,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#yfwcrkfjtk .gt_last_grand_summary_row_top {
+#izssfvdiwr .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -492,11 +535,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#yfwcrkfjtk .gt_striped {
+#izssfvdiwr .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#yfwcrkfjtk .gt_table_body {
+#izssfvdiwr .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -505,7 +548,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#yfwcrkfjtk .gt_footnotes {
+#izssfvdiwr .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -519,7 +562,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#yfwcrkfjtk .gt_footnote {
+#izssfvdiwr .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -528,7 +571,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#yfwcrkfjtk .gt_sourcenotes {
+#izssfvdiwr .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -542,7 +585,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#yfwcrkfjtk .gt_sourcenote {
+#izssfvdiwr .gt_sourcenote {
   font-size: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -550,63 +593,63 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#yfwcrkfjtk .gt_left {
+#izssfvdiwr .gt_left {
   text-align: left;
 }
 
-#yfwcrkfjtk .gt_center {
+#izssfvdiwr .gt_center {
   text-align: center;
 }
 
-#yfwcrkfjtk .gt_right {
+#izssfvdiwr .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#yfwcrkfjtk .gt_font_normal {
+#izssfvdiwr .gt_font_normal {
   font-weight: normal;
 }
 
-#yfwcrkfjtk .gt_font_bold {
+#izssfvdiwr .gt_font_bold {
   font-weight: bold;
 }
 
-#yfwcrkfjtk .gt_font_italic {
+#izssfvdiwr .gt_font_italic {
   font-style: italic;
 }
 
-#yfwcrkfjtk .gt_super {
+#izssfvdiwr .gt_super {
   font-size: 65%;
 }
 
-#yfwcrkfjtk .gt_footnote_marks {
+#izssfvdiwr .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#yfwcrkfjtk .gt_asterisk {
+#izssfvdiwr .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#yfwcrkfjtk .gt_indent_1 {
+#izssfvdiwr .gt_indent_1 {
   text-indent: 5px;
 }
 
-#yfwcrkfjtk .gt_indent_2 {
+#izssfvdiwr .gt_indent_2 {
   text-indent: 10px;
 }
 
-#yfwcrkfjtk .gt_indent_3 {
+#izssfvdiwr .gt_indent_3 {
   text-indent: 15px;
 }
 
-#yfwcrkfjtk .gt_indent_4 {
+#izssfvdiwr .gt_indent_4 {
   text-indent: 20px;
 }
 
-#yfwcrkfjtk .gt_indent_5 {
+#izssfvdiwr .gt_indent_5 {
   text-indent: 25px;
 }
 
@@ -659,24 +702,24 @@ tbody tr:last-child {
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="xgqhepuusc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="norzcpwrah" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#xgqhepuusc table {
+#norzcpwrah table {
   font-family: Chivo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#xgqhepuusc thead, #xgqhepuusc tbody, #xgqhepuusc tfoot, #xgqhepuusc tr, #xgqhepuusc td, #xgqhepuusc th {
+#norzcpwrah thead, #norzcpwrah tbody, #norzcpwrah tfoot, #norzcpwrah tr, #norzcpwrah td, #norzcpwrah th {
   border-style: none;
 }
 
-#xgqhepuusc p {
+#norzcpwrah p {
   margin: 0;
   padding: 0;
 }
 
-#xgqhepuusc .gt_table {
+#norzcpwrah .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -702,12 +745,12 @@ tbody tr:last-child {
   border-left-color: #D3D3D3;
 }
 
-#xgqhepuusc .gt_caption {
+#norzcpwrah .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#xgqhepuusc .gt_title {
+#norzcpwrah .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -719,7 +762,7 @@ tbody tr:last-child {
   border-bottom-width: 0;
 }
 
-#xgqhepuusc .gt_subtitle {
+#norzcpwrah .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -731,7 +774,7 @@ tbody tr:last-child {
   border-top-width: 0;
 }
 
-#xgqhepuusc .gt_heading {
+#norzcpwrah .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -743,13 +786,13 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#xgqhepuusc .gt_bottom_border {
+#norzcpwrah .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xgqhepuusc .gt_col_headings {
+#norzcpwrah .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -764,7 +807,7 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#xgqhepuusc .gt_col_heading {
+#norzcpwrah .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 80%;
@@ -784,7 +827,7 @@ tbody tr:last-child {
   overflow-x: hidden;
 }
 
-#xgqhepuusc .gt_column_spanner_outer {
+#norzcpwrah .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 80%;
@@ -796,15 +839,15 @@ tbody tr:last-child {
   padding-right: 4px;
 }
 
-#xgqhepuusc .gt_column_spanner_outer:first-child {
+#norzcpwrah .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xgqhepuusc .gt_column_spanner_outer:last-child {
+#norzcpwrah .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xgqhepuusc .gt_column_spanner {
+#norzcpwrah .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -816,11 +859,11 @@ tbody tr:last-child {
   width: 100%;
 }
 
-#xgqhepuusc .gt_spanner_row {
+#norzcpwrah .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#xgqhepuusc .gt_group_heading {
+#norzcpwrah .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -846,7 +889,7 @@ tbody tr:last-child {
   text-align: left;
 }
 
-#xgqhepuusc .gt_empty_group_heading {
+#norzcpwrah .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -861,15 +904,15 @@ tbody tr:last-child {
   vertical-align: middle;
 }
 
-#xgqhepuusc .gt_from_md > :first-child {
+#norzcpwrah .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xgqhepuusc .gt_from_md > :last-child {
+#norzcpwrah .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xgqhepuusc .gt_row {
+#norzcpwrah .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -888,7 +931,7 @@ tbody tr:last-child {
   overflow-x: hidden;
 }
 
-#xgqhepuusc .gt_stub {
+#norzcpwrah .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 80%;
@@ -901,7 +944,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#xgqhepuusc .gt_stub_row_group {
+#norzcpwrah .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -915,15 +958,15 @@ tbody tr:last-child {
   vertical-align: top;
 }
 
-#xgqhepuusc .gt_row_group_first td {
+#norzcpwrah .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#xgqhepuusc .gt_row_group_first th {
+#norzcpwrah .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#xgqhepuusc .gt_summary_row {
+#norzcpwrah .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -933,16 +976,16 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#xgqhepuusc .gt_first_summary_row {
+#norzcpwrah .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#xgqhepuusc .gt_first_summary_row.thick {
+#norzcpwrah .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#xgqhepuusc .gt_last_summary_row {
+#norzcpwrah .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -952,7 +995,7 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#xgqhepuusc .gt_grand_summary_row {
+#norzcpwrah .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -962,7 +1005,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#xgqhepuusc .gt_first_grand_summary_row {
+#norzcpwrah .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -972,7 +1015,7 @@ tbody tr:last-child {
   border-top-color: #D3D3D3;
 }
 
-#xgqhepuusc .gt_last_grand_summary_row_top {
+#norzcpwrah .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -982,11 +1025,11 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#xgqhepuusc .gt_striped {
+#norzcpwrah .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xgqhepuusc .gt_table_body {
+#norzcpwrah .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -995,7 +1038,7 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#xgqhepuusc .gt_footnotes {
+#norzcpwrah .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1009,7 +1052,7 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#xgqhepuusc .gt_footnote {
+#norzcpwrah .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1018,7 +1061,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#xgqhepuusc .gt_sourcenotes {
+#norzcpwrah .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1032,7 +1075,7 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#xgqhepuusc .gt_sourcenote {
+#norzcpwrah .gt_sourcenote {
   font-size: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1040,63 +1083,63 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#xgqhepuusc .gt_left {
+#norzcpwrah .gt_left {
   text-align: left;
 }
 
-#xgqhepuusc .gt_center {
+#norzcpwrah .gt_center {
   text-align: center;
 }
 
-#xgqhepuusc .gt_right {
+#norzcpwrah .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xgqhepuusc .gt_font_normal {
+#norzcpwrah .gt_font_normal {
   font-weight: normal;
 }
 
-#xgqhepuusc .gt_font_bold {
+#norzcpwrah .gt_font_bold {
   font-weight: bold;
 }
 
-#xgqhepuusc .gt_font_italic {
+#norzcpwrah .gt_font_italic {
   font-style: italic;
 }
 
-#xgqhepuusc .gt_super {
+#norzcpwrah .gt_super {
   font-size: 65%;
 }
 
-#xgqhepuusc .gt_footnote_marks {
+#norzcpwrah .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#xgqhepuusc .gt_asterisk {
+#norzcpwrah .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#xgqhepuusc .gt_indent_1 {
+#norzcpwrah .gt_indent_1 {
   text-indent: 5px;
 }
 
-#xgqhepuusc .gt_indent_2 {
+#norzcpwrah .gt_indent_2 {
   text-indent: 10px;
 }
 
-#xgqhepuusc .gt_indent_3 {
+#norzcpwrah .gt_indent_3 {
   text-indent: 15px;
 }
 
-#xgqhepuusc .gt_indent_4 {
+#norzcpwrah .gt_indent_4 {
   text-indent: 20px;
 }
 
-#xgqhepuusc .gt_indent_5 {
+#norzcpwrah .gt_indent_5 {
   text-indent: 25px;
 }
 
@@ -1149,8 +1192,10 @@ tbody tr:last-child {
 <section id="over-time" class="level3">
 <h3 class="anchored" data-anchor-id="over-time">Over Time</h3>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>Error in gzfile(file, "rb") : cannot open the connection</code></pre>
+<div class="cell-output-display">
+
+<div class="highchart html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-cd63e7dec4323d2be65a" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-cd63e7dec4323d2be65a">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":null},"yAxis":{"title":{"text":"Daily Spend"},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"area":{"stacking":"normal","lineWidth":1,"marker":{"enabled":false}}},"series":[{"name":"AKP","data":[{"date":"2024-02-15","party":"AKP","amount_spent":1,"Daily Spend":null,"short_name":"AKP","colors":"#ff8700","x":1707955200000,"y":null,"fill":"#ff8700"},{"date":"2024-02-16","party":"AKP","amount_spent":1,"Daily Spend":0,"short_name":"AKP","colors":"#ff8700","x":1708041600000,"y":0,"fill":"#ff8700"},{"date":"2024-02-17","party":"AKP","amount_spent":1,"Daily Spend":0,"short_name":"AKP","colors":"#ff8700","x":1708128000000,"y":0,"fill":"#ff8700"},{"date":"2024-02-18","party":"AKP","amount_spent":1,"Daily Spend":0,"short_name":"AKP","colors":"#ff8700","x":1708214400000,"y":0,"fill":"#ff8700"},{"date":"2024-02-19","party":"AKP","amount_spent":1,"Daily Spend":0,"short_name":"AKP","colors":"#ff8700","x":1708300800000,"y":0,"fill":"#ff8700"},{"date":"2024-02-20","party":"AKP","amount_spent":1,"Daily Spend":0,"short_name":"AKP","colors":"#ff8700","x":1708387200000,"y":0,"fill":"#ff8700"},{"date":"2024-02-21","party":"AKP","amount_spent":1,"Daily Spend":0,"short_name":"AKP","colors":"#ff8700","x":1708473600000,"y":0,"fill":"#ff8700"},{"date":"2024-02-22","party":"AKP","amount_spent":1,"Daily Spend":0,"short_name":"AKP","colors":"#ff8700","x":1708560000000,"y":0,"fill":"#ff8700"},{"date":"2024-02-23","party":"AKP","amount_spent":1,"Daily Spend":0,"short_name":"AKP","colors":"#ff8700","x":1708646400000,"y":0,"fill":"#ff8700"},{"date":"2024-02-24","party":"AKP","amount_spent":1183,"Daily Spend":1182,"short_name":"AKP","colors":"#ff8700","x":1708732800000,"y":1182,"fill":"#ff8700"},{"date":"2024-02-25","party":"AKP","amount_spent":2561,"Daily Spend":1378,"short_name":"AKP","colors":"#ff8700","x":1708819200000,"y":1378,"fill":"#ff8700"},{"date":"2024-02-26","party":"AKP","amount_spent":6516,"Daily Spend":3955,"short_name":"AKP","colors":"#ff8700","x":1708905600000,"y":3955,"fill":"#ff8700"},{"date":"2024-02-27","party":"AKP","amount_spent":13025,"Daily Spend":6509,"short_name":"AKP","colors":"#ff8700","x":1708992000000,"y":6509,"fill":"#ff8700"},{"date":"2024-02-28","party":"AKP","amount_spent":24731,"Daily Spend":11706,"short_name":"AKP","colors":"#ff8700","x":1709078400000,"y":11706,"fill":"#ff8700"},{"date":"2024-02-29","party":"AKP","amount_spent":39791,"Daily Spend":15060,"short_name":"AKP","colors":"#ff8700","x":1709164800000,"y":15060,"fill":"#ff8700"},{"date":"2024-03-01","party":"AKP","amount_spent":53214,"Daily Spend":13423,"short_name":"AKP","colors":"#ff8700","x":1709251200000,"y":13423,"fill":"#ff8700"},{"date":"2024-03-02","party":"AKP","amount_spent":66338,"Daily Spend":13124,"short_name":"AKP","colors":"#ff8700","x":1709337600000,"y":13124,"fill":"#ff8700"},{"date":"2024-03-03","party":"AKP","amount_spent":81022,"Daily Spend":14684,"short_name":"AKP","colors":"#ff8700","x":1709424000000,"y":14684,"fill":"#ff8700"},{"date":"2024-03-04","party":"AKP","amount_spent":95650,"Daily Spend":14628,"short_name":"AKP","colors":"#ff8700","x":1709510400000,"y":14628,"fill":"#ff8700"},{"date":"2024-03-05","party":"AKP","amount_spent":113314,"Daily Spend":17664,"short_name":"AKP","colors":"#ff8700","x":1709596800000,"y":17664,"fill":"#ff8700"},{"date":"2024-03-06","party":"AKP","amount_spent":127862,"Daily Spend":14548,"short_name":"AKP","colors":"#ff8700","x":1709683200000,"y":14548,"fill":"#ff8700"},{"date":"2024-03-07","party":"AKP","amount_spent":138736,"Daily Spend":10874,"short_name":"AKP","colors":"#ff8700","x":1709769600000,"y":10874,"fill":"#ff8700"},{"date":"2024-03-08","party":"AKP","amount_spent":141759,"Daily Spend":3023,"short_name":"AKP","colors":"#ff8700","x":1709856000000,"y":3023,"fill":"#ff8700"},{"date":"2024-03-09","party":"AKP","amount_spent":153736,"Daily Spend":11977,"short_name":"AKP","colors":"#ff8700","x":1709942400000,"y":11977,"fill":"#ff8700"},{"date":"2024-03-10","party":"AKP","amount_spent":167560,"Daily Spend":13824,"short_name":"AKP","colors":"#ff8700","x":1710028800000,"y":13824,"fill":"#ff8700"}],"type":"area"},{"name":"CHP","data":[{"date":"2024-02-08","party":"CHP","amount_spent":300,"Daily Spend":null,"short_name":"CHP","colors":"#ED1C24","x":1707350400000,"y":null,"fill":"#ED1C24"},{"date":"2024-02-09","party":"CHP","amount_spent":1837,"Daily Spend":1537,"short_name":"CHP","colors":"#ED1C24","x":1707436800000,"y":1537,"fill":"#ED1C24"},{"date":"2024-02-10","party":"CHP","amount_spent":3380,"Daily Spend":1543,"short_name":"CHP","colors":"#ED1C24","x":1707523200000,"y":1543,"fill":"#ED1C24"},{"date":"2024-02-11","party":"CHP","amount_spent":4922,"Daily Spend":1542,"short_name":"CHP","colors":"#ED1C24","x":1707609600000,"y":1542,"fill":"#ED1C24"},{"date":"2024-02-12","party":"CHP","amount_spent":6465,"Daily Spend":1543,"short_name":"CHP","colors":"#ED1C24","x":1707696000000,"y":1543,"fill":"#ED1C24"},{"date":"2024-02-13","party":"CHP","amount_spent":8008,"Daily Spend":1543,"short_name":"CHP","colors":"#ED1C24","x":1707782400000,"y":1543,"fill":"#ED1C24"},{"date":"2024-02-14","party":"CHP","amount_spent":8015,"Daily Spend":7,"short_name":"CHP","colors":"#ED1C24","x":1707868800000,"y":7,"fill":"#ED1C24"},{"date":"2024-02-15","party":"CHP","amount_spent":13586,"Daily Spend":5571,"short_name":"CHP","colors":"#ED1C24","x":1707955200000,"y":5571,"fill":"#ED1C24"},{"date":"2024-02-16","party":"CHP","amount_spent":22207,"Daily Spend":8621,"short_name":"CHP","colors":"#ED1C24","x":1708041600000,"y":8621,"fill":"#ED1C24"},{"date":"2024-02-17","party":"CHP","amount_spent":37891,"Daily Spend":15684,"short_name":"CHP","colors":"#ED1C24","x":1708128000000,"y":15684,"fill":"#ED1C24"},{"date":"2024-02-18","party":"CHP","amount_spent":39440,"Daily Spend":1549,"short_name":"CHP","colors":"#ED1C24","x":1708214400000,"y":1549,"fill":"#ED1C24"},{"date":"2024-02-19","party":"CHP","amount_spent":43901,"Daily Spend":4461,"short_name":"CHP","colors":"#ED1C24","x":1708300800000,"y":4461,"fill":"#ED1C24"},{"date":"2024-02-20","party":"CHP","amount_spent":49615,"Daily Spend":5714,"short_name":"CHP","colors":"#ED1C24","x":1708387200000,"y":5714,"fill":"#ED1C24"},{"date":"2024-02-21","party":"CHP","amount_spent":62477,"Daily Spend":12862,"short_name":"CHP","colors":"#ED1C24","x":1708473600000,"y":12862,"fill":"#ED1C24"},{"date":"2024-02-22","party":"CHP","amount_spent":76871,"Daily Spend":14394,"short_name":"CHP","colors":"#ED1C24","x":1708560000000,"y":14394,"fill":"#ED1C24"},{"date":"2024-02-23","party":"CHP","amount_spent":91143,"Daily Spend":14272,"short_name":"CHP","colors":"#ED1C24","x":1708646400000,"y":14272,"fill":"#ED1C24"},{"date":"2024-02-24","party":"CHP","amount_spent":91156,"Daily Spend":13,"short_name":"CHP","colors":"#ED1C24","x":1708732800000,"y":13,"fill":"#ED1C24"},{"date":"2024-02-25","party":"CHP","amount_spent":94124,"Daily Spend":2968,"short_name":"CHP","colors":"#ED1C24","x":1708819200000,"y":2968,"fill":"#ED1C24"},{"date":"2024-02-26","party":"CHP","amount_spent":103320,"Daily Spend":9196,"short_name":"CHP","colors":"#ED1C24","x":1708905600000,"y":9196,"fill":"#ED1C24"},{"date":"2024-02-27","party":"CHP","amount_spent":112479,"Daily Spend":9159,"short_name":"CHP","colors":"#ED1C24","x":1708992000000,"y":9159,"fill":"#ED1C24"},{"date":"2024-02-28","party":"CHP","amount_spent":118451,"Daily Spend":5972,"short_name":"CHP","colors":"#ED1C24","x":1709078400000,"y":5972,"fill":"#ED1C24"},{"date":"2024-02-29","party":"CHP","amount_spent":121507,"Daily Spend":3056,"short_name":"CHP","colors":"#ED1C24","x":1709164800000,"y":3056,"fill":"#ED1C24"},{"date":"2024-03-01","party":"CHP","amount_spent":121512,"Daily Spend":5,"short_name":"CHP","colors":"#ED1C24","x":1709251200000,"y":5,"fill":"#ED1C24"},{"date":"2024-03-02","party":"CHP","amount_spent":126812,"Daily Spend":5300,"short_name":"CHP","colors":"#ED1C24","x":1709337600000,"y":5300,"fill":"#ED1C24"},{"date":"2024-03-03","party":"CHP","amount_spent":135789,"Daily Spend":8977,"short_name":"CHP","colors":"#ED1C24","x":1709424000000,"y":8977,"fill":"#ED1C24"},{"date":"2024-03-04","party":"CHP","amount_spent":139831,"Daily Spend":4042,"short_name":"CHP","colors":"#ED1C24","x":1709510400000,"y":4042,"fill":"#ED1C24"},{"date":"2024-03-05","party":"CHP","amount_spent":143692,"Daily Spend":3861,"short_name":"CHP","colors":"#ED1C24","x":1709596800000,"y":3861,"fill":"#ED1C24"},{"date":"2024-03-06","party":"CHP","amount_spent":147832,"Daily Spend":4140,"short_name":"CHP","colors":"#ED1C24","x":1709683200000,"y":4140,"fill":"#ED1C24"},{"date":"2024-03-07","party":"CHP","amount_spent":147836,"Daily Spend":4,"short_name":"CHP","colors":"#ED1C24","x":1709769600000,"y":4,"fill":"#ED1C24"},{"date":"2024-03-08","party":"CHP","amount_spent":147837,"Daily Spend":1,"short_name":"CHP","colors":"#ED1C24","x":1709856000000,"y":1,"fill":"#ED1C24"},{"date":"2024-03-09","party":"CHP","amount_spent":147854,"Daily Spend":17,"short_name":"CHP","colors":"#ED1C24","x":1709942400000,"y":17,"fill":"#ED1C24"},{"date":"2024-03-10","party":"CHP","amount_spent":152005,"Daily Spend":4151,"short_name":"CHP","colors":"#ED1C24","x":1710028800000,"y":4151,"fill":"#ED1C24"}],"type":"area"}],"xAxis":{"type":"datetime","title":{"text":"date"},"categories":null},"colors":["#ff8700","#52A136","#f34ada","#cccccc","#ED1C24","#008000","#0000FF","#3D9864","#A9A9A9","#333333","#951B88","#808080","#870000","#0D5DA6","#FFC0CB","#800080","#388537","#fddb00"],"tooltip":{"shared":true,"positioner":"function (labelWidth, labelHeight, point) {\n        return { x: 200, y: this.chart.plotTop };\n    }"}},"theme":{"chart":{"backgroundColor":"transparent"},"colors":["#7cb5ec","#434348","#90ed7d","#f7a35c","#8085e9","#f15c80","#e4d354","#2b908f","#f45b5b","#91e8e1"]},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":["hc_opts.tooltip.positioner"],"jsHooks":[]}</script>
 </div>
 </div>
 

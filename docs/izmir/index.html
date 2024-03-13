@@ -61,6 +61,49 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+<script src="site_libs/proj4js-2.3.15/proj4.js"></script>
+<link href="site_libs/highcharts-9.3.1/css/motion.css" rel="stylesheet">
+<script src="site_libs/highcharts-9.3.1/highcharts.js"></script>
+<script src="site_libs/highcharts-9.3.1/highcharts-3d.js"></script>
+<script src="site_libs/highcharts-9.3.1/highcharts-more.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/stock.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/map.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/data.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/exporting.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/offline-exporting.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/drilldown.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/item-series.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/overlapping-datalabels.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/annotations.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/export-data.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/funnel.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/heatmap.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/treemap.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/sankey.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/dependency-wheel.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/organization.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/solid-gauge.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/streamgraph.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/sunburst.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/vector.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/wordcloud.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/xrange.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/tilemap.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/venn.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/gantt.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/timeline.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/parallel-coordinates.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/bullet.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/coloraxis.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/dumbbell.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/lollipop.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/series-label.js"></script>
+<script src="site_libs/highcharts-9.3.1/plugins/motion.js"></script>
+<script src="site_libs/highcharts-9.3.1/custom/reset.js"></script>
+<script src="site_libs/highcharts-9.3.1/modules/boost.js"></script>
+<script src="site_libs/highchart-binding-0.9.4/highchart.js"></script>
 
 
 </head>
@@ -169,24 +212,24 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="ilmzhothrb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="jszybbmfaa" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#ilmzhothrb table {
+#jszybbmfaa table {
   font-family: Chivo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ilmzhothrb thead, #ilmzhothrb tbody, #ilmzhothrb tfoot, #ilmzhothrb tr, #ilmzhothrb td, #ilmzhothrb th {
+#jszybbmfaa thead, #jszybbmfaa tbody, #jszybbmfaa tfoot, #jszybbmfaa tr, #jszybbmfaa td, #jszybbmfaa th {
   border-style: none;
 }
 
-#ilmzhothrb p {
+#jszybbmfaa p {
   margin: 0;
   padding: 0;
 }
 
-#ilmzhothrb .gt_table {
+#jszybbmfaa .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -212,12 +255,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#ilmzhothrb .gt_caption {
+#jszybbmfaa .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ilmzhothrb .gt_title {
+#jszybbmfaa .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -229,7 +272,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#ilmzhothrb .gt_subtitle {
+#jszybbmfaa .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -241,7 +284,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#ilmzhothrb .gt_heading {
+#jszybbmfaa .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -253,13 +296,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#ilmzhothrb .gt_bottom_border {
+#jszybbmfaa .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ilmzhothrb .gt_col_headings {
+#jszybbmfaa .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -274,7 +317,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#ilmzhothrb .gt_col_heading {
+#jszybbmfaa .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 80%;
@@ -294,7 +337,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#ilmzhothrb .gt_column_spanner_outer {
+#jszybbmfaa .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 80%;
@@ -306,15 +349,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#ilmzhothrb .gt_column_spanner_outer:first-child {
+#jszybbmfaa .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ilmzhothrb .gt_column_spanner_outer:last-child {
+#jszybbmfaa .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ilmzhothrb .gt_column_spanner {
+#jszybbmfaa .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -326,11 +369,11 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#ilmzhothrb .gt_spanner_row {
+#jszybbmfaa .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ilmzhothrb .gt_group_heading {
+#jszybbmfaa .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -356,7 +399,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#ilmzhothrb .gt_empty_group_heading {
+#jszybbmfaa .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -371,15 +414,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#ilmzhothrb .gt_from_md > :first-child {
+#jszybbmfaa .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ilmzhothrb .gt_from_md > :last-child {
+#jszybbmfaa .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ilmzhothrb .gt_row {
+#jszybbmfaa .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -398,7 +441,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#ilmzhothrb .gt_stub {
+#jszybbmfaa .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 80%;
@@ -411,7 +454,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#ilmzhothrb .gt_stub_row_group {
+#jszybbmfaa .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -425,15 +468,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#ilmzhothrb .gt_row_group_first td {
+#jszybbmfaa .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ilmzhothrb .gt_row_group_first th {
+#jszybbmfaa .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ilmzhothrb .gt_summary_row {
+#jszybbmfaa .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -443,16 +486,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#ilmzhothrb .gt_first_summary_row {
+#jszybbmfaa .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ilmzhothrb .gt_first_summary_row.thick {
+#jszybbmfaa .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ilmzhothrb .gt_last_summary_row {
+#jszybbmfaa .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -462,7 +505,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#ilmzhothrb .gt_grand_summary_row {
+#jszybbmfaa .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -472,7 +515,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#ilmzhothrb .gt_first_grand_summary_row {
+#jszybbmfaa .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -482,7 +525,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#ilmzhothrb .gt_last_grand_summary_row_top {
+#jszybbmfaa .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -492,11 +535,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#ilmzhothrb .gt_striped {
+#jszybbmfaa .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ilmzhothrb .gt_table_body {
+#jszybbmfaa .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -505,7 +548,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#ilmzhothrb .gt_footnotes {
+#jszybbmfaa .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -519,7 +562,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#ilmzhothrb .gt_footnote {
+#jszybbmfaa .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -528,7 +571,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#ilmzhothrb .gt_sourcenotes {
+#jszybbmfaa .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -542,7 +585,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#ilmzhothrb .gt_sourcenote {
+#jszybbmfaa .gt_sourcenote {
   font-size: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -550,63 +593,63 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#ilmzhothrb .gt_left {
+#jszybbmfaa .gt_left {
   text-align: left;
 }
 
-#ilmzhothrb .gt_center {
+#jszybbmfaa .gt_center {
   text-align: center;
 }
 
-#ilmzhothrb .gt_right {
+#jszybbmfaa .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ilmzhothrb .gt_font_normal {
+#jszybbmfaa .gt_font_normal {
   font-weight: normal;
 }
 
-#ilmzhothrb .gt_font_bold {
+#jszybbmfaa .gt_font_bold {
   font-weight: bold;
 }
 
-#ilmzhothrb .gt_font_italic {
+#jszybbmfaa .gt_font_italic {
   font-style: italic;
 }
 
-#ilmzhothrb .gt_super {
+#jszybbmfaa .gt_super {
   font-size: 65%;
 }
 
-#ilmzhothrb .gt_footnote_marks {
+#jszybbmfaa .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ilmzhothrb .gt_asterisk {
+#jszybbmfaa .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ilmzhothrb .gt_indent_1 {
+#jszybbmfaa .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ilmzhothrb .gt_indent_2 {
+#jszybbmfaa .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ilmzhothrb .gt_indent_3 {
+#jszybbmfaa .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ilmzhothrb .gt_indent_4 {
+#jszybbmfaa .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ilmzhothrb .gt_indent_5 {
+#jszybbmfaa .gt_indent_5 {
   text-indent: 25px;
 }
 
@@ -669,24 +712,24 @@ tbody tr:last-child {
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="jrwflutnzh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="kfpmvtaash" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#jrwflutnzh table {
+#kfpmvtaash table {
   font-family: Chivo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jrwflutnzh thead, #jrwflutnzh tbody, #jrwflutnzh tfoot, #jrwflutnzh tr, #jrwflutnzh td, #jrwflutnzh th {
+#kfpmvtaash thead, #kfpmvtaash tbody, #kfpmvtaash tfoot, #kfpmvtaash tr, #kfpmvtaash td, #kfpmvtaash th {
   border-style: none;
 }
 
-#jrwflutnzh p {
+#kfpmvtaash p {
   margin: 0;
   padding: 0;
 }
 
-#jrwflutnzh .gt_table {
+#kfpmvtaash .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -712,12 +755,12 @@ tbody tr:last-child {
   border-left-color: #D3D3D3;
 }
 
-#jrwflutnzh .gt_caption {
+#kfpmvtaash .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jrwflutnzh .gt_title {
+#kfpmvtaash .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -729,7 +772,7 @@ tbody tr:last-child {
   border-bottom-width: 0;
 }
 
-#jrwflutnzh .gt_subtitle {
+#kfpmvtaash .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -741,7 +784,7 @@ tbody tr:last-child {
   border-top-width: 0;
 }
 
-#jrwflutnzh .gt_heading {
+#kfpmvtaash .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -753,13 +796,13 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#jrwflutnzh .gt_bottom_border {
+#kfpmvtaash .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jrwflutnzh .gt_col_headings {
+#kfpmvtaash .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -774,7 +817,7 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#jrwflutnzh .gt_col_heading {
+#kfpmvtaash .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 80%;
@@ -794,7 +837,7 @@ tbody tr:last-child {
   overflow-x: hidden;
 }
 
-#jrwflutnzh .gt_column_spanner_outer {
+#kfpmvtaash .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 80%;
@@ -806,15 +849,15 @@ tbody tr:last-child {
   padding-right: 4px;
 }
 
-#jrwflutnzh .gt_column_spanner_outer:first-child {
+#kfpmvtaash .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jrwflutnzh .gt_column_spanner_outer:last-child {
+#kfpmvtaash .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jrwflutnzh .gt_column_spanner {
+#kfpmvtaash .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -826,11 +869,11 @@ tbody tr:last-child {
   width: 100%;
 }
 
-#jrwflutnzh .gt_spanner_row {
+#kfpmvtaash .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jrwflutnzh .gt_group_heading {
+#kfpmvtaash .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -856,7 +899,7 @@ tbody tr:last-child {
   text-align: left;
 }
 
-#jrwflutnzh .gt_empty_group_heading {
+#kfpmvtaash .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -871,15 +914,15 @@ tbody tr:last-child {
   vertical-align: middle;
 }
 
-#jrwflutnzh .gt_from_md > :first-child {
+#kfpmvtaash .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jrwflutnzh .gt_from_md > :last-child {
+#kfpmvtaash .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jrwflutnzh .gt_row {
+#kfpmvtaash .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -898,7 +941,7 @@ tbody tr:last-child {
   overflow-x: hidden;
 }
 
-#jrwflutnzh .gt_stub {
+#kfpmvtaash .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 80%;
@@ -911,7 +954,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#jrwflutnzh .gt_stub_row_group {
+#kfpmvtaash .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -925,15 +968,15 @@ tbody tr:last-child {
   vertical-align: top;
 }
 
-#jrwflutnzh .gt_row_group_first td {
+#kfpmvtaash .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jrwflutnzh .gt_row_group_first th {
+#kfpmvtaash .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jrwflutnzh .gt_summary_row {
+#kfpmvtaash .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -943,16 +986,16 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#jrwflutnzh .gt_first_summary_row {
+#kfpmvtaash .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jrwflutnzh .gt_first_summary_row.thick {
+#kfpmvtaash .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jrwflutnzh .gt_last_summary_row {
+#kfpmvtaash .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -962,7 +1005,7 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#jrwflutnzh .gt_grand_summary_row {
+#kfpmvtaash .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -972,7 +1015,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#jrwflutnzh .gt_first_grand_summary_row {
+#kfpmvtaash .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -982,7 +1025,7 @@ tbody tr:last-child {
   border-top-color: #D3D3D3;
 }
 
-#jrwflutnzh .gt_last_grand_summary_row_top {
+#kfpmvtaash .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -992,11 +1035,11 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#jrwflutnzh .gt_striped {
+#kfpmvtaash .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jrwflutnzh .gt_table_body {
+#kfpmvtaash .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1005,7 +1048,7 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#jrwflutnzh .gt_footnotes {
+#kfpmvtaash .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1019,7 +1062,7 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#jrwflutnzh .gt_footnote {
+#kfpmvtaash .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1028,7 +1071,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#jrwflutnzh .gt_sourcenotes {
+#kfpmvtaash .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1042,7 +1085,7 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#jrwflutnzh .gt_sourcenote {
+#kfpmvtaash .gt_sourcenote {
   font-size: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1050,63 +1093,63 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#jrwflutnzh .gt_left {
+#kfpmvtaash .gt_left {
   text-align: left;
 }
 
-#jrwflutnzh .gt_center {
+#kfpmvtaash .gt_center {
   text-align: center;
 }
 
-#jrwflutnzh .gt_right {
+#kfpmvtaash .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jrwflutnzh .gt_font_normal {
+#kfpmvtaash .gt_font_normal {
   font-weight: normal;
 }
 
-#jrwflutnzh .gt_font_bold {
+#kfpmvtaash .gt_font_bold {
   font-weight: bold;
 }
 
-#jrwflutnzh .gt_font_italic {
+#kfpmvtaash .gt_font_italic {
   font-style: italic;
 }
 
-#jrwflutnzh .gt_super {
+#kfpmvtaash .gt_super {
   font-size: 65%;
 }
 
-#jrwflutnzh .gt_footnote_marks {
+#kfpmvtaash .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jrwflutnzh .gt_asterisk {
+#kfpmvtaash .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jrwflutnzh .gt_indent_1 {
+#kfpmvtaash .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jrwflutnzh .gt_indent_2 {
+#kfpmvtaash .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jrwflutnzh .gt_indent_3 {
+#kfpmvtaash .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jrwflutnzh .gt_indent_4 {
+#kfpmvtaash .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jrwflutnzh .gt_indent_5 {
+#kfpmvtaash .gt_indent_5 {
   text-indent: 25px;
 }
 
@@ -1169,8 +1212,10 @@ tbody tr:last-child {
 <section id="over-time" class="level3">
 <h3 class="anchored" data-anchor-id="over-time">Over Time</h3>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>Error in gzfile(file, "rb") : cannot open the connection</code></pre>
+<div class="cell-output-display">
+
+<div class="highchart html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-f222dbd5616a9e13f441" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-f222dbd5616a9e13f441">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":null},"yAxis":{"title":{"text":"Daily Spend"},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"area":{"stacking":"normal","lineWidth":1,"marker":{"enabled":false}}},"series":[{"name":"AKP","data":[{"date":"2024-01-31","party":"AKP","amount_spent":99501,"Daily Spend":null,"short_name":"AKP","colors":"#ff8700","x":1706659200000,"y":null,"fill":"#ff8700"},{"date":"2024-02-01","party":"AKP","amount_spent":99501,"Daily Spend":0,"short_name":"AKP","colors":"#ff8700","x":1706745600000,"y":0,"fill":"#ff8700"},{"date":"2024-02-02","party":"AKP","amount_spent":99501,"Daily Spend":0,"short_name":"AKP","colors":"#ff8700","x":1706832000000,"y":0,"fill":"#ff8700"},{"date":"2024-02-03","party":"AKP","amount_spent":106312,"Daily Spend":6811,"short_name":"AKP","colors":"#ff8700","x":1706918400000,"y":6811,"fill":"#ff8700"},{"date":"2024-02-04","party":"AKP","amount_spent":119543,"Daily Spend":13231,"short_name":"AKP","colors":"#ff8700","x":1707004800000,"y":13231,"fill":"#ff8700"},{"date":"2024-02-05","party":"AKP","amount_spent":128108,"Daily Spend":8565,"short_name":"AKP","colors":"#ff8700","x":1707091200000,"y":8565,"fill":"#ff8700"},{"date":"2024-02-06","party":"AKP","amount_spent":128838,"Daily Spend":730,"short_name":"AKP","colors":"#ff8700","x":1707177600000,"y":730,"fill":"#ff8700"},{"date":"2024-02-07","party":"AKP","amount_spent":129567,"Daily Spend":729,"short_name":"AKP","colors":"#ff8700","x":1707264000000,"y":729,"fill":"#ff8700"},{"date":"2024-02-08","party":"AKP","amount_spent":130309,"Daily Spend":742,"short_name":"AKP","colors":"#ff8700","x":1707350400000,"y":742,"fill":"#ff8700"},{"date":"2024-02-09","party":"AKP","amount_spent":131070,"Daily Spend":761,"short_name":"AKP","colors":"#ff8700","x":1707436800000,"y":761,"fill":"#ff8700"},{"date":"2024-02-10","party":"AKP","amount_spent":131876,"Daily Spend":806,"short_name":"AKP","colors":"#ff8700","x":1707523200000,"y":806,"fill":"#ff8700"},{"date":"2024-02-11","party":"AKP","amount_spent":132695,"Daily Spend":819,"short_name":"AKP","colors":"#ff8700","x":1707609600000,"y":819,"fill":"#ff8700"},{"date":"2024-02-12","party":"AKP","amount_spent":135676,"Daily Spend":2981,"short_name":"AKP","colors":"#ff8700","x":1707696000000,"y":2981,"fill":"#ff8700"},{"date":"2024-02-13","party":"AKP","amount_spent":147945,"Daily Spend":12269,"short_name":"AKP","colors":"#ff8700","x":1707782400000,"y":12269,"fill":"#ff8700"},{"date":"2024-02-14","party":"AKP","amount_spent":159746,"Daily Spend":11801,"short_name":"AKP","colors":"#ff8700","x":1707868800000,"y":11801,"fill":"#ff8700"},{"date":"2024-02-15","party":"AKP","amount_spent":180605,"Daily Spend":20859,"short_name":"AKP","colors":"#ff8700","x":1707955200000,"y":20859,"fill":"#ff8700"},{"date":"2024-02-16","party":"AKP","amount_spent":230487,"Daily Spend":49882,"short_name":"AKP","colors":"#ff8700","x":1708041600000,"y":49882,"fill":"#ff8700"},{"date":"2024-02-17","party":"AKP","amount_spent":320921,"Daily Spend":90434,"short_name":"AKP","colors":"#ff8700","x":1708128000000,"y":90434,"fill":"#ff8700"},{"date":"2024-02-18","party":"AKP","amount_spent":399885,"Daily Spend":78964,"short_name":"AKP","colors":"#ff8700","x":1708214400000,"y":78964,"fill":"#ff8700"},{"date":"2024-02-19","party":"AKP","amount_spent":435374,"Daily Spend":35489,"short_name":"AKP","colors":"#ff8700","x":1708300800000,"y":35489,"fill":"#ff8700"},{"date":"2024-02-20","party":"AKP","amount_spent":460861,"Daily Spend":25487,"short_name":"AKP","colors":"#ff8700","x":1708387200000,"y":25487,"fill":"#ff8700"},{"date":"2024-02-21","party":"AKP","amount_spent":492859,"Daily Spend":31998,"short_name":"AKP","colors":"#ff8700","x":1708473600000,"y":31998,"fill":"#ff8700"},{"date":"2024-02-22","party":"AKP","amount_spent":523300,"Daily Spend":30441,"short_name":"AKP","colors":"#ff8700","x":1708560000000,"y":30441,"fill":"#ff8700"},{"date":"2024-02-23","party":"AKP","amount_spent":558880,"Daily Spend":35580,"short_name":"AKP","colors":"#ff8700","x":1708646400000,"y":35580,"fill":"#ff8700"},{"date":"2024-02-24","party":"AKP","amount_spent":581858,"Daily Spend":22978,"short_name":"AKP","colors":"#ff8700","x":1708732800000,"y":22978,"fill":"#ff8700"},{"date":"2024-02-25","party":"AKP","amount_spent":601633,"Daily Spend":19775,"short_name":"AKP","colors":"#ff8700","x":1708819200000,"y":19775,"fill":"#ff8700"},{"date":"2024-02-26","party":"AKP","amount_spent":632169,"Daily Spend":30536,"short_name":"AKP","colors":"#ff8700","x":1708905600000,"y":30536,"fill":"#ff8700"},{"date":"2024-02-27","party":"AKP","amount_spent":662945,"Daily Spend":30776,"short_name":"AKP","colors":"#ff8700","x":1708992000000,"y":30776,"fill":"#ff8700"},{"date":"2024-02-28","party":"AKP","amount_spent":707219,"Daily Spend":44274,"short_name":"AKP","colors":"#ff8700","x":1709078400000,"y":44274,"fill":"#ff8700"},{"date":"2024-02-29","party":"AKP","amount_spent":821216,"Daily Spend":113997,"short_name":"AKP","colors":"#ff8700","x":1709164800000,"y":113997,"fill":"#ff8700"},{"date":"2024-03-01","party":"AKP","amount_spent":942942,"Daily Spend":121726,"short_name":"AKP","colors":"#ff8700","x":1709251200000,"y":121726,"fill":"#ff8700"},{"date":"2024-03-02","party":"AKP","amount_spent":1052299,"Daily Spend":109357,"short_name":"AKP","colors":"#ff8700","x":1709337600000,"y":109357,"fill":"#ff8700"},{"date":"2024-03-03","party":"AKP","amount_spent":1198774,"Daily Spend":146475,"short_name":"AKP","colors":"#ff8700","x":1709424000000,"y":146475,"fill":"#ff8700"},{"date":"2024-03-04","party":"AKP","amount_spent":1336410,"Daily Spend":137636,"short_name":"AKP","colors":"#ff8700","x":1709510400000,"y":137636,"fill":"#ff8700"},{"date":"2024-03-05","party":"AKP","amount_spent":1399519,"Daily Spend":63109,"short_name":"AKP","colors":"#ff8700","x":1709596800000,"y":63109,"fill":"#ff8700"},{"date":"2024-03-06","party":"AKP","amount_spent":1427169,"Daily Spend":27650,"short_name":"AKP","colors":"#ff8700","x":1709683200000,"y":27650,"fill":"#ff8700"},{"date":"2024-03-07","party":"AKP","amount_spent":1504674,"Daily Spend":77505,"short_name":"AKP","colors":"#ff8700","x":1709769600000,"y":77505,"fill":"#ff8700"},{"date":"2024-03-08","party":"AKP","amount_spent":1611118,"Daily Spend":106444,"short_name":"AKP","colors":"#ff8700","x":1709856000000,"y":106444,"fill":"#ff8700"},{"date":"2024-03-09","party":"AKP","amount_spent":1696741,"Daily Spend":85623,"short_name":"AKP","colors":"#ff8700","x":1709942400000,"y":85623,"fill":"#ff8700"},{"date":"2024-03-10","party":"AKP","amount_spent":1696741,"Daily Spend":0,"short_name":"AKP","colors":"#ff8700","x":1710028800000,"y":0,"fill":"#ff8700"}],"type":"area"},{"name":"CHP","data":[{"date":"2024-01-31","party":"CHP","amount_spent":50422,"Daily Spend":null,"short_name":"CHP","colors":"#ED1C24","x":1706659200000,"y":null,"fill":"#ED1C24"},{"date":"2024-02-01","party":"CHP","amount_spent":55279,"Daily Spend":4857,"short_name":"CHP","colors":"#ED1C24","x":1706745600000,"y":4857,"fill":"#ED1C24"},{"date":"2024-02-02","party":"CHP","amount_spent":61256,"Daily Spend":5977,"short_name":"CHP","colors":"#ED1C24","x":1706832000000,"y":5977,"fill":"#ED1C24"},{"date":"2024-02-03","party":"CHP","amount_spent":68489,"Daily Spend":7233,"short_name":"CHP","colors":"#ED1C24","x":1706918400000,"y":7233,"fill":"#ED1C24"},{"date":"2024-02-04","party":"CHP","amount_spent":82210,"Daily Spend":13721,"short_name":"CHP","colors":"#ED1C24","x":1707004800000,"y":13721,"fill":"#ED1C24"},{"date":"2024-02-05","party":"CHP","amount_spent":91943,"Daily Spend":9733,"short_name":"CHP","colors":"#ED1C24","x":1707091200000,"y":9733,"fill":"#ED1C24"},{"date":"2024-02-06","party":"CHP","amount_spent":98197,"Daily Spend":6254,"short_name":"CHP","colors":"#ED1C24","x":1707177600000,"y":6254,"fill":"#ED1C24"},{"date":"2024-02-07","party":"CHP","amount_spent":101945,"Daily Spend":3748,"short_name":"CHP","colors":"#ED1C24","x":1707264000000,"y":3748,"fill":"#ED1C24"},{"date":"2024-02-08","party":"CHP","amount_spent":109357,"Daily Spend":7412,"short_name":"CHP","colors":"#ED1C24","x":1707350400000,"y":7412,"fill":"#ED1C24"},{"date":"2024-02-09","party":"CHP","amount_spent":118137,"Daily Spend":8780,"short_name":"CHP","colors":"#ED1C24","x":1707436800000,"y":8780,"fill":"#ED1C24"},{"date":"2024-02-10","party":"CHP","amount_spent":123725,"Daily Spend":5588,"short_name":"CHP","colors":"#ED1C24","x":1707523200000,"y":5588,"fill":"#ED1C24"},{"date":"2024-02-11","party":"CHP","amount_spent":130503,"Daily Spend":6778,"short_name":"CHP","colors":"#ED1C24","x":1707609600000,"y":6778,"fill":"#ED1C24"},{"date":"2024-02-12","party":"CHP","amount_spent":156364,"Daily Spend":25861,"short_name":"CHP","colors":"#ED1C24","x":1707696000000,"y":25861,"fill":"#ED1C24"},{"date":"2024-02-13","party":"CHP","amount_spent":217971,"Daily Spend":61607,"short_name":"CHP","colors":"#ED1C24","x":1707782400000,"y":61607,"fill":"#ED1C24"},{"date":"2024-02-14","party":"CHP","amount_spent":341012,"Daily Spend":123041,"short_name":"CHP","colors":"#ED1C24","x":1707868800000,"y":123041,"fill":"#ED1C24"},{"date":"2024-02-15","party":"CHP","amount_spent":350462,"Daily Spend":9450,"short_name":"CHP","colors":"#ED1C24","x":1707955200000,"y":9450,"fill":"#ED1C24"},{"date":"2024-02-16","party":"CHP","amount_spent":363627,"Daily Spend":13165,"short_name":"CHP","colors":"#ED1C24","x":1708041600000,"y":13165,"fill":"#ED1C24"},{"date":"2024-02-17","party":"CHP","amount_spent":377316,"Daily Spend":13689,"short_name":"CHP","colors":"#ED1C24","x":1708128000000,"y":13689,"fill":"#ED1C24"},{"date":"2024-02-18","party":"CHP","amount_spent":390726,"Daily Spend":13410,"short_name":"CHP","colors":"#ED1C24","x":1708214400000,"y":13410,"fill":"#ED1C24"},{"date":"2024-02-19","party":"CHP","amount_spent":408059,"Daily Spend":17333,"short_name":"CHP","colors":"#ED1C24","x":1708300800000,"y":17333,"fill":"#ED1C24"},{"date":"2024-02-20","party":"CHP","amount_spent":420146,"Daily Spend":12087,"short_name":"CHP","colors":"#ED1C24","x":1708387200000,"y":12087,"fill":"#ED1C24"},{"date":"2024-02-21","party":"CHP","amount_spent":433986,"Daily Spend":13840,"short_name":"CHP","colors":"#ED1C24","x":1708473600000,"y":13840,"fill":"#ED1C24"},{"date":"2024-02-22","party":"CHP","amount_spent":444287,"Daily Spend":10301,"short_name":"CHP","colors":"#ED1C24","x":1708560000000,"y":10301,"fill":"#ED1C24"},{"date":"2024-02-23","party":"CHP","amount_spent":461032,"Daily Spend":16745,"short_name":"CHP","colors":"#ED1C24","x":1708646400000,"y":16745,"fill":"#ED1C24"},{"date":"2024-02-24","party":"CHP","amount_spent":475231,"Daily Spend":14199,"short_name":"CHP","colors":"#ED1C24","x":1708732800000,"y":14199,"fill":"#ED1C24"},{"date":"2024-02-25","party":"CHP","amount_spent":498930,"Daily Spend":23699,"short_name":"CHP","colors":"#ED1C24","x":1708819200000,"y":23699,"fill":"#ED1C24"},{"date":"2024-02-26","party":"CHP","amount_spent":522508,"Daily Spend":23578,"short_name":"CHP","colors":"#ED1C24","x":1708905600000,"y":23578,"fill":"#ED1C24"},{"date":"2024-02-27","party":"CHP","amount_spent":544568,"Daily Spend":22060,"short_name":"CHP","colors":"#ED1C24","x":1708992000000,"y":22060,"fill":"#ED1C24"},{"date":"2024-02-28","party":"CHP","amount_spent":566017,"Daily Spend":21449,"short_name":"CHP","colors":"#ED1C24","x":1709078400000,"y":21449,"fill":"#ED1C24"},{"date":"2024-02-29","party":"CHP","amount_spent":584013,"Daily Spend":17996,"short_name":"CHP","colors":"#ED1C24","x":1709164800000,"y":17996,"fill":"#ED1C24"},{"date":"2024-03-01","party":"CHP","amount_spent":604099,"Daily Spend":20086,"short_name":"CHP","colors":"#ED1C24","x":1709251200000,"y":20086,"fill":"#ED1C24"},{"date":"2024-03-02","party":"CHP","amount_spent":614900,"Daily Spend":10801,"short_name":"CHP","colors":"#ED1C24","x":1709337600000,"y":10801,"fill":"#ED1C24"},{"date":"2024-03-03","party":"CHP","amount_spent":624243,"Daily Spend":9343,"short_name":"CHP","colors":"#ED1C24","x":1709424000000,"y":9343,"fill":"#ED1C24"},{"date":"2024-03-04","party":"CHP","amount_spent":630415,"Daily Spend":6172,"short_name":"CHP","colors":"#ED1C24","x":1709510400000,"y":6172,"fill":"#ED1C24"},{"date":"2024-03-05","party":"CHP","amount_spent":649910,"Daily Spend":19495,"short_name":"CHP","colors":"#ED1C24","x":1709596800000,"y":19495,"fill":"#ED1C24"},{"date":"2024-03-06","party":"CHP","amount_spent":686369,"Daily Spend":36459,"short_name":"CHP","colors":"#ED1C24","x":1709683200000,"y":36459,"fill":"#ED1C24"},{"date":"2024-03-07","party":"CHP","amount_spent":729805,"Daily Spend":43436,"short_name":"CHP","colors":"#ED1C24","x":1709769600000,"y":43436,"fill":"#ED1C24"},{"date":"2024-03-08","party":"CHP","amount_spent":762654,"Daily Spend":32849,"short_name":"CHP","colors":"#ED1C24","x":1709856000000,"y":32849,"fill":"#ED1C24"},{"date":"2024-03-09","party":"CHP","amount_spent":791193,"Daily Spend":28539,"short_name":"CHP","colors":"#ED1C24","x":1709942400000,"y":28539,"fill":"#ED1C24"},{"date":"2024-03-10","party":"CHP","amount_spent":821290,"Daily Spend":30097,"short_name":"CHP","colors":"#ED1C24","x":1710028800000,"y":30097,"fill":"#ED1C24"}],"type":"area"},{"name":"İYİ","data":[{"date":"2024-01-31","party":"İYİ","amount_spent":347,"Daily Spend":null,"short_name":"İYİ","colors":"#fddb00","x":1706659200000,"y":null,"fill":"#fddb00"},{"date":"2024-02-01","party":"İYİ","amount_spent":347,"Daily Spend":0,"short_name":"İYİ","colors":"#fddb00","x":1706745600000,"y":0,"fill":"#fddb00"},{"date":"2024-02-02","party":"İYİ","amount_spent":347,"Daily Spend":0,"short_name":"İYİ","colors":"#fddb00","x":1706832000000,"y":0,"fill":"#fddb00"},{"date":"2024-02-03","party":"İYİ","amount_spent":347,"Daily Spend":0,"short_name":"İYİ","colors":"#fddb00","x":1706918400000,"y":0,"fill":"#fddb00"},{"date":"2024-02-04","party":"İYİ","amount_spent":347,"Daily Spend":0,"short_name":"İYİ","colors":"#fddb00","x":1707004800000,"y":0,"fill":"#fddb00"},{"date":"2024-02-05","party":"İYİ","amount_spent":347,"Daily Spend":0,"short_name":"İYİ","colors":"#fddb00","x":1707091200000,"y":0,"fill":"#fddb00"},{"date":"2024-02-06","party":"İYİ","amount_spent":1327,"Daily Spend":980,"short_name":"İYİ","colors":"#fddb00","x":1707177600000,"y":980,"fill":"#fddb00"},{"date":"2024-02-07","party":"İYİ","amount_spent":2494,"Daily Spend":1167,"short_name":"İYİ","colors":"#fddb00","x":1707264000000,"y":1167,"fill":"#fddb00"},{"date":"2024-02-08","party":"İYİ","amount_spent":5027,"Daily Spend":2533,"short_name":"İYİ","colors":"#fddb00","x":1707350400000,"y":2533,"fill":"#fddb00"},{"date":"2024-02-09","party":"İYİ","amount_spent":8442,"Daily Spend":3415,"short_name":"İYİ","colors":"#fddb00","x":1707436800000,"y":3415,"fill":"#fddb00"},{"date":"2024-02-10","party":"İYİ","amount_spent":13361,"Daily Spend":4919,"short_name":"İYİ","colors":"#fddb00","x":1707523200000,"y":4919,"fill":"#fddb00"},{"date":"2024-02-11","party":"İYİ","amount_spent":19456,"Daily Spend":6095,"short_name":"İYİ","colors":"#fddb00","x":1707609600000,"y":6095,"fill":"#fddb00"},{"date":"2024-02-12","party":"İYİ","amount_spent":26595,"Daily Spend":7139,"short_name":"İYİ","colors":"#fddb00","x":1707696000000,"y":7139,"fill":"#fddb00"},{"date":"2024-02-13","party":"İYİ","amount_spent":33274,"Daily Spend":6679,"short_name":"İYİ","colors":"#fddb00","x":1707782400000,"y":6679,"fill":"#fddb00"},{"date":"2024-02-14","party":"İYİ","amount_spent":38149,"Daily Spend":4875,"short_name":"İYİ","colors":"#fddb00","x":1707868800000,"y":4875,"fill":"#fddb00"},{"date":"2024-02-15","party":"İYİ","amount_spent":40895,"Daily Spend":2746,"short_name":"İYİ","colors":"#fddb00","x":1707955200000,"y":2746,"fill":"#fddb00"},{"date":"2024-02-16","party":"İYİ","amount_spent":41862,"Daily Spend":967,"short_name":"İYİ","colors":"#fddb00","x":1708041600000,"y":967,"fill":"#fddb00"},{"date":"2024-02-17","party":"İYİ","amount_spent":42800,"Daily Spend":938,"short_name":"İYİ","colors":"#fddb00","x":1708128000000,"y":938,"fill":"#fddb00"},{"date":"2024-02-18","party":"İYİ","amount_spent":43882,"Daily Spend":1082,"short_name":"İYİ","colors":"#fddb00","x":1708214400000,"y":1082,"fill":"#fddb00"},{"date":"2024-02-19","party":"İYİ","amount_spent":46774,"Daily Spend":2892,"short_name":"İYİ","colors":"#fddb00","x":1708300800000,"y":2892,"fill":"#fddb00"},{"date":"2024-02-20","party":"İYİ","amount_spent":52891,"Daily Spend":6117,"short_name":"İYİ","colors":"#fddb00","x":1708387200000,"y":6117,"fill":"#fddb00"},{"date":"2024-02-21","party":"İYİ","amount_spent":58933,"Daily Spend":6042,"short_name":"İYİ","colors":"#fddb00","x":1708473600000,"y":6042,"fill":"#fddb00"},{"date":"2024-02-22","party":"İYİ","amount_spent":68381,"Daily Spend":9448,"short_name":"İYİ","colors":"#fddb00","x":1708560000000,"y":9448,"fill":"#fddb00"},{"date":"2024-02-23","party":"İYİ","amount_spent":78480,"Daily Spend":10099,"short_name":"İYİ","colors":"#fddb00","x":1708646400000,"y":10099,"fill":"#fddb00"},{"date":"2024-02-24","party":"İYİ","amount_spent":88692,"Daily Spend":10212,"short_name":"İYİ","colors":"#fddb00","x":1708732800000,"y":10212,"fill":"#fddb00"},{"date":"2024-02-25","party":"İYİ","amount_spent":99150,"Daily Spend":10458,"short_name":"İYİ","colors":"#fddb00","x":1708819200000,"y":10458,"fill":"#fddb00"},{"date":"2024-02-26","party":"İYİ","amount_spent":109275,"Daily Spend":10125,"short_name":"İYİ","colors":"#fddb00","x":1708905600000,"y":10125,"fill":"#fddb00"},{"date":"2024-02-27","party":"İYİ","amount_spent":118646,"Daily Spend":9371,"short_name":"İYİ","colors":"#fddb00","x":1708992000000,"y":9371,"fill":"#fddb00"},{"date":"2024-02-28","party":"İYİ","amount_spent":127957,"Daily Spend":9311,"short_name":"İYİ","colors":"#fddb00","x":1709078400000,"y":9311,"fill":"#fddb00"},{"date":"2024-02-29","party":"İYİ","amount_spent":137195,"Daily Spend":9238,"short_name":"İYİ","colors":"#fddb00","x":1709164800000,"y":9238,"fill":"#fddb00"},{"date":"2024-03-01","party":"İYİ","amount_spent":146478,"Daily Spend":9283,"short_name":"İYİ","colors":"#fddb00","x":1709251200000,"y":9283,"fill":"#fddb00"},{"date":"2024-03-02","party":"İYİ","amount_spent":155797,"Daily Spend":9319,"short_name":"İYİ","colors":"#fddb00","x":1709337600000,"y":9319,"fill":"#fddb00"},{"date":"2024-03-03","party":"İYİ","amount_spent":165738,"Daily Spend":9941,"short_name":"İYİ","colors":"#fddb00","x":1709424000000,"y":9941,"fill":"#fddb00"},{"date":"2024-03-04","party":"İYİ","amount_spent":175276,"Daily Spend":9538,"short_name":"İYİ","colors":"#fddb00","x":1709510400000,"y":9538,"fill":"#fddb00"},{"date":"2024-03-05","party":"İYİ","amount_spent":183427,"Daily Spend":8151,"short_name":"İYİ","colors":"#fddb00","x":1709596800000,"y":8151,"fill":"#fddb00"},{"date":"2024-03-06","party":"İYİ","amount_spent":191800,"Daily Spend":8373,"short_name":"İYİ","colors":"#fddb00","x":1709683200000,"y":8373,"fill":"#fddb00"},{"date":"2024-03-07","party":"İYİ","amount_spent":200105,"Daily Spend":8305,"short_name":"İYİ","colors":"#fddb00","x":1709769600000,"y":8305,"fill":"#fddb00"},{"date":"2024-03-08","party":"İYİ","amount_spent":208428,"Daily Spend":8323,"short_name":"İYİ","colors":"#fddb00","x":1709856000000,"y":8323,"fill":"#fddb00"},{"date":"2024-03-09","party":"İYİ","amount_spent":216872,"Daily Spend":8444,"short_name":"İYİ","colors":"#fddb00","x":1709942400000,"y":8444,"fill":"#fddb00"},{"date":"2024-03-10","party":"İYİ","amount_spent":223865,"Daily Spend":6993,"short_name":"İYİ","colors":"#fddb00","x":1710028800000,"y":6993,"fill":"#fddb00"}],"type":"area"}],"xAxis":{"type":"datetime","title":{"text":"date"},"categories":null},"colors":["#ff8700","#2DC1A1","#f34ada","#cccccc","#ED1C24","#008000","#0000FF","#38A7C6","#A9A9A9","#333333","#951B88","#808080","#870000","#0D5DA6","#FFC0CB","#800080","#388537","#fddb00"],"tooltip":{"shared":true,"positioner":"function (labelWidth, labelHeight, point) {\n        return { x: 200, y: this.chart.plotTop };\n    }"}},"theme":{"chart":{"backgroundColor":"transparent"},"colors":["#7cb5ec","#434348","#90ed7d","#f7a35c","#8085e9","#f15c80","#e4d354","#2b908f","#f45b5b","#91e8e1"]},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":["hc_opts.tooltip.positioner"],"jsHooks":[]}</script>
 </div>
 </div>
 

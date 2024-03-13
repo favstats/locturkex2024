@@ -245,6 +245,7 @@ city_list %>%
     # file.remove("_site/_quarto.yml")
     
     rm(election_dat30)
+    gc()
     
     
   })
