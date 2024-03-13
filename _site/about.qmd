@@ -15,7 +15,7 @@ library(tidyverse)
 library(rvest)
 library(htmltools)
 sets <- jsonlite::fromJSON(here::here("settings.json"))
-source(here::here("party_utils.R"))
+# source(here::here("party_utils.R"))
 ```
 
 
@@ -23,14 +23,6 @@ source(here::here("party_utils.R"))
 
 
 In collaboration with [Who Targets Me](https://whotargets.me/), we monitored `r read_lines("../n_advertisers.txt")` political advertisers to better understand how campaigns use different targeting methods made available by Meta. To do this, we used data from the [Meta Ad Library](https://www.facebook.com/ads/library/), using the new 'Audience' data which gives some detail on how pages target their ads. 
-
-
-
-To better understand the election, we kept only advertisers who:
-
-1. Advertised in the last 7 days (`r last7days_string`)
-2. Advertised in the last 30 days (`r last30days_string`)
-
 
 ::: {.callout-note}
 Meta only provides 7, 30 and 90 days windows for the targeting data in their Ad Library. Meta's data also lags by a few days. Report will be updated as soon as new data is available.
@@ -44,11 +36,16 @@ The data shown in this dashboard is based on the platform's respective ad librar
 
 :::
 
-### About the Creator of the Dashboard
+### About the Creators of the Dashboard
 
+
+::: {.panel-tabset}
+
+#### Fabio Votta
 
 ```{r, echo=F}
 
+library(htmltools)
 
 card <- div(
   class = "card",
@@ -60,7 +57,7 @@ card <- div(
         style = "display: flex; justify-content: center;",
         img(
           class = "card-img", 
-          src = "https://pbs.twimg.com/profile_images/1662875733704822784/C4T3VPy0_400x400.jpg",
+          src = "https://algosoc.org/uploads/_card/fabio-votta-1.jpg",
           style = "max-width: 500px;"  # Adjusted max-width to control image size
         )
       )
@@ -87,8 +84,51 @@ card
 ```
 
 
+#### Onurcan Güden
+
+```{r, echo=F}
+card <- div(
+  class = "card",
+  div(
+    class = "row no-gutters align-items-center",  # Added align-items-center to vertically center the content
+    div(
+      class = "col-md-2",  # Reduced column size to make the image smaller
+      div(  # Wrapped the image in another div to center it horizontally
+        style = "display: flex; justify-content: center;",
+        img(
+          class = "card-img", 
+          src = "",
+          style = "max-width: 500px;"  # Adjusted max-width to control image size
+        )
+      )
+    ),
+    div(
+      class = "col-md-2",
+      div(
+        class = "card-body",
+        p(
+          class = "card-text", 
+          "Onurcan Güden is a TBD."
+        )
+      )
+    )
+  )
+)
+
+# print(card)
 
 
+# print(card)
+card
+
+
+```
+
+
+
+
+
+:::
 
 :::: {style="display: flex; justify-content: center; align-items: center;" }
 
@@ -117,7 +157,6 @@ Want to retrieve targeting data from the Facebook Ad Library yourself? This dash
 :::
 
 ::::
-
 
 ### Election Targeting Dashboards
 

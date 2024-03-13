@@ -117,7 +117,7 @@ cityyyy <- advertiser_dat %>%
         arrange(desc(ds))
       
       # try({
-      election_dat30 <- arrow::read_parquet(paste0("https://github.com/favstats/meta_ad_targeting/releases/download/", "TR", "-last_", 30,"_days/", thosearethere$ds[1], ".parquet"))  %>% 
+      elex <- arrow::read_parquet(paste0("https://github.com/favstats/meta_ad_targeting/releases/download/", "TR", "-last_", 30,"_days/", thosearethere$ds[1], ".parquet"))  %>% 
       left_join(advertiser_dat %>% select(page_id, party2 = party, official, page_type, city, notes) %>% mutate(page_id = as.character(page_id)) %>% 
                   distinct(page_id, .keep_all = T)) %>% 
       mutate(party = ifelse(is.na(party2), party, party2)) %>% 
@@ -151,7 +151,7 @@ cities_data <- data.frame(
   lat = c(41.0082, 36.9081, 38.4192, 39.9334, 37.000000, 41.2778, 38.6128, 40.1828, 37.8500, 36.8000, 40.7667, 36.2167, 39.8167, 40.1500, 41.7333, 37.0667, 39.7778, 38.3500, 39.0667, 38.7500, 40.9750, 40.7500, 39.7500, 37.7833, 37.9667, 41.0000, 37.7500),
   lon = c(28.9784, 30.6956, 27.1287, 32.8597, 35.321335, 36.2397, 27.4442, 29.0609, 27.8451, 34.6756, 29.9167 , 36.3667, 34.8000, 26.6667, 27.8333, 28.3667, 30.5189, 38.3228, 27.8861, 30.5333, 37.8500, 30.4500, 37.0167, 33.7167, 35.3167, 40.4500, 28.1167)) %>% 
   left_join(cityyyy %>% rename(name = city)) %>% 
-  left_join(election_dat30)
+  left_join(elex)
 
 # color_dat <-
   # readRDS("../data/color_dat.rds") %>% 

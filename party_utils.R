@@ -211,7 +211,7 @@ if(!exists("election_dat30")){
                   distinct(page_id, .keep_all = T)) %>% 
       mutate(party = ifelse(is.na(party2), party, party2))
     
-  print(election_dat30)
+  # print(election_dat30)
 }
 
 if(!exists("election_dat7")){

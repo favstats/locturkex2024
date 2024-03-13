@@ -3,7 +3,7 @@ project:
   output-dir: ../docs
 
 website:
-  title: "Turkish Local Elections 2024"
+  title: "{{< iconify twemoji flag-turkey >}} Turkish Local Elections 2024"
   navbar:
     left:
       - href: map.qmd
@@ -17,7 +17,7 @@ website:
         text: "{{< iconify ph info-thin >}} About"
     right:
       - icon: github
-        href: https://github.com/favstats/betargex
+        href: https://github.com/favstats/ys24
   sidebar:
     - id: ""
     - id: targeting

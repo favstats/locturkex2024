@@ -334,7 +334,9 @@ hc_data_dafb <- spending_dat %>%
   # ggplot(aes(date, daily_spend, fill = party)) +
   # geom_area()
 
-color_order <- color_dat %>%
+color_order <- hc_data_dafb %>%
+  left_join(color_dat) %>%
+  drop_na(colors) %>% 
   distinct(party, .keep_all = T) %>%
   arrange(party) %>%
   pull(colors) %>% 
