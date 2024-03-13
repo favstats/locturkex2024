@@ -5,7 +5,7 @@ pacman::p_load(knitr, tidyverse, openxlsx, sf, rmarkdown, rvest)
 # getwd()
 
 source("cntry.R")
-
+source("utils.R")
 
 linkie <- function(.x, sets) {
   download.file(glue::glue("https://github.com/favstats/meta_ad_reports/releases/download/{sets$cntry}-lifelong/{.x}.rds"), destfile = "data.rds", quiet = T)
