@@ -207,11 +207,19 @@ if(!exists("election_dat30")){
     election_dat30 <- election_dat30 %>% 
       # slice(6855) %>% #View()
       # filter(page_id == "101510914946267") %>%
-      left_join(advertiser_dat %>% select(page_id, party2 = party, official, page_type, city, notes) %>% mutate(page_id = as.character(page_id)) %>% 
+      left_join(advertiser_dat %>% select(page_id, party2 = party, official, city, notes, ptype = type) %>% mutate(page_id = as.character(page_id)) %>% 
                   distinct(page_id, .keep_all = T)) %>% 
-      mutate(party = ifelse(is.na(party2), party, party2))
+      mutate(party = ifelse(is.na(party2), party, party2)) %>% 
+      filter(!(ptype %in% c("Neutral", "Irrelevant Page"))) %>% 
+      mutate(party = ifelse(is.na(party), ptype, party)) %>% 
+      mutate(party = ifelse(!is.na(ptype), ptype, party))
+      # mutate(ptype = str_replace_all(ptype, "Pro.*Y.*" , "Pro-İYİ"))
+  #   election_dat30 %>%
+  #     # mutatCe(ptype = str_replace_all(ptype, "Pro" , "Pro-İYİ")) %>%
+  #     count(party)
+  # # print(election_dat30)
     
-  # print(election_dat30)
+    # str_replace("Pro-\u0130Y\u0130" , "Pro.*Y.*", "Pro-İYİ")
 }
 
 if(!exists("election_dat7")){
@@ -260,9 +268,12 @@ if(!exists("election_dat7")){
   election_dat7 <- election_dat7 %>% 
     # slice(6855) %>% #View()
     # filter(page_id == "101510914946267") %>%
-    left_join(advertiser_dat %>% select(page_id, party2 = party, official, page_type, city, notes) %>% mutate(page_id = as.character(page_id)) %>% 
+    left_join(advertiser_dat %>% select(page_id, party2 = party, official, city, notes, ptype = type) %>% mutate(page_id = as.character(page_id)) %>% 
                 distinct(page_id, .keep_all = T)) %>% 
-    mutate(party = ifelse(is.na(party2), party, party2))
+    mutate(party = ifelse(is.na(party2), party, party2))  %>% 
+    filter(!(ptype %in% c("Neutral", "Irrelevant Page"))) %>% 
+    mutate(party = ifelse(is.na(party), ptype, party)) %>% 
+    mutate(party = ifelse(!is.na(ptype), ptype, party))
   
 }
 # print("hello2")
@@ -281,7 +292,7 @@ if(sets$cntry %in% country_codes & nrow(thedat)!=0){
       # count(party)
       left_join(color_dat %>% set_names(c("long_name", "party", "colors"))) %>% 
       select(-colors) %>% 
-      filter(party %in% color_dat$party) %>% 
+      # filter(party %in% color_dat$party) %>% 
       mutate(party = ifelse(!is.na(long_name), long_name, party)) 
     
     
@@ -292,8 +303,8 @@ if(sets$cntry %in% country_codes & nrow(thedat)!=0){
       # count(party)
       left_join(color_dat %>% set_names(c("long_name", "party", "colors"))) %>% 
       select(-colors) %>% 
-      mutate(party = long_name) %>% 
-      filter(party %in% color_dat$party)
+      mutate(party = long_name) #%>% 
+      # filter(party %in% color_dat$party)
     
   } else {
     
@@ -430,10 +441,12 @@ if(class(the_city)=="character"){
 
 
 election_dat30 <- election_dat30 %>% 
-  filter(party != "Dismissed") 
+  filter(party != "Dismissed") %>% 
+  filter(party != "unknown")
 
 election_dat7 <- election_dat7 %>% 
-  filter(party != "Dismissed") 
+  filter(party != "Dismissed")  %>% 
+  filter(party != "unknown")
 
 if(nrow(election_dat30)!=0){
   

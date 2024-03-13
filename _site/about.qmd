@@ -4,7 +4,7 @@ format:
   html:
     theme: lumen
 params:
-  the_city: !expr "all"
+  the_city: "all"
 ---
 
 ```{r, echo = F, warning=F, message=F}
@@ -40,6 +40,48 @@ The data shown in this dashboard is based on the platform's respective ad librar
 
 
 ::: {.panel-tabset}
+
+
+
+#### Onurcan Güden
+
+```{r, echo=F}
+card <- div(
+  class = "card",
+  div(
+    class = "row no-gutters align-items-center",  # Added align-items-center to vertically center the content
+    div(
+      class = "col-md-2",  # Reduced column size to make the image smaller
+      div(  # Wrapped the image in another div to center it horizontally
+        style = "display: flex; justify-content: center;",
+        img(
+          class = "card-img", 
+          src = "https://github.com/favstats/ys24/blob/main/logs/onur.jpg?raw=true",
+          style = "max-width: 500px;"  # Adjusted max-width to control image size
+        )
+      )
+    ),
+    div(
+      class = "col-md-2",
+      div(
+        class = "card-body",
+        p(
+          class = "card-text", 
+          "Onurcan Güden is a PhD candidate in Media and Communication Studies at the Galatasaray University and a visiting researcher at the University of Amsterdam. His research focuses on the impact of computational propaganda in shaping digital political agendas in different democracies and its societal consequences."
+        )
+      )
+    )
+  )
+)
+
+# print(card)
+
+
+# print(card)
+card
+
+
+```
 
 #### Fabio Votta
 
@@ -83,46 +125,6 @@ card
 
 ```
 
-
-#### Onurcan Güden
-
-```{r, echo=F}
-card <- div(
-  class = "card",
-  div(
-    class = "row no-gutters align-items-center",  # Added align-items-center to vertically center the content
-    div(
-      class = "col-md-2",  # Reduced column size to make the image smaller
-      div(  # Wrapped the image in another div to center it horizontally
-        style = "display: flex; justify-content: center;",
-        img(
-          class = "card-img", 
-          src = "",
-          style = "max-width: 500px;"  # Adjusted max-width to control image size
-        )
-      )
-    ),
-    div(
-      class = "col-md-2",
-      div(
-        class = "card-body",
-        p(
-          class = "card-text", 
-          "Onurcan Güden is a TBD."
-        )
-      )
-    )
-  )
-)
-
-# print(card)
-
-
-# print(card)
-card
-
-
-```
 
 
 

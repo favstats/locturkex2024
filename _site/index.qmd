@@ -2,7 +2,7 @@
 title: Spending - `r stringr::str_to_title(params$the_city)`
 description-meta: "How do political parties chase your vote, what do they want to keep hidden, and how much money do they spend on it? In the lead-up to the elections, we monitor political microtargeting."
 params:
-  the_city: !expr "all"
+  the_city: "all"
 ---
 
 ```{r setup, include=FALSE}
@@ -48,8 +48,8 @@ total_spend_id <- election_dat30 %>%
   summarize(total_spend_formatted = sum(total_spend_formatted)) %>%
   ungroup()
 
-# election_dat30 %>% 
-#   count(city)
+# election_dat30 %>%
+#   count(party)
 
 ```
 

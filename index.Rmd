@@ -2,7 +2,7 @@
 output: 
   html_document:
     includes:
-      before_body: header.html
+      in_header: header.html
 ---
 
 ```{r, include=FALSE}

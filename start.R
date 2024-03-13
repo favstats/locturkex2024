@@ -261,6 +261,7 @@ rmarkdown::render("logs/overview.Rmd", params = params)
 file.copy(from = "logs/overview.html", to = glue::glue("docs/overview.html"), overwrite = T)
 
 dir("_site", full.names = T) %>% keep(~str_detect(.x, "qmd")) %>% walk(~render_it(.x, execute_params = params))
+# dir("_site", full.names = T) %>% keep(~str_detect(.x, "index")) %>% walk(~render_it(.x, execute_params = params))
 
 rmarkdown::render("index.Rmd")
 # dir.create(glue::glue("docs/{sets$cntry}"), recursive = T)
@@ -268,7 +269,7 @@ rmarkdown::render("index.Rmd")
 # dir(full.names = F) %>%
 #   keep(~str_detect(.x, "_libs")) %>%
 #   walk(~fs::dir_copy(.x, "docs/site_libs", overwrite = T))
-
+# 
 # system("git add -A")
 # system('git commit -m "update"')
 # system("git push")
