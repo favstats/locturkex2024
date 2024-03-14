@@ -35,7 +35,8 @@ pacman::p_load(knitr, tidyverse, rmarkdown, openxlsx, sf, shiny, rvest)
 
 source(here::here("utils.R"))
 source(here::here("party_utils.R"))
-
+# election_dat30 %>% count(party)
+# election_dat7 %>% count(party)
 ```
 
 
@@ -243,7 +244,6 @@ plot_geography <- function(x) {
 ```{r echo=FALSE, results='asis'}
 library(htmltools)
 library(purrr)
-
 # Generate plots
 plots <- plot_geography(col_each30)
 
@@ -369,8 +369,9 @@ gg %>%
 #### By Party
 
 ```{r echo=FALSE, results='asis'}
-
+# color_dat <- readRDS( here::here("data/color_dat.rds"))
 # Generate plots
+# debugonce(plot_geography)
 plots <- plot_geography(col_each7)
 
 # Map each plot to a column

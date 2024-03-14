@@ -184,7 +184,9 @@ city_list %>%
           params <- list(the_city = the_city)
           # params_json <- jsonlite::toJSON(params, auto_unbox = TRUE)
           
-          dir("_site", full.names = T) %>% keep(~str_detect(.x, "qmd")) %>% walk(~render_it(.x, execute_params = params))
+          dir("_site", full.names = T) %>% keep(~str_detect(.x, "qmd")) %>%
+            discard(~str_detect(.x, "blog|map|about")) %>% 
+            walk(~render_it(.x, execute_params = params))
           # dir("_site", full.names = T) %>% keep(~str_detect(.x, "index")) %>% walk(~render_it(.x, execute_params = params))
           
           if(!(fs::dir_exists( glue::glue("docs/{the_city}/")))){
@@ -262,6 +264,15 @@ file.copy(from = "logs/overview.html", to = glue::glue("docs/overview.html"), ov
 
 dir("_site", full.names = T) %>% keep(~str_detect(.x, "qmd")) %>% walk(~render_it(.x, execute_params = params))
 # dir("_site", full.names = T) %>% keep(~str_detect(.x, "index")) %>% walk(~render_it(.x, execute_params = params))
+
+city_list %>%
+  walk_progress( ~ {
+    dir("docs", full.names = T) %>%
+      keep( ~ str_detect(.x, "map|blog|about")) %>%
+      walk( ~ fs::file_copy(.x, str_replace(
+        .x, "docs/", glue::glue("docs/{.x}/")
+      ), overwrite = T))
+  })
 
 rmarkdown::render("index.Rmd")
 # dir.create(glue::glue("docs/{sets$cntry}"), recursive = T)

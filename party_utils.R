@@ -74,56 +74,8 @@ if(!exists("thedat")){
 }
 
 
-###### get colors ####
-if(!custom){
-  
-  party_colors <- data.frame(
-    party = c("MHP", "AKP", "CHP", "İYİ", "BAĞIMSIZ TÜRKİYE", "DEMOKRAT", "DEVA", "Diğ", 
-              "Independent", "SAADET", "YENİDEN REFAH"),
-    color = c("#870000", "#FDC400", "#D70000", "#0087DC", "#f34ada", "#008000", "#0000FF", "#A9A9A9", 
-              "#808080", "#FFC0CB", "#800080")
-  )
-  
-  if(sets$cntry %in% country_codes & nrow(thedat)!=0){
-    res <- GET(url = paste0("https://data-api.whotargets.me/entities?%24client%5BwithCountries%5D=true&countries.alpha2%5B%24in%5D%5B0%5D=", str_to_lower(sets$cntry)))
-    color_dat <- content(res) %>% 
-      flatten() %>% 
-      map(compact)%>% 
-      map_dfr(as_tibble) %>% 
-      drop_na(id) %>% 
-      ## this is a speccial UK thing
-      rename(party = name) %>% 
-      select(party, short_name, contains("color")) %>% 
-      bind_rows(party_colors) %>% 
-      distinct(party, .keep_all = T) %>% 
-      setColors() %>% 
-      rename(colors = color) 
-    
-  } else {
-    polsample <- readRDS(here::here("data/polsample.rds"))
-    partycolorsdataset  <- readRDS(here::here("data/partycolorsdataset.rds"))
-    
-    color_dat <- polsample %>% 
-      # count(cntry, partyfacts_id, sort = T) %>% View()
-      filter(cntry == sets$cntry) %>%
-      select(party = name_short, partyfacts_id) %>% 
-      distinct(partyfacts_id, party) %>% 
-      left_join(partycolorsdataset %>% mutate(partyfacts_id = as.character(partyfacts_id))) %>% 
-      select(party, color = hex)  %>% 
-      setColors() %>% 
-      rename(colors = color) %>% 
-      drop_na(party)
-  }
-  
-
-  
-  
-  saveRDS(color_dat, here::here("data/color_dat.rds"))
-} 
 
 
-
-most_left_party <- color_dat$party[1]
 
 
 scale_fill_parties <- function(...){
@@ -143,21 +95,21 @@ scale_color_parties <- function(...){
 
 # print("hello")
 
-if(custom){
-  election_dat30 <- readRDS(here::here("data/election_dat30.rds"))  %>% 
-    select(-contains("party")) %>%
-    left_join(all_dat %>% distinct(page_id, party))
-  
-  election_dat7 <- readRDS(here::here("data/election_dat7.rds"))  %>% 
-    select(-contains("party")) %>%
-    left_join(all_dat %>% distinct(page_id, party))
-}
+# if(custom){
+#   election_dat30 <- readRDS(here::here("data/election_dat30.rds"))  %>% 
+#     select(-contains("party")) %>%
+#     left_join(all_dat %>% distinct(page_id, party))
+#   
+#   election_dat7 <- readRDS(here::here("data/election_dat7.rds"))  %>% 
+#     select(-contains("party")) %>%
+#     left_join(all_dat %>% distinct(page_id, party))
+# }
 
 advertiser_dat <- readr::read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTVkw2cJ5IqeOTBKOfBXpDZDftW9g_nlN-ZKdqDK42wvcxZYHbkVBKDsxfB8r7V88RVef3zHIxBbDOw/pub?output=csv") %>% 
   janitor::clean_names()# %>% 
 # count(city, sort = T)
 
-if(!exists("election_dat30")){
+# if(!exists("election_dat30")){
   out <- sets$cntry %>% 
     map(~{
       .x %>% 
@@ -220,9 +172,9 @@ if(!exists("election_dat30")){
   # # print(election_dat30)
     
     # str_replace("Pro-\u0130Y\u0130" , "Pro.*Y.*", "Pro-İYİ")
-}
+# }
 
-if(!exists("election_dat7")){
+# if(!exists("election_dat7")){
   out <- sets$cntry %>% 
     map(~{
       .x %>% 
@@ -275,8 +227,61 @@ if(!exists("election_dat7")){
     mutate(party = ifelse(is.na(party), ptype, party)) %>% 
     mutate(party = ifelse(!is.na(ptype), ptype, party))
   
-}
+# }
 # print("hello2")
+  
+  
+  
+  ###### get colors ####
+  # if(!custom){
+    
+    party_colors <- data.frame(
+      party = c("MHP", "AKP", "CHP", "İYİ", "BAĞIMSIZ TÜRKİYE", "DEMOKRAT", "DEVA", "Diğ", 
+                "Independent", "SAADET", "YENİDEN REFAH"),
+      color = c("#870000", "#FDC400", "#D70000", "#0087DC", "#f34ada", "#008000", "#0000FF", "#A9A9A9", 
+                "#808080", "#FFC0CB", "#800080")) %>% 
+        bind_rows(election_dat30 %>% distinct(party) %>% mutate(color = NA)) %>% distinct()
+  
+    
+    if(sets$cntry %in% country_codes & nrow(thedat)!=0){
+      res <- GET(url = paste0("https://data-api.whotargets.me/entities?%24client%5BwithCountries%5D=true&countries.alpha2%5B%24in%5D%5B0%5D=", str_to_lower(sets$cntry)))
+      color_dat <<- content(res) %>% 
+        flatten() %>% 
+        map(compact)%>% 
+        map_dfr(as_tibble) %>% 
+        drop_na(id) %>% 
+        ## this is a speccial UK thing
+        rename(party = name) %>% 
+        select(party, short_name, contains("color")) %>% 
+        bind_rows(party_colors) %>% 
+        distinct(party, .keep_all = T) %>% 
+        setColors() %>% 
+        rename(colors = color) 
+      
+    } else {
+      polsample <- readRDS(here::here("data/polsample.rds"))
+      partycolorsdataset  <- readRDS(here::here("data/partycolorsdataset.rds"))
+      
+      color_dat <- polsample %>% 
+        # count(cntry, partyfacts_id, sort = T) %>% View()
+        filter(cntry == sets$cntry) %>%
+        select(party = name_short, partyfacts_id) %>% 
+        distinct(partyfacts_id, party) %>% 
+        left_join(partycolorsdataset %>% mutate(partyfacts_id = as.character(partyfacts_id))) %>% 
+        select(party, color = hex)  %>% 
+        setColors() %>% 
+        rename(colors = color) %>% 
+        drop_na(party)
+    }
+    
+    
+    
+    
+    saveRDS(color_dat, here::here("data/color_dat.rds"))
+  # } 
+  
+    
+    most_left_party <- color_dat$party[1]
 
 if(sets$cntry %in% country_codes & nrow(thedat)!=0){
   
@@ -293,7 +298,8 @@ if(sets$cntry %in% country_codes & nrow(thedat)!=0){
       left_join(color_dat %>% set_names(c("long_name", "party", "colors"))) %>% 
       select(-colors) %>% 
       # filter(party %in% color_dat$party) %>% 
-      mutate(party = ifelse(!is.na(long_name), long_name, party)) 
+      mutate(party = ifelse(!is.na(long_name), long_name, party)) %>% 
+      select(-long_name)
     
     
     election_dat7 <- election_dat7 %>%
@@ -303,8 +309,9 @@ if(sets$cntry %in% country_codes & nrow(thedat)!=0){
       # count(party)
       left_join(color_dat %>% set_names(c("long_name", "party", "colors"))) %>% 
       select(-colors) %>% 
-      mutate(party = long_name) #%>% 
-      # filter(party %in% color_dat$party)
+      # filter(party %in% color_dat$party) %>% 
+      mutate(party = ifelse(!is.na(long_name), long_name, party))  %>% 
+      select(-long_name)
     
   } else {
     
@@ -312,77 +319,77 @@ if(sets$cntry %in% country_codes & nrow(thedat)!=0){
       election_dat30 %>%
       rename(internal_id = contains("page_id")) %>%
       filter(is.na(no_data)) %>% 
-      drop_na(party) %>% 
-      filter(party %in% color_dat$party)
+      drop_na(party) #%>% 
+      # filter(party %in% color_dat$party)
     
     
     election_dat7 <- election_dat7 %>%
       rename(internal_id = contains("page_id")) %>%
       filter(is.na(no_data)) %>% 
-      drop_na(party) %>% 
-      filter(party %in% color_dat$party)
+      drop_na(party) #%>% 
+      # filter(party %in% color_dat$party)
     
   }
   
-} else if (custom){
+} #else if (custom){
   
-  raw <- election_dat30 %>%
-    rename(internal_id = contains("page_id")) %>%
-    filter(is.na(no_data)) 
-  
-  if(nrow(raw)==0){
-    election_dat30 <- tibble()
-  } else {
-    election_dat30 <- raw %>% 
-      drop_na(party) %>% 
-      filter(party %in% color_dat$party)
-  }
-  
-  
-  
-  raw <- election_dat7 %>%
-    rename(internal_id = contains("page_id")) %>%
-    filter(is.na(no_data)) 
-  
-  if(nrow(raw)==0){
-    election_dat7 <- tibble()
-  } else {
-    election_dat7 <- raw %>% 
-      drop_na(party)  %>% 
-      filter(party %in% color_dat$party)
-  }
-  
-} else {
-  
-  raw <- election_dat30 %>%
-    rename(internal_id = contains("page_id")) %>%
-    filter(is.na(no_data)) %>% 
-    filter(sources == "wtm")
-  
-  if(nrow(raw)==0){
-    election_dat30 <- tibble()
-  } else {
-    election_dat30 <- raw %>% 
-      drop_na(party) %>% 
-      filter(party %in% color_dat$party)
-  }
-  
-  
-  
-  raw <- election_dat7 %>%
-    rename(internal_id = contains("page_id")) %>%
-    filter(is.na(no_data)) %>% 
-    filter(sources == "wtm")
-  
-  if(nrow(raw)==0){
-    election_dat7 <- tibble()
-  } else {
-    election_dat7 <- raw %>% 
-      drop_na(party)  %>% 
-      filter(party %in% color_dat$party)
-  }
-  
-}
+#   raw <- election_dat30 %>%
+#     rename(internal_id = contains("page_id")) %>%
+#     filter(is.na(no_data)) 
+#   
+#   if(nrow(raw)==0){
+#     election_dat30 <- tibble()
+#   } else {
+#     election_dat30 <- raw %>% 
+#       drop_na(party) %>% 
+#       filter(party %in% color_dat$party)
+#   }
+#   
+#   
+#   
+#   raw <- election_dat7 %>%
+#     rename(internal_id = contains("page_id")) %>%
+#     filter(is.na(no_data)) 
+#   
+#   if(nrow(raw)==0){
+#     election_dat7 <- tibble()
+#   } else {
+#     election_dat7 <- raw %>% 
+#       drop_na(party)  %>% 
+#       filter(party %in% color_dat$party)
+#   }
+#   
+# } else {
+#   
+#   raw <- election_dat30 %>%
+#     rename(internal_id = contains("page_id")) %>%
+#     filter(is.na(no_data)) %>% 
+#     filter(sources == "wtm")
+#   
+#   if(nrow(raw)==0){
+#     election_dat30 <- tibble()
+#   } else {
+#     election_dat30 <- raw %>% 
+#       drop_na(party) %>% 
+#       filter(party %in% color_dat$party)
+#   }
+#   
+#   
+#   
+#   raw <- election_dat7 %>%
+#     rename(internal_id = contains("page_id")) %>%
+#     filter(is.na(no_data)) %>% 
+#     filter(sources == "wtm")
+#   
+#   if(nrow(raw)==0){
+#     election_dat7 <- tibble()
+#   } else {
+#     election_dat7 <- raw %>% 
+#       drop_na(party)  %>% 
+#       filter(party %in% color_dat$party)
+#   }
+#   
+# }
 
 
 # print(glimpse(election_dat30))
