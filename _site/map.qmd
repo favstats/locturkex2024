@@ -187,7 +187,7 @@ hcmap("countries/tr/tr-all", showInLegend = FALSE) %>%
   ) %>%
   hc_mapNavigation(enabled = TRUE) %>%
   hc_tooltip(useHTML = T,headerFormat='',
-             pointFormat = paste('City: {point.name}<br> Spending: {point.z} <br> Largest Spender: {point.party}')) %>% 
+             pointFormat = paste('City: {point.name}<br> Total Spending: ₺{point.z} <br> Largest Spender: {point.party}')) %>% 
   hc_title(text = "Click on Any City to See More") %>%
   hc_plotOptions(series = list(
   cursor = "pointer",

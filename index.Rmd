@@ -1,4 +1,5 @@
 ---
+title: Turkish Election Dashboard
 output: 
   html_document:
     includes:
@@ -13,6 +14,14 @@ browser_title <- "<title>Turkish Election Dashboard</title>"
 writeLines(browser_title, "header.html")
 ```
 
+
+```{css}
+  h1.title {
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF; /* Change to your desired color */
+  }
+```
 
 
 <head>
