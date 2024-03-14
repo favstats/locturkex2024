@@ -47,7 +47,7 @@ city_list <- advertiser_dat %>%
   summarize(spend_30days_bf_march4_2024 = sum(spend_30days_bf_march4_2024)) %>% 
   arrange(desc(spend_30days_bf_march4_2024)) %>% 
   drop_na() %>% 
-  pull(city)
+  pull(city)# %>% .[1]
 
 # city_list <- advertiser_dat$city
 
@@ -262,15 +262,23 @@ rmarkdown::render("logs/overview.Rmd", params = params)
 
 file.copy(from = "logs/overview.html", to = glue::glue("docs/overview.html"), overwrite = T)
 
-dir("_site", full.names = T) %>% keep(~str_detect(.x, "qmd")) %>% walk(~render_it(.x, execute_params = params))
+dir("_site", full.names = T,recursive = T) %>% keep(~str_detect(.x, "qmd")) %>% walk(~render_it(.x, execute_params = params))
 # dir("_site", full.names = T) %>% keep(~str_detect(.x, "index")) %>% walk(~render_it(.x, execute_params = params))
 
 city_list %>%
+  # .[1] %>% 
   walk_progress( ~ {
+    city_name <- .x
     dir("docs", full.names = T) %>%
       keep( ~ str_detect(.x, "map|blog|about")) %>%
       walk( ~ fs::file_copy(.x, str_replace(
-        .x, "docs/", glue::glue("docs/{.x}/")
+        .x, "docs/", glue::glue("docs/{city_name}/")
+      ), overwrite = T))
+    
+    dir("docs", full.names = T) %>%
+      keep( ~ str_detect(.x, "post")) %>%
+      walk( ~ fs::dir_copy(.x, str_replace(
+        .x, "docs/", glue::glue("docs/{city_name}/")
       ), overwrite = T))
   })
 
