@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -47,7 +47,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,12 +62,13 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
-<script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
 <script src="site_libs/proj4js-2.3.15/proj4.js"></script>
 <link href="site_libs/highcharts-9.3.1/css/motion.css" rel="stylesheet">
@@ -112,9 +119,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title"><iconify-icon inline="" icon="twemoji:flag-turkey"></iconify-icon> Turkish Local Elections 2024</span>
     </a>
@@ -126,55 +133,55 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./map.html" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="ph:map-trifold-thin"></iconify-icon> Map</span></a>
+    <a class="nav-link" href="./map.html"> 
+<span class="menu-text"><iconify-icon inline="" icon="ph:map-trifold-thin"></iconify-icon> Map</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="ph:note-pencil-thin"></iconify-icon> Blog</span></a>
+    <a class="nav-link" href="./blog.html"> 
+<span class="menu-text"><iconify-icon inline="" icon="ph:note-pencil-thin"></iconify-icon> Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
- <span class="menu-text"><iconify-icon inline="" icon="ph:coins-thin"></iconify-icon> Spending</span></a>
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text"><iconify-icon inline="" icon="ph:coins-thin"></iconify-icon> Spending</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iconify-ph-users-three-thin--targeting" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-iconify-ph-users-three-thin--targeting" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text"><iconify-icon inline="" icon="ph:users-three-thin"></iconify-icon> Targeting</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-iconify-ph-users-three-thin--targeting">    
         <li>
-    <a class="dropdown-item" href="./targeting.html" rel="" target="">
+    <a class="dropdown-item" href="./targeting.html">
  <span class="dropdown-text">Spending per Targeting</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./detailed.html" rel="" target="">
+    <a class="dropdown-item" href="./detailed.html">
  <span class="dropdown-text">Detailed Targeting</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./location.html" rel="" target="">
+    <a class="dropdown-item" href="./location.html">
  <span class="dropdown-text">Location</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./demographics.html" rel="" target="">
+    <a class="dropdown-item" href="./demographics.html">
  <span class="dropdown-text">Demographics</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="ph:info-thin"></iconify-icon> About</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text"><iconify-icon inline="" icon="ph:info-thin"></iconify-icon> About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/favstats/ys24" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/favstats/ys24"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -201,7 +208,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <p>Here you can see the expenditures of political parties in the lead-up to the elections according to the latest data.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
@@ -211,25 +220,48 @@ ul.task-list li input[type="checkbox"] {
 <p>During this period, political parties spent a total of ₺811,241 and displayed 1522 advertisements on Meta.</p>
 <div class="cell">
 <div class="cell-output-display">
+<<<<<<< HEAD
 
 <div id="fxzvfmzhyo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 #fxzvfmzhyo table {
   font-family: Chivo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+=======
+<div>
+<div id="szxwzedfzw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#szxwzedfzw table {
+  font-family: Cairo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo thead, #fxzvfmzhyo tbody, #fxzvfmzhyo tfoot, #fxzvfmzhyo tr, #fxzvfmzhyo td, #fxzvfmzhyo th {
   border-style: none;
 }
 
 #fxzvfmzhyo p {
+=======
+#szxwzedfzw thead, #szxwzedfzw tbody, #szxwzedfzw tfoot, #szxwzedfzw tr, #szxwzedfzw td, #szxwzedfzw th {
+  border-style: none;
+}
+
+#szxwzedfzw p {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   margin: 0;
   padding: 0;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_table {
+=======
+#szxwzedfzw .gt_table {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -237,7 +269,7 @@ ul.task-list li input[type="checkbox"] {
   margin-right: auto;
   color: #333333;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   background-color: #FFFFFF;
   width: auto;
@@ -255,12 +287,20 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_caption {
+=======
+#szxwzedfzw .gt_caption {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_title {
+=======
+#szxwzedfzw .gt_title {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -272,7 +312,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_subtitle {
+=======
+#szxwzedfzw .gt_subtitle {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -284,7 +328,11 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_heading {
+=======
+#szxwzedfzw .gt_heading {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -296,13 +344,21 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_bottom_border {
+=======
+#szxwzedfzw .gt_bottom_border {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_col_headings {
+=======
+#szxwzedfzw .gt_col_headings {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -317,12 +373,16 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_col_heading {
+=======
+#szxwzedfzw .gt_col_heading {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   border-left-style: none;
   border-left-width: 1px;
   border-left-color: #D3D3D3;
@@ -337,18 +397,23 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_column_spanner_outer {
+=======
+#szxwzedfzw .gt_column_spanner_outer {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
@@ -358,6 +423,17 @@ ul.task-list li input[type="checkbox"] {
 }
 
 #fxzvfmzhyo .gt_column_spanner {
+=======
+#szxwzedfzw .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#szxwzedfzw .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#szxwzedfzw .gt_column_spanner {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -369,20 +445,28 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
 #fxzvfmzhyo .gt_group_heading {
+=======
+#szxwzedfzw .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#szxwzedfzw .gt_group_heading {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
   padding-right: 5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -399,12 +483,16 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_empty_group_heading {
+=======
+#szxwzedfzw .gt_empty_group_heading {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
+  font-size: 100%;
+  font-weight: initial;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -414,6 +502,7 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_from_md > :first-child {
   margin-top: 0;
 }
@@ -423,6 +512,17 @@ ul.task-list li input[type="checkbox"] {
 }
 
 #fxzvfmzhyo .gt_row {
+=======
+#szxwzedfzw .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#szxwzedfzw .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#szxwzedfzw .gt_row {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -441,12 +541,16 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_stub {
+=======
+#szxwzedfzw .gt_stub {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-right-style: solid;
   border-right-width: 0px;
   border-right-color: #FFFFFF;
@@ -454,7 +558,11 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_stub_row_group {
+=======
+#szxwzedfzw .gt_stub_row_group {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -468,6 +576,7 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_row_group_first td {
   border-top-width: 2px;
 }
@@ -477,6 +586,17 @@ ul.task-list li input[type="checkbox"] {
 }
 
 #fxzvfmzhyo .gt_summary_row {
+=======
+#szxwzedfzw .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#szxwzedfzw .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#szxwzedfzw .gt_summary_row {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -486,16 +606,28 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_first_summary_row {
+=======
+#szxwzedfzw .gt_first_summary_row {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
 #fxzvfmzhyo .gt_last_summary_row {
+=======
+#szxwzedfzw .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#szxwzedfzw .gt_last_summary_row {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -505,7 +637,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_grand_summary_row {
+=======
+#szxwzedfzw .gt_grand_summary_row {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -515,7 +651,11 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_first_grand_summary_row {
+=======
+#szxwzedfzw .gt_first_grand_summary_row {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -525,7 +665,11 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_last_grand_summary_row_top {
+=======
+#szxwzedfzw .gt_last_grand_summary_row_top {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -535,11 +679,19 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
 #fxzvfmzhyo .gt_table_body {
+=======
+#szxwzedfzw .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#szxwzedfzw .gt_table_body {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -548,7 +700,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_footnotes {
+=======
+#szxwzedfzw .gt_footnotes {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -562,7 +718,11 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_footnote {
+=======
+#szxwzedfzw .gt_footnote {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -571,7 +731,11 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_sourcenotes {
+=======
+#szxwzedfzw .gt_sourcenotes {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -585,7 +749,11 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_sourcenote {
+=======
+#szxwzedfzw .gt_sourcenote {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   font-size: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -593,6 +761,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_left {
   text-align: left;
 }
@@ -602,10 +771,22 @@ ul.task-list li input[type="checkbox"] {
 }
 
 #fxzvfmzhyo .gt_right {
+=======
+#szxwzedfzw .gt_left {
+  text-align: left;
+}
+
+#szxwzedfzw .gt_center {
+  text-align: center;
+}
+
+#szxwzedfzw .gt_right {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_font_normal {
   font-weight: normal;
 }
@@ -623,16 +804,40 @@ ul.task-list li input[type="checkbox"] {
 }
 
 #fxzvfmzhyo .gt_footnote_marks {
+=======
+#szxwzedfzw .gt_font_normal {
+  font-weight: normal;
+}
+
+#szxwzedfzw .gt_font_bold {
+  font-weight: bold;
+}
+
+#szxwzedfzw .gt_font_italic {
+  font-style: italic;
+}
+
+#szxwzedfzw .gt_super {
+  font-size: 65%;
+}
+
+#szxwzedfzw .gt_footnote_marks {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_asterisk {
+=======
+#szxwzedfzw .gt_asterisk {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   font-size: 100%;
   vertical-align: 0;
 }
 
+<<<<<<< HEAD
 #fxzvfmzhyo .gt_indent_1 {
   text-indent: 5px;
 }
@@ -650,6 +855,25 @@ ul.task-list li input[type="checkbox"] {
 }
 
 #fxzvfmzhyo .gt_indent_5 {
+=======
+#szxwzedfzw .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#szxwzedfzw .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#szxwzedfzw .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#szxwzedfzw .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#szxwzedfzw .gt_indent_5 {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   text-indent: 25px;
 }
 
@@ -657,6 +881,7 @@ tbody tr:last-child {
   border-bottom: 2px solid #ffffff00;
 }
 </style>
+<<<<<<< HEAD
 <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
   <thead>
     
@@ -752,34 +977,137 @@ tbody tr:last-child {
   </tbody>
   
   
+=======
+
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="Number of Advertisers" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Advertisers</th>
+<th id="Top Spenders" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Top Spenders</th>
+<th id="Number of Ads" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Ads</th>
+<th id="Total Spend" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Total Spend</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Pro-AKP</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #2DC7F5"><p>6</p></td>
+<td class="gt_row gt_left" headers="stub_1_1 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=TR&amp;view_all_page_id=227864364826563">Yücel Yılmaz Sevenleri</a> (₺246,520)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=TR&amp;view_all_page_id=112962178445014">Balıkesir Yüzyılı</a> (₺209,544)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=TR&amp;view_all_page_id=106245845723334">Balıkesirlilerin Kararı</a> (₺23,994)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Ads"><p>459</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Total Spend"><p>₺504,853</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>İYİ</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #fddb00"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_2 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=TR&amp;view_all_page_id=1430492427188997">Turhan ÇÖMEZ</a> (₺176,042)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Ads"><p>17</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Total Spend"><p>₺176,042</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>AKP</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #ff8700"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_3 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=TR&amp;view_all_page_id=2262848377325731">Yücel Yılmaz Balıkesir</a> (₺78,630)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Ads"><p>20</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Total Spend"><p>₺78,630</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Pro-İYİ &amp; Anti-CHP</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #37062B"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_4 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=TR&amp;view_all_page_id=108002215147250">Balıkesirin Gerçekleri</a> (₺23,803)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Ads"><p>36</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Total Spend"><p>₺23,803</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Pro-CHP &amp; Anti-AKP</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #961821"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_5 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=TR&amp;view_all_page_id=109404688809999">Balıkesir Haber</a> (₺17,237)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Ads"><p>957</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Total Spend"><p>₺17,237</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Pro-İYİ</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #A5EA9F"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_6 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=TR&amp;view_all_page_id=100516989042507">Balıkesir Posta TV</a> (₺5,637)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Ads"><p>21</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Total Spend"><p>₺5,637</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_7" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Anti-AKP</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #ABBB25"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_7 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=TR&amp;view_all_page_id=108601695673097">Muhabir Balıkesir</a> (₺4,613)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Ads"><p>11</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Total Spend"><p>₺4,613</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_8" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Pro-CHP</p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #6CD711"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_8 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=TR&amp;view_all_page_id=109196942046557">Balıkesir Haber Özel</a> (₺426)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Number of Ads"><p>1</p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Total Spend"><p>₺426</p></td>
+</tr>
+</tbody>
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
 </table>
+
+</div>
 </div>
 </div>
 </div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>During this period, political parties spent a total of ₺348,086 and displayed 864 advertisements on Meta.</p>
+<p>During this period, political parties spent a total of ₺365,530 and displayed 858 advertisements on Meta.</p>
 <div class="cell">
 <div class="cell-output-display">
+<<<<<<< HEAD
 
 <div id="dtlkaflenf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 #dtlkaflenf table {
   font-family: Chivo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+=======
+<div>
+<div id="pqemubuvbs" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#pqemubuvbs table {
+  font-family: Cairo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf thead, #dtlkaflenf tbody, #dtlkaflenf tfoot, #dtlkaflenf tr, #dtlkaflenf td, #dtlkaflenf th {
   border-style: none;
 }
 
 #dtlkaflenf p {
+=======
+#pqemubuvbs thead, #pqemubuvbs tbody, #pqemubuvbs tfoot, #pqemubuvbs tr, #pqemubuvbs td, #pqemubuvbs th {
+  border-style: none;
+}
+
+#pqemubuvbs p {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   margin: 0;
   padding: 0;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_table {
+=======
+#pqemubuvbs .gt_table {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -787,7 +1115,7 @@ tbody tr:last-child {
   margin-right: auto;
   color: #333333;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   background-color: #FFFFFF;
   width: auto;
@@ -805,12 +1133,20 @@ tbody tr:last-child {
   border-left-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_caption {
+=======
+#pqemubuvbs .gt_caption {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_title {
+=======
+#pqemubuvbs .gt_title {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -822,7 +1158,11 @@ tbody tr:last-child {
   border-bottom-width: 0;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_subtitle {
+=======
+#pqemubuvbs .gt_subtitle {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -834,7 +1174,11 @@ tbody tr:last-child {
   border-top-width: 0;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_heading {
+=======
+#pqemubuvbs .gt_heading {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -846,13 +1190,21 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_bottom_border {
+=======
+#pqemubuvbs .gt_bottom_border {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_col_headings {
+=======
+#pqemubuvbs .gt_col_headings {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -867,12 +1219,16 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_col_heading {
+=======
+#pqemubuvbs .gt_col_heading {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   border-left-style: none;
   border-left-width: 1px;
   border-left-color: #D3D3D3;
@@ -887,18 +1243,23 @@ tbody tr:last-child {
   overflow-x: hidden;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_column_spanner_outer {
+=======
+#pqemubuvbs .gt_column_spanner_outer {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: normal;
-  text-transform: uppercase;
+  text-transform: inherit;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
@@ -908,6 +1269,17 @@ tbody tr:last-child {
 }
 
 #dtlkaflenf .gt_column_spanner {
+=======
+#pqemubuvbs .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#pqemubuvbs .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#pqemubuvbs .gt_column_spanner {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -919,20 +1291,28 @@ tbody tr:last-child {
   width: 100%;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
 #dtlkaflenf .gt_group_heading {
+=======
+#pqemubuvbs .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#pqemubuvbs .gt_group_heading {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
   padding-right: 5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -949,12 +1329,16 @@ tbody tr:last-child {
   text-align: left;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_empty_group_heading {
+=======
+#pqemubuvbs .gt_empty_group_heading {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
+  font-size: 100%;
+  font-weight: initial;
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #000000;
@@ -964,6 +1348,7 @@ tbody tr:last-child {
   vertical-align: middle;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_from_md > :first-child {
   margin-top: 0;
 }
@@ -973,6 +1358,17 @@ tbody tr:last-child {
 }
 
 #dtlkaflenf .gt_row {
+=======
+#pqemubuvbs .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#pqemubuvbs .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#pqemubuvbs .gt_row {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -991,12 +1387,16 @@ tbody tr:last-child {
   overflow-x: hidden;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_stub {
+=======
+#pqemubuvbs .gt_stub {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   background-color: #FFFFFF;
-  font-size: 80%;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
   border-right-style: solid;
   border-right-width: 0px;
   border-right-color: #FFFFFF;
@@ -1004,7 +1404,11 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_stub_row_group {
+=======
+#pqemubuvbs .gt_stub_row_group {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1018,6 +1422,7 @@ tbody tr:last-child {
   vertical-align: top;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_row_group_first td {
   border-top-width: 2px;
 }
@@ -1027,6 +1432,17 @@ tbody tr:last-child {
 }
 
 #dtlkaflenf .gt_summary_row {
+=======
+#pqemubuvbs .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#pqemubuvbs .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#pqemubuvbs .gt_summary_row {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1036,16 +1452,28 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_first_summary_row {
+=======
+#pqemubuvbs .gt_first_summary_row {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
 #dtlkaflenf .gt_last_summary_row {
+=======
+#pqemubuvbs .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#pqemubuvbs .gt_last_summary_row {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1055,7 +1483,11 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_grand_summary_row {
+=======
+#pqemubuvbs .gt_grand_summary_row {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1065,7 +1497,11 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_first_grand_summary_row {
+=======
+#pqemubuvbs .gt_first_grand_summary_row {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1075,7 +1511,11 @@ tbody tr:last-child {
   border-top-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_last_grand_summary_row_top {
+=======
+#pqemubuvbs .gt_last_grand_summary_row_top {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1085,11 +1525,19 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
 #dtlkaflenf .gt_table_body {
+=======
+#pqemubuvbs .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#pqemubuvbs .gt_table_body {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1098,7 +1546,11 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_footnotes {
+=======
+#pqemubuvbs .gt_footnotes {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1112,7 +1564,11 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_footnote {
+=======
+#pqemubuvbs .gt_footnote {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1121,7 +1577,11 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_sourcenotes {
+=======
+#pqemubuvbs .gt_sourcenotes {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1135,7 +1595,11 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_sourcenote {
+=======
+#pqemubuvbs .gt_sourcenote {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   font-size: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1143,6 +1607,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_left {
   text-align: left;
 }
@@ -1152,10 +1617,22 @@ tbody tr:last-child {
 }
 
 #dtlkaflenf .gt_right {
+=======
+#pqemubuvbs .gt_left {
+  text-align: left;
+}
+
+#pqemubuvbs .gt_center {
+  text-align: center;
+}
+
+#pqemubuvbs .gt_right {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_font_normal {
   font-weight: normal;
 }
@@ -1173,16 +1650,40 @@ tbody tr:last-child {
 }
 
 #dtlkaflenf .gt_footnote_marks {
+=======
+#pqemubuvbs .gt_font_normal {
+  font-weight: normal;
+}
+
+#pqemubuvbs .gt_font_bold {
+  font-weight: bold;
+}
+
+#pqemubuvbs .gt_font_italic {
+  font-style: italic;
+}
+
+#pqemubuvbs .gt_super {
+  font-size: 65%;
+}
+
+#pqemubuvbs .gt_footnote_marks {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_asterisk {
+=======
+#pqemubuvbs .gt_asterisk {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   font-size: 100%;
   vertical-align: 0;
 }
 
+<<<<<<< HEAD
 #dtlkaflenf .gt_indent_1 {
   text-indent: 5px;
 }
@@ -1200,6 +1701,25 @@ tbody tr:last-child {
 }
 
 #dtlkaflenf .gt_indent_5 {
+=======
+#pqemubuvbs .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#pqemubuvbs .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#pqemubuvbs .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#pqemubuvbs .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#pqemubuvbs .gt_indent_5 {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   text-indent: 25px;
 }
 
@@ -1207,6 +1727,7 @@ tbody tr:last-child {
   border-bottom: 2px solid #ffffff00;
 }
 </style>
+<<<<<<< HEAD
 <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
   <thead>
     
@@ -1292,7 +1813,80 @@ tbody tr:last-child {
   </tbody>
   
   
+=======
+
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="Number of Advertisers" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Advertisers</th>
+<th id="Top Spenders" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Top Spenders</th>
+<th id="Number of Ads" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Ads</th>
+<th id="Total Spend" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Total Spend</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Pro-AKP</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #2DC7F5"><p>6</p></td>
+<td class="gt_row gt_left" headers="stub_1_1 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=TR&amp;view_all_page_id=227864364826563">Yücel Yılmaz Sevenleri</a> (₺95,030)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=TR&amp;view_all_page_id=112962178445014">Balıkesir Yüzyılı</a> (₺84,546)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=TR&amp;view_all_page_id=167745913099896">Gündem Balıkesir</a> (₺3,694)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Ads"><p>299</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Total Spend"><p>₺189,822</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>İYİ</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #fddb00"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_2 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=TR&amp;view_all_page_id=1430492427188997">Turhan ÇÖMEZ</a> (₺139,159)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Ads"><p>13</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Total Spend"><p>₺139,159</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>AKP</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #ff8700"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_3 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=TR&amp;view_all_page_id=2262848377325731">Yücel Yılmaz Balıkesir</a> (₺20,997)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Ads"><p>7</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Total Spend"><p>₺20,997</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Pro-CHP &amp; Anti-AKP</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #961821"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_4 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=TR&amp;view_all_page_id=109404688809999">Balıkesir Haber</a> (₺9,016)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Ads"><p>509</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Total Spend"><p>₺9,016</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Pro-İYİ &amp; Anti-CHP</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #37062B"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_5 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=TR&amp;view_all_page_id=108002215147250">Balıkesirin Gerçekleri</a> (₺3,700)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Ads"><p>22</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Total Spend"><p>₺3,700</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Pro-İYİ</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #A5EA9F"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_6 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=TR&amp;view_all_page_id=100516989042507">Balıkesir Posta TV</a> (₺2,736)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Ads"><p>7</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Total Spend"><p>₺2,736</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_7" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Pro-CHP</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #6CD711"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_7 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=TR&amp;view_all_page_id=109196942046557">Balıkesir Haber Özel</a> (₺100)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Ads"><p>1</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Total Spend"><p>₺100</p></td>
+</tr>
+</tbody>
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
 </table>
+
+</div>
 </div>
 </div>
 </div>
@@ -1303,9 +1897,14 @@ tbody tr:last-child {
 <h3 class="anchored" data-anchor-id="over-time">Over Time</h3>
 <div class="cell">
 <div class="cell-output-display">
+<<<<<<< HEAD
 
 <div class="highchart html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-004c5e705a922ae72227" style="width:100%;height:464px;"></div>
 <script type="application/json" data-for="htmlwidget-004c5e705a922ae72227">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":null},"yAxis":{"title":{"text":"Daily Spend"},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"area":{"stacking":"normal","lineWidth":1,"marker":{"enabled":false}}},"series":[{"name":"AKP","data":[{"date":"2024-02-03","party":"AKP","amount_spent":384,"Daily Spend":null,"short_name":"AKP","colors":"#ff8700","x":1706918400000,"y":null,"fill":"#ff8700"},{"date":"2024-02-04","party":"AKP","amount_spent":1617,"Daily Spend":1233,"short_name":"AKP","colors":"#ff8700","x":1707004800000,"y":1233,"fill":"#ff8700"},{"date":"2024-02-05","party":"AKP","amount_spent":2884,"Daily Spend":1267,"short_name":"AKP","colors":"#ff8700","x":1707091200000,"y":1267,"fill":"#ff8700"},{"date":"2024-02-06","party":"AKP","amount_spent":4623,"Daily Spend":1739,"short_name":"AKP","colors":"#ff8700","x":1707177600000,"y":1739,"fill":"#ff8700"},{"date":"2024-02-07","party":"AKP","amount_spent":6856,"Daily Spend":2233,"short_name":"AKP","colors":"#ff8700","x":1707264000000,"y":2233,"fill":"#ff8700"},{"date":"2024-02-08","party":"AKP","amount_spent":9448,"Daily Spend":2592,"short_name":"AKP","colors":"#ff8700","x":1707350400000,"y":2592,"fill":"#ff8700"},{"date":"2024-02-09","party":"AKP","amount_spent":12614,"Daily Spend":3166,"short_name":"AKP","colors":"#ff8700","x":1707436800000,"y":3166,"fill":"#ff8700"},{"date":"2024-02-10","party":"AKP","amount_spent":14959,"Daily Spend":2345,"short_name":"AKP","colors":"#ff8700","x":1707523200000,"y":2345,"fill":"#ff8700"},{"date":"2024-02-11","party":"AKP","amount_spent":17200,"Daily Spend":2241,"short_name":"AKP","colors":"#ff8700","x":1707609600000,"y":2241,"fill":"#ff8700"},{"date":"2024-02-12","party":"AKP","amount_spent":19340,"Daily Spend":2140,"short_name":"AKP","colors":"#ff8700","x":1707696000000,"y":2140,"fill":"#ff8700"},{"date":"2024-02-13","party":"AKP","amount_spent":20415,"Daily Spend":1075,"short_name":"AKP","colors":"#ff8700","x":1707782400000,"y":1075,"fill":"#ff8700"},{"date":"2024-02-14","party":"AKP","amount_spent":21848,"Daily Spend":1433,"short_name":"AKP","colors":"#ff8700","x":1707868800000,"y":1433,"fill":"#ff8700"},{"date":"2024-02-15","party":"AKP","amount_spent":22647,"Daily Spend":799,"short_name":"AKP","colors":"#ff8700","x":1707955200000,"y":799,"fill":"#ff8700"},{"date":"2024-02-16","party":"AKP","amount_spent":23882,"Daily Spend":1235,"short_name":"AKP","colors":"#ff8700","x":1708041600000,"y":1235,"fill":"#ff8700"},{"date":"2024-02-17","party":"AKP","amount_spent":24953,"Daily Spend":1071,"short_name":"AKP","colors":"#ff8700","x":1708128000000,"y":1071,"fill":"#ff8700"},{"date":"2024-02-18","party":"AKP","amount_spent":26083,"Daily Spend":1130,"short_name":"AKP","colors":"#ff8700","x":1708214400000,"y":1130,"fill":"#ff8700"},{"date":"2024-02-19","party":"AKP","amount_spent":27941,"Daily Spend":1858,"short_name":"AKP","colors":"#ff8700","x":1708300800000,"y":1858,"fill":"#ff8700"},{"date":"2024-02-20","party":"AKP","amount_spent":29271,"Daily Spend":1330,"short_name":"AKP","colors":"#ff8700","x":1708387200000,"y":1330,"fill":"#ff8700"},{"date":"2024-02-21","party":"AKP","amount_spent":30613,"Daily Spend":1342,"short_name":"AKP","colors":"#ff8700","x":1708473600000,"y":1342,"fill":"#ff8700"},{"date":"2024-02-22","party":"AKP","amount_spent":32026,"Daily Spend":1413,"short_name":"AKP","colors":"#ff8700","x":1708560000000,"y":1413,"fill":"#ff8700"},{"date":"2024-02-23","party":"AKP","amount_spent":33255,"Daily Spend":1229,"short_name":"AKP","colors":"#ff8700","x":1708646400000,"y":1229,"fill":"#ff8700"},{"date":"2024-02-24","party":"AKP","amount_spent":36421,"Daily Spend":3166,"short_name":"AKP","colors":"#ff8700","x":1708732800000,"y":3166,"fill":"#ff8700"},{"date":"2024-02-25","party":"AKP","amount_spent":39884,"Daily Spend":3463,"short_name":"AKP","colors":"#ff8700","x":1708819200000,"y":3463,"fill":"#ff8700"},{"date":"2024-02-26","party":"AKP","amount_spent":43201,"Daily Spend":3317,"short_name":"AKP","colors":"#ff8700","x":1708905600000,"y":3317,"fill":"#ff8700"},{"date":"2024-02-27","party":"AKP","amount_spent":47939,"Daily Spend":4738,"short_name":"AKP","colors":"#ff8700","x":1708992000000,"y":4738,"fill":"#ff8700"},{"date":"2024-02-28","party":"AKP","amount_spent":53215,"Daily Spend":5276,"short_name":"AKP","colors":"#ff8700","x":1709078400000,"y":5276,"fill":"#ff8700"},{"date":"2024-02-29","party":"AKP","amount_spent":58603,"Daily Spend":5388,"short_name":"AKP","colors":"#ff8700","x":1709164800000,"y":5388,"fill":"#ff8700"},{"date":"2024-03-01","party":"AKP","amount_spent":64665,"Daily Spend":6062,"short_name":"AKP","colors":"#ff8700","x":1709251200000,"y":6062,"fill":"#ff8700"},{"date":"2024-03-02","party":"AKP","amount_spent":67441,"Daily Spend":2776,"short_name":"AKP","colors":"#ff8700","x":1709337600000,"y":2776,"fill":"#ff8700"},{"date":"2024-03-03","party":"AKP","amount_spent":70716,"Daily Spend":3275,"short_name":"AKP","colors":"#ff8700","x":1709424000000,"y":3275,"fill":"#ff8700"},{"date":"2024-03-04","party":"AKP","amount_spent":73058,"Daily Spend":2342,"short_name":"AKP","colors":"#ff8700","x":1709510400000,"y":2342,"fill":"#ff8700"},{"date":"2024-03-05","party":"AKP","amount_spent":75740,"Daily Spend":2682,"short_name":"AKP","colors":"#ff8700","x":1709596800000,"y":2682,"fill":"#ff8700"},{"date":"2024-03-06","party":"AKP","amount_spent":78549,"Daily Spend":2809,"short_name":"AKP","colors":"#ff8700","x":1709683200000,"y":2809,"fill":"#ff8700"},{"date":"2024-03-07","party":"AKP","amount_spent":81279,"Daily Spend":2730,"short_name":"AKP","colors":"#ff8700","x":1709769600000,"y":2730,"fill":"#ff8700"},{"date":"2024-03-08","party":"AKP","amount_spent":84003,"Daily Spend":2724,"short_name":"AKP","colors":"#ff8700","x":1709856000000,"y":2724,"fill":"#ff8700"},{"date":"2024-03-09","party":"AKP","amount_spent":88185,"Daily Spend":4182,"short_name":"AKP","colors":"#ff8700","x":1709942400000,"y":4182,"fill":"#ff8700"},{"date":"2024-03-10","party":"AKP","amount_spent":91245,"Daily Spend":3060,"short_name":"AKP","colors":"#ff8700","x":1710028800000,"y":3060,"fill":"#ff8700"},{"date":"2024-03-11","party":"AKP","amount_spent":94056,"Daily Spend":2811,"short_name":"AKP","colors":"#ff8700","x":1710115200000,"y":2811,"fill":"#ff8700"}],"type":"area"},{"name":"Anti-AKP","data":[{"date":"2024-01-31","party":"Anti-AKP","amount_spent":4498,"Daily Spend":null,"short_name":null,"colors":"#BC0B4F","x":1706659200000,"y":null,"fill":"#BC0B4F"},{"date":"2024-02-01","party":"Anti-AKP","amount_spent":4547,"Daily Spend":49,"short_name":null,"colors":"#BC0B4F","x":1706745600000,"y":49,"fill":"#BC0B4F"},{"date":"2024-02-02","party":"Anti-AKP","amount_spent":4597,"Daily Spend":50,"short_name":null,"colors":"#BC0B4F","x":1706832000000,"y":50,"fill":"#BC0B4F"},{"date":"2024-02-03","party":"Anti-AKP","amount_spent":4630,"Daily Spend":33,"short_name":null,"colors":"#BC0B4F","x":1706918400000,"y":33,"fill":"#BC0B4F"},{"date":"2024-02-04","party":"Anti-AKP","amount_spent":4807,"Daily Spend":177,"short_name":null,"colors":"#BC0B4F","x":1707004800000,"y":177,"fill":"#BC0B4F"},{"date":"2024-02-05","party":"Anti-AKP","amount_spent":5642,"Daily Spend":835,"short_name":null,"colors":"#BC0B4F","x":1707091200000,"y":835,"fill":"#BC0B4F"},{"date":"2024-02-06","party":"Anti-AKP","amount_spent":6522,"Daily Spend":880,"short_name":null,"colors":"#BC0B4F","x":1707177600000,"y":880,"fill":"#BC0B4F"},{"date":"2024-02-07","party":"Anti-AKP","amount_spent":6950,"Daily Spend":428,"short_name":null,"colors":"#BC0B4F","x":1707264000000,"y":428,"fill":"#BC0B4F"},{"date":"2024-02-08","party":"Anti-AKP","amount_spent":7570,"Daily Spend":620,"short_name":null,"colors":"#BC0B4F","x":1707350400000,"y":620,"fill":"#BC0B4F"},{"date":"2024-02-09","party":"Anti-AKP","amount_spent":7893,"Daily Spend":323,"short_name":null,"colors":"#BC0B4F","x":1707436800000,"y":323,"fill":"#BC0B4F"},{"date":"2024-02-10","party":"Anti-AKP","amount_spent":8065,"Daily Spend":172,"short_name":null,"colors":"#BC0B4F","x":1707523200000,"y":172,"fill":"#BC0B4F"},{"date":"2024-02-11","party":"Anti-AKP","amount_spent":8269,"Daily Spend":204,"short_name":null,"colors":"#BC0B4F","x":1707609600000,"y":204,"fill":"#BC0B4F"},{"date":"2024-02-12","party":"Anti-AKP","amount_spent":8482,"Daily Spend":213,"short_name":null,"colors":"#BC0B4F","x":1707696000000,"y":213,"fill":"#BC0B4F"},{"date":"2024-02-13","party":"Anti-AKP","amount_spent":8773,"Daily Spend":291,"short_name":null,"colors":"#BC0B4F","x":1707782400000,"y":291,"fill":"#BC0B4F"},{"date":"2024-02-14","party":"Anti-AKP","amount_spent":8928,"Daily Spend":155,"short_name":null,"colors":"#BC0B4F","x":1707868800000,"y":155,"fill":"#BC0B4F"},{"date":"2024-02-15","party":"Anti-AKP","amount_spent":8928,"Daily Spend":0,"short_name":null,"colors":"#BC0B4F","x":1707955200000,"y":0,"fill":"#BC0B4F"},{"date":"2024-02-16","party":"Anti-AKP","amount_spent":8928,"Daily Spend":0,"short_name":null,"colors":"#BC0B4F","x":1708041600000,"y":0,"fill":"#BC0B4F"},{"date":"2024-02-17","party":"Anti-AKP","amount_spent":9353,"Daily Spend":425,"short_name":null,"colors":"#BC0B4F","x":1708128000000,"y":425,"fill":"#BC0B4F"},{"date":"2024-02-18","party":"Anti-AKP","amount_spent":10137,"Daily Spend":784,"short_name":null,"colors":"#BC0B4F","x":1708214400000,"y":784,"fill":"#BC0B4F"},{"date":"2024-02-19","party":"Anti-AKP","amount_spent":10912,"Daily Spend":775,"short_name":null,"colors":"#BC0B4F","x":1708300800000,"y":775,"fill":"#BC0B4F"},{"date":"2024-02-20","party":"Anti-AKP","amount_spent":11605,"Daily Spend":693,"short_name":null,"colors":"#BC0B4F","x":1708387200000,"y":693,"fill":"#BC0B4F"},{"date":"2024-02-21","party":"Anti-AKP","amount_spent":11720,"Daily Spend":115,"short_name":null,"colors":"#BC0B4F","x":1708473600000,"y":115,"fill":"#BC0B4F"},{"date":"2024-02-22","party":"Anti-AKP","amount_spent":11951,"Daily Spend":231,"short_name":null,"colors":"#BC0B4F","x":1708560000000,"y":231,"fill":"#BC0B4F"},{"date":"2024-02-23","party":"Anti-AKP","amount_spent":12157,"Daily Spend":206,"short_name":null,"colors":"#BC0B4F","x":1708646400000,"y":206,"fill":"#BC0B4F"},{"date":"2024-02-24","party":"Anti-AKP","amount_spent":12292,"Daily Spend":135,"short_name":null,"colors":"#BC0B4F","x":1708732800000,"y":135,"fill":"#BC0B4F"},{"date":"2024-02-25","party":"Anti-AKP","amount_spent":12418,"Daily Spend":126,"short_name":null,"colors":"#BC0B4F","x":1708819200000,"y":126,"fill":"#BC0B4F"},{"date":"2024-02-26","party":"Anti-AKP","amount_spent":12507,"Daily Spend":89,"short_name":null,"colors":"#BC0B4F","x":1708905600000,"y":89,"fill":"#BC0B4F"},{"date":"2024-02-27","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#BC0B4F","x":1708992000000,"y":0,"fill":"#BC0B4F"},{"date":"2024-02-28","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#BC0B4F","x":1709078400000,"y":0,"fill":"#BC0B4F"},{"date":"2024-02-29","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#BC0B4F","x":1709164800000,"y":0,"fill":"#BC0B4F"},{"date":"2024-03-01","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#BC0B4F","x":1709251200000,"y":0,"fill":"#BC0B4F"},{"date":"2024-03-02","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#BC0B4F","x":1709337600000,"y":0,"fill":"#BC0B4F"},{"date":"2024-03-03","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#BC0B4F","x":1709424000000,"y":0,"fill":"#BC0B4F"},{"date":"2024-03-04","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#BC0B4F","x":1709510400000,"y":0,"fill":"#BC0B4F"},{"date":"2024-03-05","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#BC0B4F","x":1709596800000,"y":0,"fill":"#BC0B4F"},{"date":"2024-03-06","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#BC0B4F","x":1709683200000,"y":0,"fill":"#BC0B4F"},{"date":"2024-03-07","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#BC0B4F","x":1709769600000,"y":0,"fill":"#BC0B4F"},{"date":"2024-03-08","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#BC0B4F","x":1709856000000,"y":0,"fill":"#BC0B4F"},{"date":"2024-03-09","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#BC0B4F","x":1709942400000,"y":0,"fill":"#BC0B4F"},{"date":"2024-03-10","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#BC0B4F","x":1710028800000,"y":0,"fill":"#BC0B4F"},{"date":"2024-03-11","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#BC0B4F","x":1710115200000,"y":0,"fill":"#BC0B4F"}],"type":"area"},{"name":"Pro-AKP","data":[{"date":"2024-01-31","party":"Pro-AKP","amount_spent":179840,"Daily Spend":null,"short_name":null,"colors":"#0B0213","x":1706659200000,"y":null,"fill":"#0B0213"},{"date":"2024-02-01","party":"Pro-AKP","amount_spent":181399,"Daily Spend":1559,"short_name":null,"colors":"#0B0213","x":1706745600000,"y":1559,"fill":"#0B0213"},{"date":"2024-02-02","party":"Pro-AKP","amount_spent":183221,"Daily Spend":1822,"short_name":null,"colors":"#0B0213","x":1706832000000,"y":1822,"fill":"#0B0213"},{"date":"2024-02-03","party":"Pro-AKP","amount_spent":185128,"Daily Spend":1907,"short_name":null,"colors":"#0B0213","x":1706918400000,"y":1907,"fill":"#0B0213"},{"date":"2024-02-04","party":"Pro-AKP","amount_spent":187129,"Daily Spend":2001,"short_name":null,"colors":"#0B0213","x":1707004800000,"y":2001,"fill":"#0B0213"},{"date":"2024-02-05","party":"Pro-AKP","amount_spent":188946,"Daily Spend":1817,"short_name":null,"colors":"#0B0213","x":1707091200000,"y":1817,"fill":"#0B0213"},{"date":"2024-02-06","party":"Pro-AKP","amount_spent":190707,"Daily Spend":1761,"short_name":null,"colors":"#0B0213","x":1707177600000,"y":1761,"fill":"#0B0213"},{"date":"2024-02-07","party":"Pro-AKP","amount_spent":192973,"Daily Spend":2266,"short_name":null,"colors":"#0B0213","x":1707264000000,"y":2266,"fill":"#0B0213"},{"date":"2024-02-08","party":"Pro-AKP","amount_spent":195847,"Daily Spend":2874,"short_name":null,"colors":"#0B0213","x":1707350400000,"y":2874,"fill":"#0B0213"},{"date":"2024-02-09","party":"Pro-AKP","amount_spent":199694,"Daily Spend":3847,"short_name":null,"colors":"#0B0213","x":1707436800000,"y":3847,"fill":"#0B0213"},{"date":"2024-02-10","party":"Pro-AKP","amount_spent":204257,"Daily Spend":4563,"short_name":null,"colors":"#0B0213","x":1707523200000,"y":4563,"fill":"#0B0213"},{"date":"2024-02-11","party":"Pro-AKP","amount_spent":208551,"Daily Spend":4294,"short_name":null,"colors":"#0B0213","x":1707609600000,"y":4294,"fill":"#0B0213"},{"date":"2024-02-12","party":"Pro-AKP","amount_spent":213130,"Daily Spend":4579,"short_name":null,"colors":"#0B0213","x":1707696000000,"y":4579,"fill":"#0B0213"},{"date":"2024-02-13","party":"Pro-AKP","amount_spent":218572,"Daily Spend":5442,"short_name":null,"colors":"#0B0213","x":1707782400000,"y":5442,"fill":"#0B0213"},{"date":"2024-02-14","party":"Pro-AKP","amount_spent":222847,"Daily Spend":4275,"short_name":null,"colors":"#0B0213","x":1707868800000,"y":4275,"fill":"#0B0213"},{"date":"2024-02-15","party":"Pro-AKP","amount_spent":227511,"Daily Spend":4664,"short_name":null,"colors":"#0B0213","x":1707955200000,"y":4664,"fill":"#0B0213"},{"date":"2024-02-16","party":"Pro-AKP","amount_spent":233324,"Daily Spend":5813,"short_name":null,"colors":"#0B0213","x":1708041600000,"y":5813,"fill":"#0B0213"},{"date":"2024-02-17","party":"Pro-AKP","amount_spent":239845,"Daily Spend":6521,"short_name":null,"colors":"#0B0213","x":1708128000000,"y":6521,"fill":"#0B0213"},{"date":"2024-02-18","party":"Pro-AKP","amount_spent":246897,"Daily Spend":7052,"short_name":null,"colors":"#0B0213","x":1708214400000,"y":7052,"fill":"#0B0213"},{"date":"2024-02-19","party":"Pro-AKP","amount_spent":253851,"Daily Spend":6954,"short_name":null,"colors":"#0B0213","x":1708300800000,"y":6954,"fill":"#0B0213"},{"date":"2024-02-20","party":"Pro-AKP","amount_spent":263546,"Daily Spend":9695,"short_name":null,"colors":"#0B0213","x":1708387200000,"y":9695,"fill":"#0B0213"},{"date":"2024-02-21","party":"Pro-AKP","amount_spent":273365,"Daily Spend":9819,"short_name":null,"colors":"#0B0213","x":1708473600000,"y":9819,"fill":"#0B0213"},{"date":"2024-02-22","party":"Pro-AKP","amount_spent":281901,"Daily Spend":8536,"short_name":null,"colors":"#0B0213","x":1708560000000,"y":8536,"fill":"#0B0213"},{"date":"2024-02-23","party":"Pro-AKP","amount_spent":292750,"Daily Spend":10849,"short_name":null,"colors":"#0B0213","x":1708646400000,"y":10849,"fill":"#0B0213"},{"date":"2024-02-24","party":"Pro-AKP","amount_spent":310244,"Daily Spend":17494,"short_name":null,"colors":"#0B0213","x":1708732800000,"y":17494,"fill":"#0B0213"},{"date":"2024-02-25","party":"Pro-AKP","amount_spent":328744,"Daily Spend":18500,"short_name":null,"colors":"#0B0213","x":1708819200000,"y":18500,"fill":"#0B0213"},{"date":"2024-02-26","party":"Pro-AKP","amount_spent":351856,"Daily Spend":23112,"short_name":null,"colors":"#0B0213","x":1708905600000,"y":23112,"fill":"#0B0213"},{"date":"2024-02-27","party":"Pro-AKP","amount_spent":379715,"Daily Spend":27859,"short_name":null,"colors":"#0B0213","x":1708992000000,"y":27859,"fill":"#0B0213"},{"date":"2024-02-28","party":"Pro-AKP","amount_spent":411380,"Daily Spend":31665,"short_name":null,"colors":"#0B0213","x":1709078400000,"y":31665,"fill":"#0B0213"},{"date":"2024-02-29","party":"Pro-AKP","amount_spent":439606,"Daily Spend":28226,"short_name":null,"colors":"#0B0213","x":1709164800000,"y":28226,"fill":"#0B0213"},{"date":"2024-03-01","party":"Pro-AKP","amount_spent":465076,"Daily Spend":25470,"short_name":null,"colors":"#0B0213","x":1709251200000,"y":25470,"fill":"#0B0213"},{"date":"2024-03-02","party":"Pro-AKP","amount_spent":491054,"Daily Spend":25978,"short_name":null,"colors":"#0B0213","x":1709337600000,"y":25978,"fill":"#0B0213"},{"date":"2024-03-03","party":"Pro-AKP","amount_spent":518701,"Daily Spend":27647,"short_name":null,"colors":"#0B0213","x":1709424000000,"y":27647,"fill":"#0B0213"},{"date":"2024-03-04","party":"Pro-AKP","amount_spent":541813,"Daily Spend":23112,"short_name":null,"colors":"#0B0213","x":1709510400000,"y":23112,"fill":"#0B0213"},{"date":"2024-03-05","party":"Pro-AKP","amount_spent":564148,"Daily Spend":22335,"short_name":null,"colors":"#0B0213","x":1709596800000,"y":22335,"fill":"#0B0213"},{"date":"2024-03-06","party":"Pro-AKP","amount_spent":590946,"Daily Spend":26798,"short_name":null,"colors":"#0B0213","x":1709683200000,"y":26798,"fill":"#0B0213"},{"date":"2024-03-07","party":"Pro-AKP","amount_spent":618962,"Daily Spend":28016,"short_name":null,"colors":"#0B0213","x":1709769600000,"y":28016,"fill":"#0B0213"},{"date":"2024-03-08","party":"Pro-AKP","amount_spent":647998,"Daily Spend":29036,"short_name":null,"colors":"#0B0213","x":1709856000000,"y":29036,"fill":"#0B0213"},{"date":"2024-03-09","party":"Pro-AKP","amount_spent":677871,"Daily Spend":29873,"short_name":null,"colors":"#0B0213","x":1709942400000,"y":29873,"fill":"#0B0213"},{"date":"2024-03-10","party":"Pro-AKP","amount_spent":704548,"Daily Spend":26677,"short_name":null,"colors":"#0B0213","x":1710028800000,"y":26677,"fill":"#0B0213"},{"date":"2024-03-11","party":"Pro-AKP","amount_spent":731637,"Daily Spend":27089,"short_name":null,"colors":"#0B0213","x":1710115200000,"y":27089,"fill":"#0B0213"}],"type":"area"},{"name":"Pro-CHP","data":[{"date":"2024-01-31","party":"Pro-CHP","amount_spent":28984,"Daily Spend":null,"short_name":null,"colors":"#4786CA","x":1706659200000,"y":null,"fill":"#4786CA"},{"date":"2024-02-01","party":"Pro-CHP","amount_spent":29764,"Daily Spend":780,"short_name":null,"colors":"#4786CA","x":1706745600000,"y":780,"fill":"#4786CA"},{"date":"2024-02-02","party":"Pro-CHP","amount_spent":29906,"Daily Spend":142,"short_name":null,"colors":"#4786CA","x":1706832000000,"y":142,"fill":"#4786CA"},{"date":"2024-02-03","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1706918400000,"y":0,"fill":"#4786CA"},{"date":"2024-02-04","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1707004800000,"y":0,"fill":"#4786CA"},{"date":"2024-02-05","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1707091200000,"y":0,"fill":"#4786CA"},{"date":"2024-02-06","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1707177600000,"y":0,"fill":"#4786CA"},{"date":"2024-02-07","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1707264000000,"y":0,"fill":"#4786CA"},{"date":"2024-02-08","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1707350400000,"y":0,"fill":"#4786CA"},{"date":"2024-02-09","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1707436800000,"y":0,"fill":"#4786CA"},{"date":"2024-02-10","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1707523200000,"y":0,"fill":"#4786CA"},{"date":"2024-02-11","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1707609600000,"y":0,"fill":"#4786CA"},{"date":"2024-02-12","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1707696000000,"y":0,"fill":"#4786CA"},{"date":"2024-02-13","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1707782400000,"y":0,"fill":"#4786CA"},{"date":"2024-02-14","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1707868800000,"y":0,"fill":"#4786CA"},{"date":"2024-02-15","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1707955200000,"y":0,"fill":"#4786CA"},{"date":"2024-02-16","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1708041600000,"y":0,"fill":"#4786CA"},{"date":"2024-02-17","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1708128000000,"y":0,"fill":"#4786CA"},{"date":"2024-02-18","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1708214400000,"y":0,"fill":"#4786CA"},{"date":"2024-02-19","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1708300800000,"y":0,"fill":"#4786CA"},{"date":"2024-02-20","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1708387200000,"y":0,"fill":"#4786CA"},{"date":"2024-02-21","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1708473600000,"y":0,"fill":"#4786CA"},{"date":"2024-02-22","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1708560000000,"y":0,"fill":"#4786CA"},{"date":"2024-02-23","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1708646400000,"y":0,"fill":"#4786CA"},{"date":"2024-02-24","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1708732800000,"y":0,"fill":"#4786CA"},{"date":"2024-02-25","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1708819200000,"y":0,"fill":"#4786CA"},{"date":"2024-02-26","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1708905600000,"y":0,"fill":"#4786CA"},{"date":"2024-02-27","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1708992000000,"y":0,"fill":"#4786CA"},{"date":"2024-02-28","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1709078400000,"y":0,"fill":"#4786CA"},{"date":"2024-02-29","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1709164800000,"y":0,"fill":"#4786CA"},{"date":"2024-03-01","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1709251200000,"y":0,"fill":"#4786CA"},{"date":"2024-03-02","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1709337600000,"y":0,"fill":"#4786CA"},{"date":"2024-03-03","party":"Pro-CHP","amount_spent":30085,"Daily Spend":179,"short_name":null,"colors":"#4786CA","x":1709424000000,"y":179,"fill":"#4786CA"},{"date":"2024-03-04","party":"Pro-CHP","amount_spent":30242,"Daily Spend":157,"short_name":null,"colors":"#4786CA","x":1709510400000,"y":157,"fill":"#4786CA"},{"date":"2024-03-05","party":"Pro-CHP","amount_spent":30332,"Daily Spend":90,"short_name":null,"colors":"#4786CA","x":1709596800000,"y":90,"fill":"#4786CA"},{"date":"2024-03-06","party":"Pro-CHP","amount_spent":30332,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1709683200000,"y":0,"fill":"#4786CA"},{"date":"2024-03-07","party":"Pro-CHP","amount_spent":30332,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1709769600000,"y":0,"fill":"#4786CA"},{"date":"2024-03-08","party":"Pro-CHP","amount_spent":30332,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1709856000000,"y":0,"fill":"#4786CA"},{"date":"2024-03-09","party":"Pro-CHP","amount_spent":30332,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1709942400000,"y":0,"fill":"#4786CA"},{"date":"2024-03-10","party":"Pro-CHP","amount_spent":30332,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1710028800000,"y":0,"fill":"#4786CA"},{"date":"2024-03-11","party":"Pro-CHP","amount_spent":30332,"Daily Spend":0,"short_name":null,"colors":"#4786CA","x":1710115200000,"y":0,"fill":"#4786CA"}],"type":"area"},{"name":"Pro-CHP & Anti-AKP","data":[{"date":"2024-01-31","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":null,"short_name":null,"colors":"#CF5B4F","x":1706659200000,"y":null,"fill":"#CF5B4F"},{"date":"2024-02-01","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1706745600000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-02","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1706832000000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-03","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1706918400000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-04","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1707004800000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-05","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1707091200000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-06","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1707177600000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-07","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1707264000000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-08","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1707350400000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-09","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1707436800000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-10","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1707523200000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-11","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1707609600000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-12","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1707696000000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-13","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1707782400000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-14","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1707868800000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-15","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1707955200000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-16","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1708041600000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-17","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1708128000000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-18","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1708214400000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-19","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1708300800000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-20","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1708387200000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-21","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1708473600000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-22","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1708560000000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-23","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1708646400000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-24","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1708732800000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-25","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#CF5B4F","x":1708819200000,"y":0,"fill":"#CF5B4F"},{"date":"2024-02-26","party":"Pro-CHP & Anti-AKP","amount_spent":5701,"Daily Spend":984,"short_name":null,"colors":"#CF5B4F","x":1708905600000,"y":984,"fill":"#CF5B4F"},{"date":"2024-02-27","party":"Pro-CHP & Anti-AKP","amount_spent":7424,"Daily Spend":1723,"short_name":null,"colors":"#CF5B4F","x":1708992000000,"y":1723,"fill":"#CF5B4F"},{"date":"2024-02-28","party":"Pro-CHP & Anti-AKP","amount_spent":9081,"Daily Spend":1657,"short_name":null,"colors":"#CF5B4F","x":1709078400000,"y":1657,"fill":"#CF5B4F"},{"date":"2024-02-29","party":"Pro-CHP & Anti-AKP","amount_spent":10046,"Daily Spend":965,"short_name":null,"colors":"#CF5B4F","x":1709164800000,"y":965,"fill":"#CF5B4F"},{"date":"2024-03-01","party":"Pro-CHP & Anti-AKP","amount_spent":11659,"Daily Spend":1613,"short_name":null,"colors":"#CF5B4F","x":1709251200000,"y":1613,"fill":"#CF5B4F"},{"date":"2024-03-02","party":"Pro-CHP & Anti-AKP","amount_spent":12117,"Daily Spend":458,"short_name":null,"colors":"#CF5B4F","x":1709337600000,"y":458,"fill":"#CF5B4F"},{"date":"2024-03-03","party":"Pro-CHP & Anti-AKP","amount_spent":13526,"Daily Spend":1409,"short_name":null,"colors":"#CF5B4F","x":1709424000000,"y":1409,"fill":"#CF5B4F"},{"date":"2024-03-04","party":"Pro-CHP & Anti-AKP","amount_spent":15106,"Daily Spend":1580,"short_name":null,"colors":"#CF5B4F","x":1709510400000,"y":1580,"fill":"#CF5B4F"},{"date":"2024-03-05","party":"Pro-CHP & Anti-AKP","amount_spent":16940,"Daily Spend":1834,"short_name":null,"colors":"#CF5B4F","x":1709596800000,"y":1834,"fill":"#CF5B4F"},{"date":"2024-03-06","party":"Pro-CHP & Anti-AKP","amount_spent":17232,"Daily Spend":292,"short_name":null,"colors":"#CF5B4F","x":1709683200000,"y":292,"fill":"#CF5B4F"},{"date":"2024-03-07","party":"Pro-CHP & Anti-AKP","amount_spent":17521,"Daily Spend":289,"short_name":null,"colors":"#CF5B4F","x":1709769600000,"y":289,"fill":"#CF5B4F"},{"date":"2024-03-08","party":"Pro-CHP & Anti-AKP","amount_spent":18253,"Daily Spend":732,"short_name":null,"colors":"#CF5B4F","x":1709856000000,"y":732,"fill":"#CF5B4F"},{"date":"2024-03-09","party":"Pro-CHP & Anti-AKP","amount_spent":19364,"Daily Spend":1111,"short_name":null,"colors":"#CF5B4F","x":1709942400000,"y":1111,"fill":"#CF5B4F"},{"date":"2024-03-10","party":"Pro-CHP & Anti-AKP","amount_spent":21954,"Daily Spend":2590,"short_name":null,"colors":"#CF5B4F","x":1710028800000,"y":2590,"fill":"#CF5B4F"},{"date":"2024-03-11","party":"Pro-CHP & Anti-AKP","amount_spent":24122,"Daily Spend":2168,"short_name":null,"colors":"#CF5B4F","x":1710115200000,"y":2168,"fill":"#CF5B4F"}],"type":"area"},{"name":"Pro-İYİ","data":[{"date":"2024-01-31","party":"Pro-İYİ","amount_spent":30282,"Daily Spend":null,"short_name":null,"colors":"#DA78EB","x":1706659200000,"y":null,"fill":"#DA78EB"},{"date":"2024-02-01","party":"Pro-İYİ","amount_spent":30967,"Daily Spend":685,"short_name":null,"colors":"#DA78EB","x":1706745600000,"y":685,"fill":"#DA78EB"},{"date":"2024-02-02","party":"Pro-İYİ","amount_spent":31381,"Daily Spend":414,"short_name":null,"colors":"#DA78EB","x":1706832000000,"y":414,"fill":"#DA78EB"},{"date":"2024-02-03","party":"Pro-İYİ","amount_spent":31610,"Daily Spend":229,"short_name":null,"colors":"#DA78EB","x":1706918400000,"y":229,"fill":"#DA78EB"},{"date":"2024-02-04","party":"Pro-İYİ","amount_spent":31883,"Daily Spend":273,"short_name":null,"colors":"#DA78EB","x":1707004800000,"y":273,"fill":"#DA78EB"},{"date":"2024-02-05","party":"Pro-İYİ","amount_spent":31883,"Daily Spend":0,"short_name":null,"colors":"#DA78EB","x":1707091200000,"y":0,"fill":"#DA78EB"},{"date":"2024-02-06","party":"Pro-İYİ","amount_spent":32081,"Daily Spend":198,"short_name":null,"colors":"#DA78EB","x":1707177600000,"y":198,"fill":"#DA78EB"},{"date":"2024-02-07","party":"Pro-İYİ","amount_spent":32283,"Daily Spend":202,"short_name":null,"colors":"#DA78EB","x":1707264000000,"y":202,"fill":"#DA78EB"},{"date":"2024-02-08","party":"Pro-İYİ","amount_spent":32450,"Daily Spend":167,"short_name":null,"colors":"#DA78EB","x":1707350400000,"y":167,"fill":"#DA78EB"},{"date":"2024-02-09","party":"Pro-İYİ","amount_spent":32583,"Daily Spend":133,"short_name":null,"colors":"#DA78EB","x":1707436800000,"y":133,"fill":"#DA78EB"},{"date":"2024-02-10","party":"Pro-İYİ","amount_spent":32583,"Daily Spend":0,"short_name":null,"colors":"#DA78EB","x":1707523200000,"y":0,"fill":"#DA78EB"},{"date":"2024-02-11","party":"Pro-İYİ","amount_spent":32583,"Daily Spend":0,"short_name":null,"colors":"#DA78EB","x":1707609600000,"y":0,"fill":"#DA78EB"},{"date":"2024-02-12","party":"Pro-İYİ","amount_spent":32583,"Daily Spend":0,"short_name":null,"colors":"#DA78EB","x":1707696000000,"y":0,"fill":"#DA78EB"},{"date":"2024-02-13","party":"Pro-İYİ","amount_spent":32583,"Daily Spend":0,"short_name":null,"colors":"#DA78EB","x":1707782400000,"y":0,"fill":"#DA78EB"},{"date":"2024-02-14","party":"Pro-İYİ","amount_spent":32583,"Daily Spend":0,"short_name":null,"colors":"#DA78EB","x":1707868800000,"y":0,"fill":"#DA78EB"},{"date":"2024-02-15","party":"Pro-İYİ","amount_spent":32583,"Daily Spend":0,"short_name":null,"colors":"#DA78EB","x":1707955200000,"y":0,"fill":"#DA78EB"},{"date":"2024-02-16","party":"Pro-İYİ","amount_spent":32583,"Daily Spend":0,"short_name":null,"colors":"#DA78EB","x":1708041600000,"y":0,"fill":"#DA78EB"},{"date":"2024-02-17","party":"Pro-İYİ","amount_spent":32583,"Daily Spend":0,"short_name":null,"colors":"#DA78EB","x":1708128000000,"y":0,"fill":"#DA78EB"},{"date":"2024-02-18","party":"Pro-İYİ","amount_spent":32631,"Daily Spend":48,"short_name":null,"colors":"#DA78EB","x":1708214400000,"y":48,"fill":"#DA78EB"},{"date":"2024-02-19","party":"Pro-İYİ","amount_spent":33015,"Daily Spend":384,"short_name":null,"colors":"#DA78EB","x":1708300800000,"y":384,"fill":"#DA78EB"},{"date":"2024-02-20","party":"Pro-İYİ","amount_spent":33263,"Daily Spend":248,"short_name":null,"colors":"#DA78EB","x":1708387200000,"y":248,"fill":"#DA78EB"},{"date":"2024-02-21","party":"Pro-İYİ","amount_spent":33745,"Daily Spend":482,"short_name":null,"colors":"#DA78EB","x":1708473600000,"y":482,"fill":"#DA78EB"},{"date":"2024-02-22","party":"Pro-İYİ","amount_spent":34191,"Daily Spend":446,"short_name":null,"colors":"#DA78EB","x":1708560000000,"y":446,"fill":"#DA78EB"},{"date":"2024-02-23","party":"Pro-İYİ","amount_spent":34559,"Daily Spend":368,"short_name":null,"colors":"#DA78EB","x":1708646400000,"y":368,"fill":"#DA78EB"},{"date":"2024-02-24","party":"Pro-İYİ","amount_spent":34652,"Daily Spend":93,"short_name":null,"colors":"#DA78EB","x":1708732800000,"y":93,"fill":"#DA78EB"},{"date":"2024-02-25","party":"Pro-İYİ","amount_spent":34652,"Daily Spend":0,"short_name":null,"colors":"#DA78EB","x":1708819200000,"y":0,"fill":"#DA78EB"},{"date":"2024-02-26","party":"Pro-İYİ","amount_spent":34652,"Daily Spend":0,"short_name":null,"colors":"#DA78EB","x":1708905600000,"y":0,"fill":"#DA78EB"},{"date":"2024-02-27","party":"Pro-İYİ","amount_spent":34652,"Daily Spend":0,"short_name":null,"colors":"#DA78EB","x":1708992000000,"y":0,"fill":"#DA78EB"},{"date":"2024-02-28","party":"Pro-İYİ","amount_spent":34703,"Daily Spend":51,"short_name":null,"colors":"#DA78EB","x":1709078400000,"y":51,"fill":"#DA78EB"},{"date":"2024-02-29","party":"Pro-İYİ","amount_spent":34774,"Daily Spend":71,"short_name":null,"colors":"#DA78EB","x":1709164800000,"y":71,"fill":"#DA78EB"},{"date":"2024-03-01","party":"Pro-İYİ","amount_spent":34887,"Daily Spend":113,"short_name":null,"colors":"#DA78EB","x":1709251200000,"y":113,"fill":"#DA78EB"},{"date":"2024-03-02","party":"Pro-İYİ","amount_spent":35255,"Daily Spend":368,"short_name":null,"colors":"#DA78EB","x":1709337600000,"y":368,"fill":"#DA78EB"},{"date":"2024-03-03","party":"Pro-İYİ","amount_spent":35297,"Daily Spend":42,"short_name":null,"colors":"#DA78EB","x":1709424000000,"y":42,"fill":"#DA78EB"},{"date":"2024-03-04","party":"Pro-İYİ","amount_spent":35484,"Daily Spend":187,"short_name":null,"colors":"#DA78EB","x":1709510400000,"y":187,"fill":"#DA78EB"},{"date":"2024-03-05","party":"Pro-İYİ","amount_spent":35764,"Daily Spend":280,"short_name":null,"colors":"#DA78EB","x":1709596800000,"y":280,"fill":"#DA78EB"},{"date":"2024-03-06","party":"Pro-İYİ","amount_spent":35852,"Daily Spend":88,"short_name":null,"colors":"#DA78EB","x":1709683200000,"y":88,"fill":"#DA78EB"},{"date":"2024-03-07","party":"Pro-İYİ","amount_spent":37054,"Daily Spend":1202,"short_name":null,"colors":"#DA78EB","x":1709769600000,"y":1202,"fill":"#DA78EB"},{"date":"2024-03-08","party":"Pro-İYİ","amount_spent":37054,"Daily Spend":0,"short_name":null,"colors":"#DA78EB","x":1709856000000,"y":0,"fill":"#DA78EB"},{"date":"2024-03-09","party":"Pro-İYİ","amount_spent":38220,"Daily Spend":1166,"short_name":null,"colors":"#DA78EB","x":1709942400000,"y":1166,"fill":"#DA78EB"},{"date":"2024-03-10","party":"Pro-İYİ","amount_spent":38220,"Daily Spend":0,"short_name":null,"colors":"#DA78EB","x":1710028800000,"y":0,"fill":"#DA78EB"},{"date":"2024-03-11","party":"Pro-İYİ","amount_spent":38220,"Daily Spend":0,"short_name":null,"colors":"#DA78EB","x":1710115200000,"y":0,"fill":"#DA78EB"}],"type":"area"},{"name":"Pro-İYİ & Anti-CHP","data":[{"date":"2024-02-08","party":"Pro-İYİ & Anti-CHP","amount_spent":1,"Daily Spend":null,"short_name":null,"colors":"#FD09E7","x":1707350400000,"y":null,"fill":"#FD09E7"},{"date":"2024-02-09","party":"Pro-İYİ & Anti-CHP","amount_spent":922,"Daily Spend":921,"short_name":null,"colors":"#FD09E7","x":1707436800000,"y":921,"fill":"#FD09E7"},{"date":"2024-02-10","party":"Pro-İYİ & Anti-CHP","amount_spent":2449,"Daily Spend":1527,"short_name":null,"colors":"#FD09E7","x":1707523200000,"y":1527,"fill":"#FD09E7"},{"date":"2024-02-11","party":"Pro-İYİ & Anti-CHP","amount_spent":4473,"Daily Spend":2024,"short_name":null,"colors":"#FD09E7","x":1707609600000,"y":2024,"fill":"#FD09E7"},{"date":"2024-02-12","party":"Pro-İYİ & Anti-CHP","amount_spent":6397,"Daily Spend":1924,"short_name":null,"colors":"#FD09E7","x":1707696000000,"y":1924,"fill":"#FD09E7"},{"date":"2024-02-13","party":"Pro-İYİ & Anti-CHP","amount_spent":8366,"Daily Spend":1969,"short_name":null,"colors":"#FD09E7","x":1707782400000,"y":1969,"fill":"#FD09E7"},{"date":"2024-02-14","party":"Pro-İYİ & Anti-CHP","amount_spent":8635,"Daily Spend":269,"short_name":null,"colors":"#FD09E7","x":1707868800000,"y":269,"fill":"#FD09E7"},{"date":"2024-02-15","party":"Pro-İYİ & Anti-CHP","amount_spent":8635,"Daily Spend":0,"short_name":null,"colors":"#FD09E7","x":1707955200000,"y":0,"fill":"#FD09E7"},{"date":"2024-02-16","party":"Pro-İYİ & Anti-CHP","amount_spent":9843,"Daily Spend":1208,"short_name":null,"colors":"#FD09E7","x":1708041600000,"y":1208,"fill":"#FD09E7"},{"date":"2024-02-17","party":"Pro-İYİ & Anti-CHP","amount_spent":11259,"Daily Spend":1416,"short_name":null,"colors":"#FD09E7","x":1708128000000,"y":1416,"fill":"#FD09E7"},{"date":"2024-02-18","party":"Pro-İYİ & Anti-CHP","amount_spent":12756,"Daily Spend":1497,"short_name":null,"colors":"#FD09E7","x":1708214400000,"y":1497,"fill":"#FD09E7"},{"date":"2024-02-19","party":"Pro-İYİ & Anti-CHP","amount_spent":14109,"Daily Spend":1353,"short_name":null,"colors":"#FD09E7","x":1708300800000,"y":1353,"fill":"#FD09E7"},{"date":"2024-02-20","party":"Pro-İYİ & Anti-CHP","amount_spent":15446,"Daily Spend":1337,"short_name":null,"colors":"#FD09E7","x":1708387200000,"y":1337,"fill":"#FD09E7"},{"date":"2024-02-21","party":"Pro-İYİ & Anti-CHP","amount_spent":16798,"Daily Spend":1352,"short_name":null,"colors":"#FD09E7","x":1708473600000,"y":1352,"fill":"#FD09E7"},{"date":"2024-02-22","party":"Pro-İYİ & Anti-CHP","amount_spent":18240,"Daily Spend":1442,"short_name":null,"colors":"#FD09E7","x":1708560000000,"y":1442,"fill":"#FD09E7"},{"date":"2024-02-23","party":"Pro-İYİ & Anti-CHP","amount_spent":18635,"Daily Spend":395,"short_name":null,"colors":"#FD09E7","x":1708646400000,"y":395,"fill":"#FD09E7"},{"date":"2024-02-24","party":"Pro-İYİ & Anti-CHP","amount_spent":18635,"Daily Spend":0,"short_name":null,"colors":"#FD09E7","x":1708732800000,"y":0,"fill":"#FD09E7"},{"date":"2024-02-25","party":"Pro-İYİ & Anti-CHP","amount_spent":18635,"Daily Spend":0,"short_name":null,"colors":"#FD09E7","x":1708819200000,"y":0,"fill":"#FD09E7"},{"date":"2024-02-26","party":"Pro-İYİ & Anti-CHP","amount_spent":18635,"Daily Spend":0,"short_name":null,"colors":"#FD09E7","x":1708905600000,"y":0,"fill":"#FD09E7"},{"date":"2024-02-27","party":"Pro-İYİ & Anti-CHP","amount_spent":18635,"Daily Spend":0,"short_name":null,"colors":"#FD09E7","x":1708992000000,"y":0,"fill":"#FD09E7"},{"date":"2024-02-28","party":"Pro-İYİ & Anti-CHP","amount_spent":18984,"Daily Spend":349,"short_name":null,"colors":"#FD09E7","x":1709078400000,"y":349,"fill":"#FD09E7"},{"date":"2024-02-29","party":"Pro-İYİ & Anti-CHP","amount_spent":19510,"Daily Spend":526,"short_name":null,"colors":"#FD09E7","x":1709164800000,"y":526,"fill":"#FD09E7"},{"date":"2024-03-01","party":"Pro-İYİ & Anti-CHP","amount_spent":20036,"Daily Spend":526,"short_name":null,"colors":"#FD09E7","x":1709251200000,"y":526,"fill":"#FD09E7"},{"date":"2024-03-02","party":"Pro-İYİ & Anti-CHP","amount_spent":20654,"Daily Spend":618,"short_name":null,"colors":"#FD09E7","x":1709337600000,"y":618,"fill":"#FD09E7"},{"date":"2024-03-03","party":"Pro-İYİ & Anti-CHP","amount_spent":21300,"Daily Spend":646,"short_name":null,"colors":"#FD09E7","x":1709424000000,"y":646,"fill":"#FD09E7"},{"date":"2024-03-04","party":"Pro-İYİ & Anti-CHP","amount_spent":21868,"Daily Spend":568,"short_name":null,"colors":"#FD09E7","x":1709510400000,"y":568,"fill":"#FD09E7"},{"date":"2024-03-05","party":"Pro-İYİ & Anti-CHP","amount_spent":22372,"Daily Spend":504,"short_name":null,"colors":"#FD09E7","x":1709596800000,"y":504,"fill":"#FD09E7"},{"date":"2024-03-06","party":"Pro-İYİ & Anti-CHP","amount_spent":22986,"Daily Spend":614,"short_name":null,"colors":"#FD09E7","x":1709683200000,"y":614,"fill":"#FD09E7"},{"date":"2024-03-07","party":"Pro-İYİ & Anti-CHP","amount_spent":23552,"Daily Spend":566,"short_name":null,"colors":"#FD09E7","x":1709769600000,"y":566,"fill":"#FD09E7"},{"date":"2024-03-08","party":"Pro-İYİ & Anti-CHP","amount_spent":23793,"Daily Spend":241,"short_name":null,"colors":"#FD09E7","x":1709856000000,"y":241,"fill":"#FD09E7"},{"date":"2024-03-09","party":"Pro-İYİ & Anti-CHP","amount_spent":23793,"Daily Spend":0,"short_name":null,"colors":"#FD09E7","x":1709942400000,"y":0,"fill":"#FD09E7"},{"date":"2024-03-10","party":"Pro-İYİ & Anti-CHP","amount_spent":24725,"Daily Spend":932,"short_name":null,"colors":"#FD09E7","x":1710028800000,"y":932,"fill":"#FD09E7"},{"date":"2024-03-11","party":"Pro-İYİ & Anti-CHP","amount_spent":25567,"Daily Spend":842,"short_name":null,"colors":"#FD09E7","x":1710115200000,"y":842,"fill":"#FD09E7"}],"type":"area"},{"name":"İYİ","data":[{"date":"2024-02-08","party":"İYİ","amount_spent":1,"Daily Spend":null,"short_name":"İYİ","colors":"#fddb00","x":1707350400000,"y":null,"fill":"#fddb00"},{"date":"2024-02-09","party":"İYİ","amount_spent":1,"Daily Spend":0,"short_name":"İYİ","colors":"#fddb00","x":1707436800000,"y":0,"fill":"#fddb00"},{"date":"2024-02-10","party":"İYİ","amount_spent":1386,"Daily Spend":1385,"short_name":"İYİ","colors":"#fddb00","x":1707523200000,"y":1385,"fill":"#fddb00"},{"date":"2024-02-11","party":"İYİ","amount_spent":2956,"Daily Spend":1570,"short_name":"İYİ","colors":"#fddb00","x":1707609600000,"y":1570,"fill":"#fddb00"},{"date":"2024-02-12","party":"İYİ","amount_spent":3252,"Daily Spend":296,"short_name":"İYİ","colors":"#fddb00","x":1707696000000,"y":296,"fill":"#fddb00"},{"date":"2024-02-13","party":"İYİ","amount_spent":3259,"Daily Spend":7,"short_name":"İYİ","colors":"#fddb00","x":1707782400000,"y":7,"fill":"#fddb00"},{"date":"2024-02-14","party":"İYİ","amount_spent":3268,"Daily Spend":9,"short_name":"İYİ","colors":"#fddb00","x":1707868800000,"y":9,"fill":"#fddb00"},{"date":"2024-02-15","party":"İYİ","amount_spent":3273,"Daily Spend":5,"short_name":"İYİ","colors":"#fddb00","x":1707955200000,"y":5,"fill":"#fddb00"},{"date":"2024-02-16","party":"İYİ","amount_spent":3276,"Daily Spend":3,"short_name":"İYİ","colors":"#fddb00","x":1708041600000,"y":3,"fill":"#fddb00"},{"date":"2024-02-17","party":"İYİ","amount_spent":3282,"Daily Spend":6,"short_name":"İYİ","colors":"#fddb00","x":1708128000000,"y":6,"fill":"#fddb00"},{"date":"2024-02-18","party":"İYİ","amount_spent":3294,"Daily Spend":12,"short_name":"İYİ","colors":"#fddb00","x":1708214400000,"y":12,"fill":"#fddb00"},{"date":"2024-02-19","party":"İYİ","amount_spent":3310,"Daily Spend":16,"short_name":"İYİ","colors":"#fddb00","x":1708300800000,"y":16,"fill":"#fddb00"},{"date":"2024-02-20","party":"İYİ","amount_spent":3325,"Daily Spend":15,"short_name":"İYİ","colors":"#fddb00","x":1708387200000,"y":15,"fill":"#fddb00"},{"date":"2024-02-21","party":"İYİ","amount_spent":3336,"Daily Spend":11,"short_name":"İYİ","colors":"#fddb00","x":1708473600000,"y":11,"fill":"#fddb00"},{"date":"2024-02-22","party":"İYİ","amount_spent":3343,"Daily Spend":7,"short_name":"İYİ","colors":"#fddb00","x":1708560000000,"y":7,"fill":"#fddb00"},{"date":"2024-02-23","party":"İYİ","amount_spent":3347,"Daily Spend":4,"short_name":"İYİ","colors":"#fddb00","x":1708646400000,"y":4,"fill":"#fddb00"},{"date":"2024-02-24","party":"İYİ","amount_spent":3349,"Daily Spend":2,"short_name":"İYİ","colors":"#fddb00","x":1708732800000,"y":2,"fill":"#fddb00"},{"date":"2024-02-25","party":"İYİ","amount_spent":3351,"Daily Spend":2,"short_name":"İYİ","colors":"#fddb00","x":1708819200000,"y":2,"fill":"#fddb00"},{"date":"2024-02-26","party":"İYİ","amount_spent":8120,"Daily Spend":4769,"short_name":"İYİ","colors":"#fddb00","x":1708905600000,"y":4769,"fill":"#fddb00"},{"date":"2024-02-27","party":"İYİ","amount_spent":16577,"Daily Spend":8457,"short_name":"İYİ","colors":"#fddb00","x":1708992000000,"y":8457,"fill":"#fddb00"},{"date":"2024-02-28","party":"İYİ","amount_spent":26659,"Daily Spend":10082,"short_name":"İYİ","colors":"#fddb00","x":1709078400000,"y":10082,"fill":"#fddb00"},{"date":"2024-02-29","party":"İYİ","amount_spent":30277,"Daily Spend":3618,"short_name":"İYİ","colors":"#fddb00","x":1709164800000,"y":3618,"fill":"#fddb00"},{"date":"2024-03-01","party":"İYİ","amount_spent":37242,"Daily Spend":6965,"short_name":"İYİ","colors":"#fddb00","x":1709251200000,"y":6965,"fill":"#fddb00"},{"date":"2024-03-02","party":"İYİ","amount_spent":44359,"Daily Spend":7117,"short_name":"İYİ","colors":"#fddb00","x":1709337600000,"y":7117,"fill":"#fddb00"},{"date":"2024-03-03","party":"İYİ","amount_spent":49409,"Daily Spend":5050,"short_name":"İYİ","colors":"#fddb00","x":1709424000000,"y":5050,"fill":"#fddb00"},{"date":"2024-03-04","party":"İYİ","amount_spent":60580,"Daily Spend":11171,"short_name":"İYİ","colors":"#fddb00","x":1709510400000,"y":11171,"fill":"#fddb00"},{"date":"2024-03-05","party":"İYİ","amount_spent":75127,"Daily Spend":14547,"short_name":"İYİ","colors":"#fddb00","x":1709596800000,"y":14547,"fill":"#fddb00"},{"date":"2024-03-06","party":"İYİ","amount_spent":90926,"Daily Spend":15799,"short_name":"İYİ","colors":"#fddb00","x":1709683200000,"y":15799,"fill":"#fddb00"},{"date":"2024-03-07","party":"İYİ","amount_spent":107414,"Daily Spend":16488,"short_name":"İYİ","colors":"#fddb00","x":1709769600000,"y":16488,"fill":"#fddb00"},{"date":"2024-03-08","party":"İYİ","amount_spent":126890,"Daily Spend":19476,"short_name":"İYİ","colors":"#fddb00","x":1709856000000,"y":19476,"fill":"#fddb00"},{"date":"2024-03-09","party":"İYİ","amount_spent":151717,"Daily Spend":24827,"short_name":"İYİ","colors":"#fddb00","x":1709942400000,"y":24827,"fill":"#fddb00"},{"date":"2024-03-10","party":"İYİ","amount_spent":176096,"Daily Spend":24379,"short_name":"İYİ","colors":"#fddb00","x":1710028800000,"y":24379,"fill":"#fddb00"},{"date":"2024-03-11","party":"İYİ","amount_spent":199740,"Daily Spend":23644,"short_name":"İYİ","colors":"#fddb00","x":1710115200000,"y":23644,"fill":"#fddb00"}],"type":"area"}],"xAxis":{"type":"datetime","title":{"text":"date"},"categories":null},"colors":["#ff8700","#BC0B4F","#0B0213","#4786CA","#CF5B4F","#DA78EB","#FD09E7","#fddb00"],"tooltip":{"shared":true,"positioner":"function (labelWidth, labelHeight, point) {\n        return { x: 200, y: this.chart.plotTop };\n    }"}},"theme":{"chart":{"backgroundColor":"transparent"},"colors":["#7cb5ec","#434348","#90ed7d","#f7a35c","#8085e9","#f15c80","#e4d354","#2b908f","#f45b5b","#91e8e1"]},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":["hc_opts.tooltip.positioner"],"jsHooks":[]}</script>
+=======
+<div class="highchart html-widget html-fill-item" id="htmlwidget-a0bc8f146f7f293d4e6a" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-a0bc8f146f7f293d4e6a">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":null},"yAxis":{"title":{"text":"Daily Spend"},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"area":{"stacking":"normal","lineWidth":1,"marker":{"enabled":false}}},"series":[{"name":"AKP","data":[{"date":"2024-02-03","party":"AKP","amount_spent":384,"Daily Spend":null,"short_name":"AKP","colors":"#ff8700","x":1706918400000,"y":null,"fill":"#ff8700"},{"date":"2024-02-04","party":"AKP","amount_spent":1617,"Daily Spend":1233,"short_name":"AKP","colors":"#ff8700","x":1707004800000,"y":1233,"fill":"#ff8700"},{"date":"2024-02-05","party":"AKP","amount_spent":2884,"Daily Spend":1267,"short_name":"AKP","colors":"#ff8700","x":1707091200000,"y":1267,"fill":"#ff8700"},{"date":"2024-02-06","party":"AKP","amount_spent":4623,"Daily Spend":1739,"short_name":"AKP","colors":"#ff8700","x":1707177600000,"y":1739,"fill":"#ff8700"},{"date":"2024-02-07","party":"AKP","amount_spent":6856,"Daily Spend":2233,"short_name":"AKP","colors":"#ff8700","x":1707264000000,"y":2233,"fill":"#ff8700"},{"date":"2024-02-08","party":"AKP","amount_spent":9448,"Daily Spend":2592,"short_name":"AKP","colors":"#ff8700","x":1707350400000,"y":2592,"fill":"#ff8700"},{"date":"2024-02-09","party":"AKP","amount_spent":12614,"Daily Spend":3166,"short_name":"AKP","colors":"#ff8700","x":1707436800000,"y":3166,"fill":"#ff8700"},{"date":"2024-02-10","party":"AKP","amount_spent":14959,"Daily Spend":2345,"short_name":"AKP","colors":"#ff8700","x":1707523200000,"y":2345,"fill":"#ff8700"},{"date":"2024-02-11","party":"AKP","amount_spent":17200,"Daily Spend":2241,"short_name":"AKP","colors":"#ff8700","x":1707609600000,"y":2241,"fill":"#ff8700"},{"date":"2024-02-12","party":"AKP","amount_spent":19340,"Daily Spend":2140,"short_name":"AKP","colors":"#ff8700","x":1707696000000,"y":2140,"fill":"#ff8700"},{"date":"2024-02-13","party":"AKP","amount_spent":20415,"Daily Spend":1075,"short_name":"AKP","colors":"#ff8700","x":1707782400000,"y":1075,"fill":"#ff8700"},{"date":"2024-02-14","party":"AKP","amount_spent":21848,"Daily Spend":1433,"short_name":"AKP","colors":"#ff8700","x":1707868800000,"y":1433,"fill":"#ff8700"},{"date":"2024-02-15","party":"AKP","amount_spent":22647,"Daily Spend":799,"short_name":"AKP","colors":"#ff8700","x":1707955200000,"y":799,"fill":"#ff8700"},{"date":"2024-02-16","party":"AKP","amount_spent":23882,"Daily Spend":1235,"short_name":"AKP","colors":"#ff8700","x":1708041600000,"y":1235,"fill":"#ff8700"},{"date":"2024-02-17","party":"AKP","amount_spent":24953,"Daily Spend":1071,"short_name":"AKP","colors":"#ff8700","x":1708128000000,"y":1071,"fill":"#ff8700"},{"date":"2024-02-18","party":"AKP","amount_spent":26083,"Daily Spend":1130,"short_name":"AKP","colors":"#ff8700","x":1708214400000,"y":1130,"fill":"#ff8700"},{"date":"2024-02-19","party":"AKP","amount_spent":27941,"Daily Spend":1858,"short_name":"AKP","colors":"#ff8700","x":1708300800000,"y":1858,"fill":"#ff8700"},{"date":"2024-02-20","party":"AKP","amount_spent":29271,"Daily Spend":1330,"short_name":"AKP","colors":"#ff8700","x":1708387200000,"y":1330,"fill":"#ff8700"},{"date":"2024-02-21","party":"AKP","amount_spent":30613,"Daily Spend":1342,"short_name":"AKP","colors":"#ff8700","x":1708473600000,"y":1342,"fill":"#ff8700"},{"date":"2024-02-22","party":"AKP","amount_spent":32026,"Daily Spend":1413,"short_name":"AKP","colors":"#ff8700","x":1708560000000,"y":1413,"fill":"#ff8700"},{"date":"2024-02-23","party":"AKP","amount_spent":33255,"Daily Spend":1229,"short_name":"AKP","colors":"#ff8700","x":1708646400000,"y":1229,"fill":"#ff8700"},{"date":"2024-02-24","party":"AKP","amount_spent":36421,"Daily Spend":3166,"short_name":"AKP","colors":"#ff8700","x":1708732800000,"y":3166,"fill":"#ff8700"},{"date":"2024-02-25","party":"AKP","amount_spent":39884,"Daily Spend":3463,"short_name":"AKP","colors":"#ff8700","x":1708819200000,"y":3463,"fill":"#ff8700"},{"date":"2024-02-26","party":"AKP","amount_spent":43201,"Daily Spend":3317,"short_name":"AKP","colors":"#ff8700","x":1708905600000,"y":3317,"fill":"#ff8700"},{"date":"2024-02-27","party":"AKP","amount_spent":47939,"Daily Spend":4738,"short_name":"AKP","colors":"#ff8700","x":1708992000000,"y":4738,"fill":"#ff8700"},{"date":"2024-02-28","party":"AKP","amount_spent":53215,"Daily Spend":5276,"short_name":"AKP","colors":"#ff8700","x":1709078400000,"y":5276,"fill":"#ff8700"},{"date":"2024-02-29","party":"AKP","amount_spent":58603,"Daily Spend":5388,"short_name":"AKP","colors":"#ff8700","x":1709164800000,"y":5388,"fill":"#ff8700"},{"date":"2024-03-01","party":"AKP","amount_spent":64665,"Daily Spend":6062,"short_name":"AKP","colors":"#ff8700","x":1709251200000,"y":6062,"fill":"#ff8700"},{"date":"2024-03-02","party":"AKP","amount_spent":67441,"Daily Spend":2776,"short_name":"AKP","colors":"#ff8700","x":1709337600000,"y":2776,"fill":"#ff8700"},{"date":"2024-03-03","party":"AKP","amount_spent":70716,"Daily Spend":3275,"short_name":"AKP","colors":"#ff8700","x":1709424000000,"y":3275,"fill":"#ff8700"},{"date":"2024-03-04","party":"AKP","amount_spent":73058,"Daily Spend":2342,"short_name":"AKP","colors":"#ff8700","x":1709510400000,"y":2342,"fill":"#ff8700"},{"date":"2024-03-05","party":"AKP","amount_spent":75740,"Daily Spend":2682,"short_name":"AKP","colors":"#ff8700","x":1709596800000,"y":2682,"fill":"#ff8700"},{"date":"2024-03-06","party":"AKP","amount_spent":78549,"Daily Spend":2809,"short_name":"AKP","colors":"#ff8700","x":1709683200000,"y":2809,"fill":"#ff8700"},{"date":"2024-03-07","party":"AKP","amount_spent":81279,"Daily Spend":2730,"short_name":"AKP","colors":"#ff8700","x":1709769600000,"y":2730,"fill":"#ff8700"},{"date":"2024-03-08","party":"AKP","amount_spent":84003,"Daily Spend":2724,"short_name":"AKP","colors":"#ff8700","x":1709856000000,"y":2724,"fill":"#ff8700"},{"date":"2024-03-09","party":"AKP","amount_spent":88185,"Daily Spend":4182,"short_name":"AKP","colors":"#ff8700","x":1709942400000,"y":4182,"fill":"#ff8700"},{"date":"2024-03-10","party":"AKP","amount_spent":91245,"Daily Spend":3060,"short_name":"AKP","colors":"#ff8700","x":1710028800000,"y":3060,"fill":"#ff8700"},{"date":"2024-03-11","party":"AKP","amount_spent":94056,"Daily Spend":2811,"short_name":"AKP","colors":"#ff8700","x":1710115200000,"y":2811,"fill":"#ff8700"}],"type":"area"},{"name":"Anti-AKP","data":[{"date":"2024-01-31","party":"Anti-AKP","amount_spent":4498,"Daily Spend":null,"short_name":null,"colors":"#ABBB25","x":1706659200000,"y":null,"fill":"#ABBB25"},{"date":"2024-02-01","party":"Anti-AKP","amount_spent":4547,"Daily Spend":49,"short_name":null,"colors":"#ABBB25","x":1706745600000,"y":49,"fill":"#ABBB25"},{"date":"2024-02-02","party":"Anti-AKP","amount_spent":4597,"Daily Spend":50,"short_name":null,"colors":"#ABBB25","x":1706832000000,"y":50,"fill":"#ABBB25"},{"date":"2024-02-03","party":"Anti-AKP","amount_spent":4630,"Daily Spend":33,"short_name":null,"colors":"#ABBB25","x":1706918400000,"y":33,"fill":"#ABBB25"},{"date":"2024-02-04","party":"Anti-AKP","amount_spent":4807,"Daily Spend":177,"short_name":null,"colors":"#ABBB25","x":1707004800000,"y":177,"fill":"#ABBB25"},{"date":"2024-02-05","party":"Anti-AKP","amount_spent":5642,"Daily Spend":835,"short_name":null,"colors":"#ABBB25","x":1707091200000,"y":835,"fill":"#ABBB25"},{"date":"2024-02-06","party":"Anti-AKP","amount_spent":6522,"Daily Spend":880,"short_name":null,"colors":"#ABBB25","x":1707177600000,"y":880,"fill":"#ABBB25"},{"date":"2024-02-07","party":"Anti-AKP","amount_spent":6950,"Daily Spend":428,"short_name":null,"colors":"#ABBB25","x":1707264000000,"y":428,"fill":"#ABBB25"},{"date":"2024-02-08","party":"Anti-AKP","amount_spent":7570,"Daily Spend":620,"short_name":null,"colors":"#ABBB25","x":1707350400000,"y":620,"fill":"#ABBB25"},{"date":"2024-02-09","party":"Anti-AKP","amount_spent":7893,"Daily Spend":323,"short_name":null,"colors":"#ABBB25","x":1707436800000,"y":323,"fill":"#ABBB25"},{"date":"2024-02-10","party":"Anti-AKP","amount_spent":8065,"Daily Spend":172,"short_name":null,"colors":"#ABBB25","x":1707523200000,"y":172,"fill":"#ABBB25"},{"date":"2024-02-11","party":"Anti-AKP","amount_spent":8269,"Daily Spend":204,"short_name":null,"colors":"#ABBB25","x":1707609600000,"y":204,"fill":"#ABBB25"},{"date":"2024-02-12","party":"Anti-AKP","amount_spent":8482,"Daily Spend":213,"short_name":null,"colors":"#ABBB25","x":1707696000000,"y":213,"fill":"#ABBB25"},{"date":"2024-02-13","party":"Anti-AKP","amount_spent":8773,"Daily Spend":291,"short_name":null,"colors":"#ABBB25","x":1707782400000,"y":291,"fill":"#ABBB25"},{"date":"2024-02-14","party":"Anti-AKP","amount_spent":8928,"Daily Spend":155,"short_name":null,"colors":"#ABBB25","x":1707868800000,"y":155,"fill":"#ABBB25"},{"date":"2024-02-15","party":"Anti-AKP","amount_spent":8928,"Daily Spend":0,"short_name":null,"colors":"#ABBB25","x":1707955200000,"y":0,"fill":"#ABBB25"},{"date":"2024-02-16","party":"Anti-AKP","amount_spent":8928,"Daily Spend":0,"short_name":null,"colors":"#ABBB25","x":1708041600000,"y":0,"fill":"#ABBB25"},{"date":"2024-02-17","party":"Anti-AKP","amount_spent":9353,"Daily Spend":425,"short_name":null,"colors":"#ABBB25","x":1708128000000,"y":425,"fill":"#ABBB25"},{"date":"2024-02-18","party":"Anti-AKP","amount_spent":10137,"Daily Spend":784,"short_name":null,"colors":"#ABBB25","x":1708214400000,"y":784,"fill":"#ABBB25"},{"date":"2024-02-19","party":"Anti-AKP","amount_spent":10912,"Daily Spend":775,"short_name":null,"colors":"#ABBB25","x":1708300800000,"y":775,"fill":"#ABBB25"},{"date":"2024-02-20","party":"Anti-AKP","amount_spent":11605,"Daily Spend":693,"short_name":null,"colors":"#ABBB25","x":1708387200000,"y":693,"fill":"#ABBB25"},{"date":"2024-02-21","party":"Anti-AKP","amount_spent":11720,"Daily Spend":115,"short_name":null,"colors":"#ABBB25","x":1708473600000,"y":115,"fill":"#ABBB25"},{"date":"2024-02-22","party":"Anti-AKP","amount_spent":11951,"Daily Spend":231,"short_name":null,"colors":"#ABBB25","x":1708560000000,"y":231,"fill":"#ABBB25"},{"date":"2024-02-23","party":"Anti-AKP","amount_spent":12157,"Daily Spend":206,"short_name":null,"colors":"#ABBB25","x":1708646400000,"y":206,"fill":"#ABBB25"},{"date":"2024-02-24","party":"Anti-AKP","amount_spent":12292,"Daily Spend":135,"short_name":null,"colors":"#ABBB25","x":1708732800000,"y":135,"fill":"#ABBB25"},{"date":"2024-02-25","party":"Anti-AKP","amount_spent":12418,"Daily Spend":126,"short_name":null,"colors":"#ABBB25","x":1708819200000,"y":126,"fill":"#ABBB25"},{"date":"2024-02-26","party":"Anti-AKP","amount_spent":12507,"Daily Spend":89,"short_name":null,"colors":"#ABBB25","x":1708905600000,"y":89,"fill":"#ABBB25"},{"date":"2024-02-27","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#ABBB25","x":1708992000000,"y":0,"fill":"#ABBB25"},{"date":"2024-02-28","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#ABBB25","x":1709078400000,"y":0,"fill":"#ABBB25"},{"date":"2024-02-29","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#ABBB25","x":1709164800000,"y":0,"fill":"#ABBB25"},{"date":"2024-03-01","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#ABBB25","x":1709251200000,"y":0,"fill":"#ABBB25"},{"date":"2024-03-02","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#ABBB25","x":1709337600000,"y":0,"fill":"#ABBB25"},{"date":"2024-03-03","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#ABBB25","x":1709424000000,"y":0,"fill":"#ABBB25"},{"date":"2024-03-04","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#ABBB25","x":1709510400000,"y":0,"fill":"#ABBB25"},{"date":"2024-03-05","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#ABBB25","x":1709596800000,"y":0,"fill":"#ABBB25"},{"date":"2024-03-06","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#ABBB25","x":1709683200000,"y":0,"fill":"#ABBB25"},{"date":"2024-03-07","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#ABBB25","x":1709769600000,"y":0,"fill":"#ABBB25"},{"date":"2024-03-08","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#ABBB25","x":1709856000000,"y":0,"fill":"#ABBB25"},{"date":"2024-03-09","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#ABBB25","x":1709942400000,"y":0,"fill":"#ABBB25"},{"date":"2024-03-10","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#ABBB25","x":1710028800000,"y":0,"fill":"#ABBB25"},{"date":"2024-03-11","party":"Anti-AKP","amount_spent":12507,"Daily Spend":0,"short_name":null,"colors":"#ABBB25","x":1710115200000,"y":0,"fill":"#ABBB25"}],"type":"area"},{"name":"Pro-AKP","data":[{"date":"2024-01-31","party":"Pro-AKP","amount_spent":179840,"Daily Spend":null,"short_name":null,"colors":"#2DC7F5","x":1706659200000,"y":null,"fill":"#2DC7F5"},{"date":"2024-02-01","party":"Pro-AKP","amount_spent":181399,"Daily Spend":1559,"short_name":null,"colors":"#2DC7F5","x":1706745600000,"y":1559,"fill":"#2DC7F5"},{"date":"2024-02-02","party":"Pro-AKP","amount_spent":183221,"Daily Spend":1822,"short_name":null,"colors":"#2DC7F5","x":1706832000000,"y":1822,"fill":"#2DC7F5"},{"date":"2024-02-03","party":"Pro-AKP","amount_spent":185128,"Daily Spend":1907,"short_name":null,"colors":"#2DC7F5","x":1706918400000,"y":1907,"fill":"#2DC7F5"},{"date":"2024-02-04","party":"Pro-AKP","amount_spent":187129,"Daily Spend":2001,"short_name":null,"colors":"#2DC7F5","x":1707004800000,"y":2001,"fill":"#2DC7F5"},{"date":"2024-02-05","party":"Pro-AKP","amount_spent":188946,"Daily Spend":1817,"short_name":null,"colors":"#2DC7F5","x":1707091200000,"y":1817,"fill":"#2DC7F5"},{"date":"2024-02-06","party":"Pro-AKP","amount_spent":190707,"Daily Spend":1761,"short_name":null,"colors":"#2DC7F5","x":1707177600000,"y":1761,"fill":"#2DC7F5"},{"date":"2024-02-07","party":"Pro-AKP","amount_spent":192973,"Daily Spend":2266,"short_name":null,"colors":"#2DC7F5","x":1707264000000,"y":2266,"fill":"#2DC7F5"},{"date":"2024-02-08","party":"Pro-AKP","amount_spent":195847,"Daily Spend":2874,"short_name":null,"colors":"#2DC7F5","x":1707350400000,"y":2874,"fill":"#2DC7F5"},{"date":"2024-02-09","party":"Pro-AKP","amount_spent":199694,"Daily Spend":3847,"short_name":null,"colors":"#2DC7F5","x":1707436800000,"y":3847,"fill":"#2DC7F5"},{"date":"2024-02-10","party":"Pro-AKP","amount_spent":204257,"Daily Spend":4563,"short_name":null,"colors":"#2DC7F5","x":1707523200000,"y":4563,"fill":"#2DC7F5"},{"date":"2024-02-11","party":"Pro-AKP","amount_spent":208551,"Daily Spend":4294,"short_name":null,"colors":"#2DC7F5","x":1707609600000,"y":4294,"fill":"#2DC7F5"},{"date":"2024-02-12","party":"Pro-AKP","amount_spent":213130,"Daily Spend":4579,"short_name":null,"colors":"#2DC7F5","x":1707696000000,"y":4579,"fill":"#2DC7F5"},{"date":"2024-02-13","party":"Pro-AKP","amount_spent":218572,"Daily Spend":5442,"short_name":null,"colors":"#2DC7F5","x":1707782400000,"y":5442,"fill":"#2DC7F5"},{"date":"2024-02-14","party":"Pro-AKP","amount_spent":222847,"Daily Spend":4275,"short_name":null,"colors":"#2DC7F5","x":1707868800000,"y":4275,"fill":"#2DC7F5"},{"date":"2024-02-15","party":"Pro-AKP","amount_spent":227511,"Daily Spend":4664,"short_name":null,"colors":"#2DC7F5","x":1707955200000,"y":4664,"fill":"#2DC7F5"},{"date":"2024-02-16","party":"Pro-AKP","amount_spent":233324,"Daily Spend":5813,"short_name":null,"colors":"#2DC7F5","x":1708041600000,"y":5813,"fill":"#2DC7F5"},{"date":"2024-02-17","party":"Pro-AKP","amount_spent":239845,"Daily Spend":6521,"short_name":null,"colors":"#2DC7F5","x":1708128000000,"y":6521,"fill":"#2DC7F5"},{"date":"2024-02-18","party":"Pro-AKP","amount_spent":246897,"Daily Spend":7052,"short_name":null,"colors":"#2DC7F5","x":1708214400000,"y":7052,"fill":"#2DC7F5"},{"date":"2024-02-19","party":"Pro-AKP","amount_spent":253851,"Daily Spend":6954,"short_name":null,"colors":"#2DC7F5","x":1708300800000,"y":6954,"fill":"#2DC7F5"},{"date":"2024-02-20","party":"Pro-AKP","amount_spent":263546,"Daily Spend":9695,"short_name":null,"colors":"#2DC7F5","x":1708387200000,"y":9695,"fill":"#2DC7F5"},{"date":"2024-02-21","party":"Pro-AKP","amount_spent":273365,"Daily Spend":9819,"short_name":null,"colors":"#2DC7F5","x":1708473600000,"y":9819,"fill":"#2DC7F5"},{"date":"2024-02-22","party":"Pro-AKP","amount_spent":281901,"Daily Spend":8536,"short_name":null,"colors":"#2DC7F5","x":1708560000000,"y":8536,"fill":"#2DC7F5"},{"date":"2024-02-23","party":"Pro-AKP","amount_spent":292750,"Daily Spend":10849,"short_name":null,"colors":"#2DC7F5","x":1708646400000,"y":10849,"fill":"#2DC7F5"},{"date":"2024-02-24","party":"Pro-AKP","amount_spent":310244,"Daily Spend":17494,"short_name":null,"colors":"#2DC7F5","x":1708732800000,"y":17494,"fill":"#2DC7F5"},{"date":"2024-02-25","party":"Pro-AKP","amount_spent":328744,"Daily Spend":18500,"short_name":null,"colors":"#2DC7F5","x":1708819200000,"y":18500,"fill":"#2DC7F5"},{"date":"2024-02-26","party":"Pro-AKP","amount_spent":351856,"Daily Spend":23112,"short_name":null,"colors":"#2DC7F5","x":1708905600000,"y":23112,"fill":"#2DC7F5"},{"date":"2024-02-27","party":"Pro-AKP","amount_spent":379715,"Daily Spend":27859,"short_name":null,"colors":"#2DC7F5","x":1708992000000,"y":27859,"fill":"#2DC7F5"},{"date":"2024-02-28","party":"Pro-AKP","amount_spent":411380,"Daily Spend":31665,"short_name":null,"colors":"#2DC7F5","x":1709078400000,"y":31665,"fill":"#2DC7F5"},{"date":"2024-02-29","party":"Pro-AKP","amount_spent":439606,"Daily Spend":28226,"short_name":null,"colors":"#2DC7F5","x":1709164800000,"y":28226,"fill":"#2DC7F5"},{"date":"2024-03-01","party":"Pro-AKP","amount_spent":465076,"Daily Spend":25470,"short_name":null,"colors":"#2DC7F5","x":1709251200000,"y":25470,"fill":"#2DC7F5"},{"date":"2024-03-02","party":"Pro-AKP","amount_spent":491054,"Daily Spend":25978,"short_name":null,"colors":"#2DC7F5","x":1709337600000,"y":25978,"fill":"#2DC7F5"},{"date":"2024-03-03","party":"Pro-AKP","amount_spent":518701,"Daily Spend":27647,"short_name":null,"colors":"#2DC7F5","x":1709424000000,"y":27647,"fill":"#2DC7F5"},{"date":"2024-03-04","party":"Pro-AKP","amount_spent":541813,"Daily Spend":23112,"short_name":null,"colors":"#2DC7F5","x":1709510400000,"y":23112,"fill":"#2DC7F5"},{"date":"2024-03-05","party":"Pro-AKP","amount_spent":564148,"Daily Spend":22335,"short_name":null,"colors":"#2DC7F5","x":1709596800000,"y":22335,"fill":"#2DC7F5"},{"date":"2024-03-06","party":"Pro-AKP","amount_spent":590946,"Daily Spend":26798,"short_name":null,"colors":"#2DC7F5","x":1709683200000,"y":26798,"fill":"#2DC7F5"},{"date":"2024-03-07","party":"Pro-AKP","amount_spent":618962,"Daily Spend":28016,"short_name":null,"colors":"#2DC7F5","x":1709769600000,"y":28016,"fill":"#2DC7F5"},{"date":"2024-03-08","party":"Pro-AKP","amount_spent":647998,"Daily Spend":29036,"short_name":null,"colors":"#2DC7F5","x":1709856000000,"y":29036,"fill":"#2DC7F5"},{"date":"2024-03-09","party":"Pro-AKP","amount_spent":677871,"Daily Spend":29873,"short_name":null,"colors":"#2DC7F5","x":1709942400000,"y":29873,"fill":"#2DC7F5"},{"date":"2024-03-10","party":"Pro-AKP","amount_spent":704548,"Daily Spend":26677,"short_name":null,"colors":"#2DC7F5","x":1710028800000,"y":26677,"fill":"#2DC7F5"},{"date":"2024-03-11","party":"Pro-AKP","amount_spent":731637,"Daily Spend":27089,"short_name":null,"colors":"#2DC7F5","x":1710115200000,"y":27089,"fill":"#2DC7F5"}],"type":"area"},{"name":"Pro-CHP","data":[{"date":"2024-01-31","party":"Pro-CHP","amount_spent":28984,"Daily Spend":null,"short_name":null,"colors":"#6CD711","x":1706659200000,"y":null,"fill":"#6CD711"},{"date":"2024-02-01","party":"Pro-CHP","amount_spent":29764,"Daily Spend":780,"short_name":null,"colors":"#6CD711","x":1706745600000,"y":780,"fill":"#6CD711"},{"date":"2024-02-02","party":"Pro-CHP","amount_spent":29906,"Daily Spend":142,"short_name":null,"colors":"#6CD711","x":1706832000000,"y":142,"fill":"#6CD711"},{"date":"2024-02-03","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1706918400000,"y":0,"fill":"#6CD711"},{"date":"2024-02-04","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1707004800000,"y":0,"fill":"#6CD711"},{"date":"2024-02-05","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1707091200000,"y":0,"fill":"#6CD711"},{"date":"2024-02-06","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1707177600000,"y":0,"fill":"#6CD711"},{"date":"2024-02-07","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1707264000000,"y":0,"fill":"#6CD711"},{"date":"2024-02-08","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1707350400000,"y":0,"fill":"#6CD711"},{"date":"2024-02-09","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1707436800000,"y":0,"fill":"#6CD711"},{"date":"2024-02-10","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1707523200000,"y":0,"fill":"#6CD711"},{"date":"2024-02-11","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1707609600000,"y":0,"fill":"#6CD711"},{"date":"2024-02-12","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1707696000000,"y":0,"fill":"#6CD711"},{"date":"2024-02-13","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1707782400000,"y":0,"fill":"#6CD711"},{"date":"2024-02-14","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1707868800000,"y":0,"fill":"#6CD711"},{"date":"2024-02-15","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1707955200000,"y":0,"fill":"#6CD711"},{"date":"2024-02-16","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1708041600000,"y":0,"fill":"#6CD711"},{"date":"2024-02-17","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1708128000000,"y":0,"fill":"#6CD711"},{"date":"2024-02-18","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1708214400000,"y":0,"fill":"#6CD711"},{"date":"2024-02-19","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1708300800000,"y":0,"fill":"#6CD711"},{"date":"2024-02-20","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1708387200000,"y":0,"fill":"#6CD711"},{"date":"2024-02-21","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1708473600000,"y":0,"fill":"#6CD711"},{"date":"2024-02-22","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1708560000000,"y":0,"fill":"#6CD711"},{"date":"2024-02-23","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1708646400000,"y":0,"fill":"#6CD711"},{"date":"2024-02-24","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1708732800000,"y":0,"fill":"#6CD711"},{"date":"2024-02-25","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1708819200000,"y":0,"fill":"#6CD711"},{"date":"2024-02-26","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1708905600000,"y":0,"fill":"#6CD711"},{"date":"2024-02-27","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1708992000000,"y":0,"fill":"#6CD711"},{"date":"2024-02-28","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1709078400000,"y":0,"fill":"#6CD711"},{"date":"2024-02-29","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1709164800000,"y":0,"fill":"#6CD711"},{"date":"2024-03-01","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1709251200000,"y":0,"fill":"#6CD711"},{"date":"2024-03-02","party":"Pro-CHP","amount_spent":29906,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1709337600000,"y":0,"fill":"#6CD711"},{"date":"2024-03-03","party":"Pro-CHP","amount_spent":30085,"Daily Spend":179,"short_name":null,"colors":"#6CD711","x":1709424000000,"y":179,"fill":"#6CD711"},{"date":"2024-03-04","party":"Pro-CHP","amount_spent":30242,"Daily Spend":157,"short_name":null,"colors":"#6CD711","x":1709510400000,"y":157,"fill":"#6CD711"},{"date":"2024-03-05","party":"Pro-CHP","amount_spent":30332,"Daily Spend":90,"short_name":null,"colors":"#6CD711","x":1709596800000,"y":90,"fill":"#6CD711"},{"date":"2024-03-06","party":"Pro-CHP","amount_spent":30332,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1709683200000,"y":0,"fill":"#6CD711"},{"date":"2024-03-07","party":"Pro-CHP","amount_spent":30332,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1709769600000,"y":0,"fill":"#6CD711"},{"date":"2024-03-08","party":"Pro-CHP","amount_spent":30332,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1709856000000,"y":0,"fill":"#6CD711"},{"date":"2024-03-09","party":"Pro-CHP","amount_spent":30332,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1709942400000,"y":0,"fill":"#6CD711"},{"date":"2024-03-10","party":"Pro-CHP","amount_spent":30332,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1710028800000,"y":0,"fill":"#6CD711"},{"date":"2024-03-11","party":"Pro-CHP","amount_spent":30332,"Daily Spend":0,"short_name":null,"colors":"#6CD711","x":1710115200000,"y":0,"fill":"#6CD711"}],"type":"area"},{"name":"Pro-CHP & Anti-AKP","data":[{"date":"2024-01-31","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":null,"short_name":null,"colors":"#961821","x":1706659200000,"y":null,"fill":"#961821"},{"date":"2024-02-01","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1706745600000,"y":0,"fill":"#961821"},{"date":"2024-02-02","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1706832000000,"y":0,"fill":"#961821"},{"date":"2024-02-03","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1706918400000,"y":0,"fill":"#961821"},{"date":"2024-02-04","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1707004800000,"y":0,"fill":"#961821"},{"date":"2024-02-05","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1707091200000,"y":0,"fill":"#961821"},{"date":"2024-02-06","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1707177600000,"y":0,"fill":"#961821"},{"date":"2024-02-07","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1707264000000,"y":0,"fill":"#961821"},{"date":"2024-02-08","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1707350400000,"y":0,"fill":"#961821"},{"date":"2024-02-09","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1707436800000,"y":0,"fill":"#961821"},{"date":"2024-02-10","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1707523200000,"y":0,"fill":"#961821"},{"date":"2024-02-11","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1707609600000,"y":0,"fill":"#961821"},{"date":"2024-02-12","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1707696000000,"y":0,"fill":"#961821"},{"date":"2024-02-13","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1707782400000,"y":0,"fill":"#961821"},{"date":"2024-02-14","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1707868800000,"y":0,"fill":"#961821"},{"date":"2024-02-15","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1707955200000,"y":0,"fill":"#961821"},{"date":"2024-02-16","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1708041600000,"y":0,"fill":"#961821"},{"date":"2024-02-17","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1708128000000,"y":0,"fill":"#961821"},{"date":"2024-02-18","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1708214400000,"y":0,"fill":"#961821"},{"date":"2024-02-19","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1708300800000,"y":0,"fill":"#961821"},{"date":"2024-02-20","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1708387200000,"y":0,"fill":"#961821"},{"date":"2024-02-21","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1708473600000,"y":0,"fill":"#961821"},{"date":"2024-02-22","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1708560000000,"y":0,"fill":"#961821"},{"date":"2024-02-23","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1708646400000,"y":0,"fill":"#961821"},{"date":"2024-02-24","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1708732800000,"y":0,"fill":"#961821"},{"date":"2024-02-25","party":"Pro-CHP & Anti-AKP","amount_spent":4717,"Daily Spend":0,"short_name":null,"colors":"#961821","x":1708819200000,"y":0,"fill":"#961821"},{"date":"2024-02-26","party":"Pro-CHP & Anti-AKP","amount_spent":5701,"Daily Spend":984,"short_name":null,"colors":"#961821","x":1708905600000,"y":984,"fill":"#961821"},{"date":"2024-02-27","party":"Pro-CHP & Anti-AKP","amount_spent":7424,"Daily Spend":1723,"short_name":null,"colors":"#961821","x":1708992000000,"y":1723,"fill":"#961821"},{"date":"2024-02-28","party":"Pro-CHP & Anti-AKP","amount_spent":9081,"Daily Spend":1657,"short_name":null,"colors":"#961821","x":1709078400000,"y":1657,"fill":"#961821"},{"date":"2024-02-29","party":"Pro-CHP & Anti-AKP","amount_spent":10046,"Daily Spend":965,"short_name":null,"colors":"#961821","x":1709164800000,"y":965,"fill":"#961821"},{"date":"2024-03-01","party":"Pro-CHP & Anti-AKP","amount_spent":11659,"Daily Spend":1613,"short_name":null,"colors":"#961821","x":1709251200000,"y":1613,"fill":"#961821"},{"date":"2024-03-02","party":"Pro-CHP & Anti-AKP","amount_spent":12117,"Daily Spend":458,"short_name":null,"colors":"#961821","x":1709337600000,"y":458,"fill":"#961821"},{"date":"2024-03-03","party":"Pro-CHP & Anti-AKP","amount_spent":13526,"Daily Spend":1409,"short_name":null,"colors":"#961821","x":1709424000000,"y":1409,"fill":"#961821"},{"date":"2024-03-04","party":"Pro-CHP & Anti-AKP","amount_spent":15106,"Daily Spend":1580,"short_name":null,"colors":"#961821","x":1709510400000,"y":1580,"fill":"#961821"},{"date":"2024-03-05","party":"Pro-CHP & Anti-AKP","amount_spent":16940,"Daily Spend":1834,"short_name":null,"colors":"#961821","x":1709596800000,"y":1834,"fill":"#961821"},{"date":"2024-03-06","party":"Pro-CHP & Anti-AKP","amount_spent":17232,"Daily Spend":292,"short_name":null,"colors":"#961821","x":1709683200000,"y":292,"fill":"#961821"},{"date":"2024-03-07","party":"Pro-CHP & Anti-AKP","amount_spent":17521,"Daily Spend":289,"short_name":null,"colors":"#961821","x":1709769600000,"y":289,"fill":"#961821"},{"date":"2024-03-08","party":"Pro-CHP & Anti-AKP","amount_spent":18253,"Daily Spend":732,"short_name":null,"colors":"#961821","x":1709856000000,"y":732,"fill":"#961821"},{"date":"2024-03-09","party":"Pro-CHP & Anti-AKP","amount_spent":19364,"Daily Spend":1111,"short_name":null,"colors":"#961821","x":1709942400000,"y":1111,"fill":"#961821"},{"date":"2024-03-10","party":"Pro-CHP & Anti-AKP","amount_spent":21954,"Daily Spend":2590,"short_name":null,"colors":"#961821","x":1710028800000,"y":2590,"fill":"#961821"},{"date":"2024-03-11","party":"Pro-CHP & Anti-AKP","amount_spent":24122,"Daily Spend":2168,"short_name":null,"colors":"#961821","x":1710115200000,"y":2168,"fill":"#961821"}],"type":"area"},{"name":"Pro-İYİ","data":[{"date":"2024-01-31","party":"Pro-İYİ","amount_spent":30282,"Daily Spend":null,"short_name":null,"colors":"#A5EA9F","x":1706659200000,"y":null,"fill":"#A5EA9F"},{"date":"2024-02-01","party":"Pro-İYİ","amount_spent":30967,"Daily Spend":685,"short_name":null,"colors":"#A5EA9F","x":1706745600000,"y":685,"fill":"#A5EA9F"},{"date":"2024-02-02","party":"Pro-İYİ","amount_spent":31381,"Daily Spend":414,"short_name":null,"colors":"#A5EA9F","x":1706832000000,"y":414,"fill":"#A5EA9F"},{"date":"2024-02-03","party":"Pro-İYİ","amount_spent":31610,"Daily Spend":229,"short_name":null,"colors":"#A5EA9F","x":1706918400000,"y":229,"fill":"#A5EA9F"},{"date":"2024-02-04","party":"Pro-İYİ","amount_spent":31883,"Daily Spend":273,"short_name":null,"colors":"#A5EA9F","x":1707004800000,"y":273,"fill":"#A5EA9F"},{"date":"2024-02-05","party":"Pro-İYİ","amount_spent":31883,"Daily Spend":0,"short_name":null,"colors":"#A5EA9F","x":1707091200000,"y":0,"fill":"#A5EA9F"},{"date":"2024-02-06","party":"Pro-İYİ","amount_spent":32081,"Daily Spend":198,"short_name":null,"colors":"#A5EA9F","x":1707177600000,"y":198,"fill":"#A5EA9F"},{"date":"2024-02-07","party":"Pro-İYİ","amount_spent":32283,"Daily Spend":202,"short_name":null,"colors":"#A5EA9F","x":1707264000000,"y":202,"fill":"#A5EA9F"},{"date":"2024-02-08","party":"Pro-İYİ","amount_spent":32450,"Daily Spend":167,"short_name":null,"colors":"#A5EA9F","x":1707350400000,"y":167,"fill":"#A5EA9F"},{"date":"2024-02-09","party":"Pro-İYİ","amount_spent":32583,"Daily Spend":133,"short_name":null,"colors":"#A5EA9F","x":1707436800000,"y":133,"fill":"#A5EA9F"},{"date":"2024-02-10","party":"Pro-İYİ","amount_spent":32583,"Daily Spend":0,"short_name":null,"colors":"#A5EA9F","x":1707523200000,"y":0,"fill":"#A5EA9F"},{"date":"2024-02-11","party":"Pro-İYİ","amount_spent":32583,"Daily Spend":0,"short_name":null,"colors":"#A5EA9F","x":1707609600000,"y":0,"fill":"#A5EA9F"},{"date":"2024-02-12","party":"Pro-İYİ","amount_spent":32583,"Daily Spend":0,"short_name":null,"colors":"#A5EA9F","x":1707696000000,"y":0,"fill":"#A5EA9F"},{"date":"2024-02-13","party":"Pro-İYİ","amount_spent":32583,"Daily Spend":0,"short_name":null,"colors":"#A5EA9F","x":1707782400000,"y":0,"fill":"#A5EA9F"},{"date":"2024-02-14","party":"Pro-İYİ","amount_spent":32583,"Daily Spend":0,"short_name":null,"colors":"#A5EA9F","x":1707868800000,"y":0,"fill":"#A5EA9F"},{"date":"2024-02-15","party":"Pro-İYİ","amount_spent":32583,"Daily Spend":0,"short_name":null,"colors":"#A5EA9F","x":1707955200000,"y":0,"fill":"#A5EA9F"},{"date":"2024-02-16","party":"Pro-İYİ","amount_spent":32583,"Daily Spend":0,"short_name":null,"colors":"#A5EA9F","x":1708041600000,"y":0,"fill":"#A5EA9F"},{"date":"2024-02-17","party":"Pro-İYİ","amount_spent":32583,"Daily Spend":0,"short_name":null,"colors":"#A5EA9F","x":1708128000000,"y":0,"fill":"#A5EA9F"},{"date":"2024-02-18","party":"Pro-İYİ","amount_spent":32631,"Daily Spend":48,"short_name":null,"colors":"#A5EA9F","x":1708214400000,"y":48,"fill":"#A5EA9F"},{"date":"2024-02-19","party":"Pro-İYİ","amount_spent":33015,"Daily Spend":384,"short_name":null,"colors":"#A5EA9F","x":1708300800000,"y":384,"fill":"#A5EA9F"},{"date":"2024-02-20","party":"Pro-İYİ","amount_spent":33263,"Daily Spend":248,"short_name":null,"colors":"#A5EA9F","x":1708387200000,"y":248,"fill":"#A5EA9F"},{"date":"2024-02-21","party":"Pro-İYİ","amount_spent":33745,"Daily Spend":482,"short_name":null,"colors":"#A5EA9F","x":1708473600000,"y":482,"fill":"#A5EA9F"},{"date":"2024-02-22","party":"Pro-İYİ","amount_spent":34191,"Daily Spend":446,"short_name":null,"colors":"#A5EA9F","x":1708560000000,"y":446,"fill":"#A5EA9F"},{"date":"2024-02-23","party":"Pro-İYİ","amount_spent":34559,"Daily Spend":368,"short_name":null,"colors":"#A5EA9F","x":1708646400000,"y":368,"fill":"#A5EA9F"},{"date":"2024-02-24","party":"Pro-İYİ","amount_spent":34652,"Daily Spend":93,"short_name":null,"colors":"#A5EA9F","x":1708732800000,"y":93,"fill":"#A5EA9F"},{"date":"2024-02-25","party":"Pro-İYİ","amount_spent":34652,"Daily Spend":0,"short_name":null,"colors":"#A5EA9F","x":1708819200000,"y":0,"fill":"#A5EA9F"},{"date":"2024-02-26","party":"Pro-İYİ","amount_spent":34652,"Daily Spend":0,"short_name":null,"colors":"#A5EA9F","x":1708905600000,"y":0,"fill":"#A5EA9F"},{"date":"2024-02-27","party":"Pro-İYİ","amount_spent":34652,"Daily Spend":0,"short_name":null,"colors":"#A5EA9F","x":1708992000000,"y":0,"fill":"#A5EA9F"},{"date":"2024-02-28","party":"Pro-İYİ","amount_spent":34703,"Daily Spend":51,"short_name":null,"colors":"#A5EA9F","x":1709078400000,"y":51,"fill":"#A5EA9F"},{"date":"2024-02-29","party":"Pro-İYİ","amount_spent":34774,"Daily Spend":71,"short_name":null,"colors":"#A5EA9F","x":1709164800000,"y":71,"fill":"#A5EA9F"},{"date":"2024-03-01","party":"Pro-İYİ","amount_spent":34887,"Daily Spend":113,"short_name":null,"colors":"#A5EA9F","x":1709251200000,"y":113,"fill":"#A5EA9F"},{"date":"2024-03-02","party":"Pro-İYİ","amount_spent":35255,"Daily Spend":368,"short_name":null,"colors":"#A5EA9F","x":1709337600000,"y":368,"fill":"#A5EA9F"},{"date":"2024-03-03","party":"Pro-İYİ","amount_spent":35297,"Daily Spend":42,"short_name":null,"colors":"#A5EA9F","x":1709424000000,"y":42,"fill":"#A5EA9F"},{"date":"2024-03-04","party":"Pro-İYİ","amount_spent":35484,"Daily Spend":187,"short_name":null,"colors":"#A5EA9F","x":1709510400000,"y":187,"fill":"#A5EA9F"},{"date":"2024-03-05","party":"Pro-İYİ","amount_spent":35764,"Daily Spend":280,"short_name":null,"colors":"#A5EA9F","x":1709596800000,"y":280,"fill":"#A5EA9F"},{"date":"2024-03-06","party":"Pro-İYİ","amount_spent":35852,"Daily Spend":88,"short_name":null,"colors":"#A5EA9F","x":1709683200000,"y":88,"fill":"#A5EA9F"},{"date":"2024-03-07","party":"Pro-İYİ","amount_spent":37054,"Daily Spend":1202,"short_name":null,"colors":"#A5EA9F","x":1709769600000,"y":1202,"fill":"#A5EA9F"},{"date":"2024-03-08","party":"Pro-İYİ","amount_spent":37054,"Daily Spend":0,"short_name":null,"colors":"#A5EA9F","x":1709856000000,"y":0,"fill":"#A5EA9F"},{"date":"2024-03-09","party":"Pro-İYİ","amount_spent":38220,"Daily Spend":1166,"short_name":null,"colors":"#A5EA9F","x":1709942400000,"y":1166,"fill":"#A5EA9F"},{"date":"2024-03-10","party":"Pro-İYİ","amount_spent":38220,"Daily Spend":0,"short_name":null,"colors":"#A5EA9F","x":1710028800000,"y":0,"fill":"#A5EA9F"},{"date":"2024-03-11","party":"Pro-İYİ","amount_spent":38220,"Daily Spend":0,"short_name":null,"colors":"#A5EA9F","x":1710115200000,"y":0,"fill":"#A5EA9F"}],"type":"area"},{"name":"Pro-İYİ & Anti-CHP","data":[{"date":"2024-02-08","party":"Pro-İYİ & Anti-CHP","amount_spent":1,"Daily Spend":null,"short_name":null,"colors":"#37062B","x":1707350400000,"y":null,"fill":"#37062B"},{"date":"2024-02-09","party":"Pro-İYİ & Anti-CHP","amount_spent":922,"Daily Spend":921,"short_name":null,"colors":"#37062B","x":1707436800000,"y":921,"fill":"#37062B"},{"date":"2024-02-10","party":"Pro-İYİ & Anti-CHP","amount_spent":2449,"Daily Spend":1527,"short_name":null,"colors":"#37062B","x":1707523200000,"y":1527,"fill":"#37062B"},{"date":"2024-02-11","party":"Pro-İYİ & Anti-CHP","amount_spent":4473,"Daily Spend":2024,"short_name":null,"colors":"#37062B","x":1707609600000,"y":2024,"fill":"#37062B"},{"date":"2024-02-12","party":"Pro-İYİ & Anti-CHP","amount_spent":6397,"Daily Spend":1924,"short_name":null,"colors":"#37062B","x":1707696000000,"y":1924,"fill":"#37062B"},{"date":"2024-02-13","party":"Pro-İYİ & Anti-CHP","amount_spent":8366,"Daily Spend":1969,"short_name":null,"colors":"#37062B","x":1707782400000,"y":1969,"fill":"#37062B"},{"date":"2024-02-14","party":"Pro-İYİ & Anti-CHP","amount_spent":8635,"Daily Spend":269,"short_name":null,"colors":"#37062B","x":1707868800000,"y":269,"fill":"#37062B"},{"date":"2024-02-15","party":"Pro-İYİ & Anti-CHP","amount_spent":8635,"Daily Spend":0,"short_name":null,"colors":"#37062B","x":1707955200000,"y":0,"fill":"#37062B"},{"date":"2024-02-16","party":"Pro-İYİ & Anti-CHP","amount_spent":9843,"Daily Spend":1208,"short_name":null,"colors":"#37062B","x":1708041600000,"y":1208,"fill":"#37062B"},{"date":"2024-02-17","party":"Pro-İYİ & Anti-CHP","amount_spent":11259,"Daily Spend":1416,"short_name":null,"colors":"#37062B","x":1708128000000,"y":1416,"fill":"#37062B"},{"date":"2024-02-18","party":"Pro-İYİ & Anti-CHP","amount_spent":12756,"Daily Spend":1497,"short_name":null,"colors":"#37062B","x":1708214400000,"y":1497,"fill":"#37062B"},{"date":"2024-02-19","party":"Pro-İYİ & Anti-CHP","amount_spent":14109,"Daily Spend":1353,"short_name":null,"colors":"#37062B","x":1708300800000,"y":1353,"fill":"#37062B"},{"date":"2024-02-20","party":"Pro-İYİ & Anti-CHP","amount_spent":15446,"Daily Spend":1337,"short_name":null,"colors":"#37062B","x":1708387200000,"y":1337,"fill":"#37062B"},{"date":"2024-02-21","party":"Pro-İYİ & Anti-CHP","amount_spent":16798,"Daily Spend":1352,"short_name":null,"colors":"#37062B","x":1708473600000,"y":1352,"fill":"#37062B"},{"date":"2024-02-22","party":"Pro-İYİ & Anti-CHP","amount_spent":18240,"Daily Spend":1442,"short_name":null,"colors":"#37062B","x":1708560000000,"y":1442,"fill":"#37062B"},{"date":"2024-02-23","party":"Pro-İYİ & Anti-CHP","amount_spent":18635,"Daily Spend":395,"short_name":null,"colors":"#37062B","x":1708646400000,"y":395,"fill":"#37062B"},{"date":"2024-02-24","party":"Pro-İYİ & Anti-CHP","amount_spent":18635,"Daily Spend":0,"short_name":null,"colors":"#37062B","x":1708732800000,"y":0,"fill":"#37062B"},{"date":"2024-02-25","party":"Pro-İYİ & Anti-CHP","amount_spent":18635,"Daily Spend":0,"short_name":null,"colors":"#37062B","x":1708819200000,"y":0,"fill":"#37062B"},{"date":"2024-02-26","party":"Pro-İYİ & Anti-CHP","amount_spent":18635,"Daily Spend":0,"short_name":null,"colors":"#37062B","x":1708905600000,"y":0,"fill":"#37062B"},{"date":"2024-02-27","party":"Pro-İYİ & Anti-CHP","amount_spent":18635,"Daily Spend":0,"short_name":null,"colors":"#37062B","x":1708992000000,"y":0,"fill":"#37062B"},{"date":"2024-02-28","party":"Pro-İYİ & Anti-CHP","amount_spent":18984,"Daily Spend":349,"short_name":null,"colors":"#37062B","x":1709078400000,"y":349,"fill":"#37062B"},{"date":"2024-02-29","party":"Pro-İYİ & Anti-CHP","amount_spent":19510,"Daily Spend":526,"short_name":null,"colors":"#37062B","x":1709164800000,"y":526,"fill":"#37062B"},{"date":"2024-03-01","party":"Pro-İYİ & Anti-CHP","amount_spent":20036,"Daily Spend":526,"short_name":null,"colors":"#37062B","x":1709251200000,"y":526,"fill":"#37062B"},{"date":"2024-03-02","party":"Pro-İYİ & Anti-CHP","amount_spent":20654,"Daily Spend":618,"short_name":null,"colors":"#37062B","x":1709337600000,"y":618,"fill":"#37062B"},{"date":"2024-03-03","party":"Pro-İYİ & Anti-CHP","amount_spent":21300,"Daily Spend":646,"short_name":null,"colors":"#37062B","x":1709424000000,"y":646,"fill":"#37062B"},{"date":"2024-03-04","party":"Pro-İYİ & Anti-CHP","amount_spent":21868,"Daily Spend":568,"short_name":null,"colors":"#37062B","x":1709510400000,"y":568,"fill":"#37062B"},{"date":"2024-03-05","party":"Pro-İYİ & Anti-CHP","amount_spent":22372,"Daily Spend":504,"short_name":null,"colors":"#37062B","x":1709596800000,"y":504,"fill":"#37062B"},{"date":"2024-03-06","party":"Pro-İYİ & Anti-CHP","amount_spent":22986,"Daily Spend":614,"short_name":null,"colors":"#37062B","x":1709683200000,"y":614,"fill":"#37062B"},{"date":"2024-03-07","party":"Pro-İYİ & Anti-CHP","amount_spent":23552,"Daily Spend":566,"short_name":null,"colors":"#37062B","x":1709769600000,"y":566,"fill":"#37062B"},{"date":"2024-03-08","party":"Pro-İYİ & Anti-CHP","amount_spent":23793,"Daily Spend":241,"short_name":null,"colors":"#37062B","x":1709856000000,"y":241,"fill":"#37062B"},{"date":"2024-03-09","party":"Pro-İYİ & Anti-CHP","amount_spent":23793,"Daily Spend":0,"short_name":null,"colors":"#37062B","x":1709942400000,"y":0,"fill":"#37062B"},{"date":"2024-03-10","party":"Pro-İYİ & Anti-CHP","amount_spent":24725,"Daily Spend":932,"short_name":null,"colors":"#37062B","x":1710028800000,"y":932,"fill":"#37062B"},{"date":"2024-03-11","party":"Pro-İYİ & Anti-CHP","amount_spent":25567,"Daily Spend":842,"short_name":null,"colors":"#37062B","x":1710115200000,"y":842,"fill":"#37062B"}],"type":"area"},{"name":"İYİ","data":[{"date":"2024-02-08","party":"İYİ","amount_spent":1,"Daily Spend":null,"short_name":"İYİ","colors":"#fddb00","x":1707350400000,"y":null,"fill":"#fddb00"},{"date":"2024-02-09","party":"İYİ","amount_spent":1,"Daily Spend":0,"short_name":"İYİ","colors":"#fddb00","x":1707436800000,"y":0,"fill":"#fddb00"},{"date":"2024-02-10","party":"İYİ","amount_spent":1386,"Daily Spend":1385,"short_name":"İYİ","colors":"#fddb00","x":1707523200000,"y":1385,"fill":"#fddb00"},{"date":"2024-02-11","party":"İYİ","amount_spent":2956,"Daily Spend":1570,"short_name":"İYİ","colors":"#fddb00","x":1707609600000,"y":1570,"fill":"#fddb00"},{"date":"2024-02-12","party":"İYİ","amount_spent":3252,"Daily Spend":296,"short_name":"İYİ","colors":"#fddb00","x":1707696000000,"y":296,"fill":"#fddb00"},{"date":"2024-02-13","party":"İYİ","amount_spent":3259,"Daily Spend":7,"short_name":"İYİ","colors":"#fddb00","x":1707782400000,"y":7,"fill":"#fddb00"},{"date":"2024-02-14","party":"İYİ","amount_spent":3268,"Daily Spend":9,"short_name":"İYİ","colors":"#fddb00","x":1707868800000,"y":9,"fill":"#fddb00"},{"date":"2024-02-15","party":"İYİ","amount_spent":3273,"Daily Spend":5,"short_name":"İYİ","colors":"#fddb00","x":1707955200000,"y":5,"fill":"#fddb00"},{"date":"2024-02-16","party":"İYİ","amount_spent":3276,"Daily Spend":3,"short_name":"İYİ","colors":"#fddb00","x":1708041600000,"y":3,"fill":"#fddb00"},{"date":"2024-02-17","party":"İYİ","amount_spent":3282,"Daily Spend":6,"short_name":"İYİ","colors":"#fddb00","x":1708128000000,"y":6,"fill":"#fddb00"},{"date":"2024-02-18","party":"İYİ","amount_spent":3294,"Daily Spend":12,"short_name":"İYİ","colors":"#fddb00","x":1708214400000,"y":12,"fill":"#fddb00"},{"date":"2024-02-19","party":"İYİ","amount_spent":3310,"Daily Spend":16,"short_name":"İYİ","colors":"#fddb00","x":1708300800000,"y":16,"fill":"#fddb00"},{"date":"2024-02-20","party":"İYİ","amount_spent":3325,"Daily Spend":15,"short_name":"İYİ","colors":"#fddb00","x":1708387200000,"y":15,"fill":"#fddb00"},{"date":"2024-02-21","party":"İYİ","amount_spent":3336,"Daily Spend":11,"short_name":"İYİ","colors":"#fddb00","x":1708473600000,"y":11,"fill":"#fddb00"},{"date":"2024-02-22","party":"İYİ","amount_spent":3343,"Daily Spend":7,"short_name":"İYİ","colors":"#fddb00","x":1708560000000,"y":7,"fill":"#fddb00"},{"date":"2024-02-23","party":"İYİ","amount_spent":3347,"Daily Spend":4,"short_name":"İYİ","colors":"#fddb00","x":1708646400000,"y":4,"fill":"#fddb00"},{"date":"2024-02-24","party":"İYİ","amount_spent":3349,"Daily Spend":2,"short_name":"İYİ","colors":"#fddb00","x":1708732800000,"y":2,"fill":"#fddb00"},{"date":"2024-02-25","party":"İYİ","amount_spent":3351,"Daily Spend":2,"short_name":"İYİ","colors":"#fddb00","x":1708819200000,"y":2,"fill":"#fddb00"},{"date":"2024-02-26","party":"İYİ","amount_spent":8120,"Daily Spend":4769,"short_name":"İYİ","colors":"#fddb00","x":1708905600000,"y":4769,"fill":"#fddb00"},{"date":"2024-02-27","party":"İYİ","amount_spent":16577,"Daily Spend":8457,"short_name":"İYİ","colors":"#fddb00","x":1708992000000,"y":8457,"fill":"#fddb00"},{"date":"2024-02-28","party":"İYİ","amount_spent":26659,"Daily Spend":10082,"short_name":"İYİ","colors":"#fddb00","x":1709078400000,"y":10082,"fill":"#fddb00"},{"date":"2024-02-29","party":"İYİ","amount_spent":30277,"Daily Spend":3618,"short_name":"İYİ","colors":"#fddb00","x":1709164800000,"y":3618,"fill":"#fddb00"},{"date":"2024-03-01","party":"İYİ","amount_spent":37242,"Daily Spend":6965,"short_name":"İYİ","colors":"#fddb00","x":1709251200000,"y":6965,"fill":"#fddb00"},{"date":"2024-03-02","party":"İYİ","amount_spent":44359,"Daily Spend":7117,"short_name":"İYİ","colors":"#fddb00","x":1709337600000,"y":7117,"fill":"#fddb00"},{"date":"2024-03-03","party":"İYİ","amount_spent":49409,"Daily Spend":5050,"short_name":"İYİ","colors":"#fddb00","x":1709424000000,"y":5050,"fill":"#fddb00"},{"date":"2024-03-04","party":"İYİ","amount_spent":60580,"Daily Spend":11171,"short_name":"İYİ","colors":"#fddb00","x":1709510400000,"y":11171,"fill":"#fddb00"},{"date":"2024-03-05","party":"İYİ","amount_spent":75127,"Daily Spend":14547,"short_name":"İYİ","colors":"#fddb00","x":1709596800000,"y":14547,"fill":"#fddb00"},{"date":"2024-03-06","party":"İYİ","amount_spent":90926,"Daily Spend":15799,"short_name":"İYİ","colors":"#fddb00","x":1709683200000,"y":15799,"fill":"#fddb00"},{"date":"2024-03-07","party":"İYİ","amount_spent":107414,"Daily Spend":16488,"short_name":"İYİ","colors":"#fddb00","x":1709769600000,"y":16488,"fill":"#fddb00"},{"date":"2024-03-08","party":"İYİ","amount_spent":126890,"Daily Spend":19476,"short_name":"İYİ","colors":"#fddb00","x":1709856000000,"y":19476,"fill":"#fddb00"},{"date":"2024-03-09","party":"İYİ","amount_spent":151717,"Daily Spend":24827,"short_name":"İYİ","colors":"#fddb00","x":1709942400000,"y":24827,"fill":"#fddb00"},{"date":"2024-03-10","party":"İYİ","amount_spent":176096,"Daily Spend":24379,"short_name":"İYİ","colors":"#fddb00","x":1710028800000,"y":24379,"fill":"#fddb00"},{"date":"2024-03-11","party":"İYİ","amount_spent":199740,"Daily Spend":23644,"short_name":"İYİ","colors":"#fddb00","x":1710115200000,"y":23644,"fill":"#fddb00"}],"type":"area"}],"xAxis":{"type":"datetime","title":{"text":"date"},"categories":null},"colors":["#ff8700","#ABBB25","#2DC7F5","#6CD711","#961821","#A5EA9F","#37062B","#fddb00"],"tooltip":{"shared":true,"positioner":"function (labelWidth, labelHeight, point) {\n        return { x: 200, y: this.chart.plotTop };\n    }"}},"theme":{"chart":{"backgroundColor":"transparent"},"colors":["#7cb5ec","#434348","#90ed7d","#f7a35c","#8085e9","#f15c80","#e4d354","#2b908f","#f45b5b","#91e8e1"]},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":["hc_opts.tooltip.positioner"],"jsHooks":[]}</script>
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
 </div>
 </div>
 
@@ -1392,10 +1991,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1405,8 +2021,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1418,7 +2043,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1462,6 +2210,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1487,6 +2236,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1547,6 +2322,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
