@@ -269,22 +269,24 @@ file.copy(from = "logs/overview.html", to = glue::glue("docs/overview.html"), ov
 
 dir("_site", full.names = T,recursive = T) %>% keep(~str_detect(.x, "qmd")) %>% walk(~render_it(.x, execute_params = params))
 # dir("_site", full.names = T) %>% keep(~str_detect(.x, "index")) %>% walk(~render_it(.x, execute_params = params))
+# dir("_site", full.names = T) %>% keep(~str_detect(.x, "location")) %>% walk(~render_it(.x, execute_params = params))
+# dir("_site", full.names = T) %>% keep(~str_detect(.x, "targeting")) %>% walk(~render_it(.x, execute_params = params))
 
 city_list %>%
   # .[1] %>% 
   walk_progress( ~ {
     city_name <- .x
-    # dir("docs", full.names = T) %>%
-    #   keep( ~ str_detect(.x, "map|blog|about")) %>%
-    #   walk( ~ fs::file_copy(.x, str_replace(
-    #     .x, "docs/", glue::glue("docs/{city_name}/")
-    #   ), overwrite = T))
-    
     dir("docs", full.names = T) %>%
-      keep( ~ str_detect(.x, "blog")) %>%
+      keep( ~ str_detect(.x, "map|blog|about")) %>%
       walk( ~ fs::file_copy(.x, str_replace(
         .x, "docs/", glue::glue("docs/{city_name}/")
       ), overwrite = T))
+    
+    # dir("docs", full.names = T) %>%
+    #   keep( ~ str_detect(.x, "blog")) %>%
+    #   walk( ~ fs::file_copy(.x, str_replace(
+    #     .x, "docs/", glue::glue("docs/{city_name}/")
+    #   ), overwrite = T))
     
     dir("docs", full.names = T) %>%
       keep( ~ str_detect(.x, "post")) %>%
