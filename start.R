@@ -36,7 +36,10 @@ full_cntry_list <- read_rds("https://github.com/favstats/meta_ad_reports/raw/mai
 
 cntryy <- "TR"
 
-render_it <- possibly(quarto::quarto_render, otherwise = NULL, quiet = F)
+render_it <- function(...) {
+  quarto::quarto_render(..., quiet = T)
+}
+render_it <- possibly(render_it, otherwise = NULL, quiet = F)
 
 
 advertiser_dat <- readr::read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTVkw2cJ5IqeOTBKOfBXpDZDftW9g_nlN-ZKdqDK42wvcxZYHbkVBKDsxfB8r7V88RVef3zHIxBbDOw/pub?output=csv") %>% 
@@ -53,12 +56,14 @@ city_list <- advertiser_dat %>%
 
 # for (cities in city_list) {
   # print(cntryy)
-  
+  counter <- 0
 city_list %>% 
   walk_progress(~{
     
     the_city <- .x
-    
+    counter <- counter + 1
+    # print(the_city)
+    print(paste0(the_city, ": ", counter))
     try({
       
       sets$the_country <- full_cntry_list$country[which(full_cntry_list$iso2c==cntryy)]

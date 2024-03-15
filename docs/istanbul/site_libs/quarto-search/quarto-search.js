@@ -43,7 +43,11 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
   const mainEl = window.document.querySelector("main");
 
   // highlight matches on the page
+<<<<<<< HEAD
+  if (query !== null && mainEl) {
+=======
   if (query && mainEl) {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
     // perform any highlighting
     highlight(escapeRegExp(query), mainEl);
 
@@ -57,7 +61,11 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
   // (e.g. if the user edits the query or clears it)
   let highlighting = true;
   const resetHighlighting = (searchTerm) => {
+<<<<<<< HEAD
+    if (mainEl && highlighting && query !== null && searchTerm !== query) {
+=======
     if (mainEl && highlighting && query && searchTerm !== query) {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
       clearHighlight(query, mainEl);
       highlighting = false;
     }
@@ -98,7 +106,10 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
     classNames: {
       form: "d-flex",
     },
+<<<<<<< HEAD
+=======
     placeholder: language["search-text-placeholder"],
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
     translations: {
       clearButtonTitle: language["search-clear-button-title"],
       detachedCancelButtonText: language["search-detached-cancel-button-title"],
@@ -111,8 +122,11 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
       return item.href;
     },
     onStateChange({ state }) {
+<<<<<<< HEAD
+=======
       // If this is a file URL, note that
 
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
       // Perhaps reset highlighting
       resetHighlighting(state.query);
 
@@ -362,8 +376,12 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
                 state,
                 setActiveItemId,
                 setContext,
+<<<<<<< HEAD
+                refresh
+=======
                 refresh,
                 quartoSearchOptions
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
               );
             },
           },
@@ -378,6 +396,8 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
     focusSearchInput();
   };
 
+<<<<<<< HEAD
+=======
   document.addEventListener("keyup", (event) => {
     const { key } = event;
     const kbds = quartoSearchOptions["keyboard-shortcut"];
@@ -404,6 +424,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
     }
   });
 
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   // Remove the labeleledby attribute since it is pointing
   // to a non-existent label
   if (quartoSearchOptions.type === "overlay") {
@@ -415,6 +436,13 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
     }
   }
 
+<<<<<<< HEAD
+  // If the main document scrolls dismiss the search results
+  // (otherwise, since they're floating in the document they can scroll with the document)
+  window.document.body.onscroll = () => {
+    setIsOpen(false);
+  };
+=======
   function throttle(func, wait) {
     let waiting = false;
     return function () {
@@ -439,6 +467,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
       setIsOpen(false);
     }
   }, 50);
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
 
   if (showSearchResults) {
     setIsOpen(true);
@@ -478,6 +507,17 @@ function configurePlugins(quartoSearchOptions) {
         const algoliaInsightsPlugin = createAlgoliaInsightsPlugin({
           insightsClient: window.aa,
           onItemsChange({ insights, insightsEvents }) {
+<<<<<<< HEAD
+            const events = insightsEvents.map((event) => {
+              const maxEvents = event.objectIDs.slice(0, 20);
+              return {
+                ...event,
+                objectIDs: maxEvents,
+              };
+            });
+
+            insights.viewedObjectIDs(...events);
+=======
             const events = insightsEvents.flatMap((event) => {
               // This API limits the number of items per event to 20
               const chunkSize = 20;
@@ -499,6 +539,7 @@ function configurePlugins(quartoSearchOptions) {
             for (const event of events) {
               insights.viewedObjectIDs(event);
             }
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
           },
         });
         return algoliaInsightsPlugin;
@@ -674,6 +715,22 @@ function showCopyLink(query, options) {
 /* Search Index Handling */
 // create the index
 var fuseIndex = undefined;
+<<<<<<< HEAD
+async function readSearchData() {
+  // Initialize the search index on demand
+  if (fuseIndex === undefined) {
+    // create fuse index
+    const options = {
+      keys: [
+        { name: "title", weight: 20 },
+        { name: "section", weight: 20 },
+        { name: "text", weight: 10 },
+      ],
+      ignoreLocation: true,
+      threshold: 0.1,
+    };
+    const fuse = new window.Fuse([], options);
+=======
 var shownWarning = false;
 
 // fuse index options
@@ -698,6 +755,7 @@ async function readSearchData() {
       return;
     }
     const fuse = new window.Fuse([], kFuseIndexOptions);
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
 
     // fetch the main search.json
     const response = await fetch(offsetURL("search.json"));
@@ -717,7 +775,10 @@ async function readSearchData() {
       );
     }
   }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   return fuseIndex;
 }
 
@@ -746,8 +807,12 @@ function renderItem(
   state,
   setActiveItemId,
   setContext,
+<<<<<<< HEAD
+  refresh
+=======
   refresh,
   quartoSearchOptions
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
 ) {
   switch (item.type) {
     case kItemTypeDoc:
@@ -757,9 +822,13 @@ function renderItem(
         item.title,
         item.section,
         item.text,
+<<<<<<< HEAD
+        item.href
+=======
         item.href,
         item.crumbs,
         quartoSearchOptions
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
       );
     case kItemTypeMore:
       return createMoreCard(
@@ -784,6 +853,9 @@ function renderItem(
   }
 }
 
+<<<<<<< HEAD
+function createDocumentCard(createElement, icon, title, section, text, href) {
+=======
 function createDocumentCard(
   createElement,
   icon,
@@ -794,10 +866,17 @@ function createDocumentCard(
   crumbs,
   quartoSearchOptions
 ) {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   const iconEl = createElement("i", {
     class: `bi bi-${icon} search-result-icon`,
   });
   const titleEl = createElement("p", { class: "search-result-title" }, title);
+<<<<<<< HEAD
+  const titleContainerEl = createElement(
+    "div",
+    { class: "search-result-title-container" },
+    [iconEl, titleEl]
+=======
   const titleContents = [iconEl, titleEl];
   const showParent = quartoSearchOptions["show-item-context"];
   if (crumbs && showParent) {
@@ -824,6 +903,7 @@ function createDocumentCard(
     "div",
     { class: "search-result-title-container" },
     titleContents
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
   );
 
   const textEls = [];
@@ -1205,6 +1285,19 @@ function algoliaSearch(query, limit, algoliaOptions) {
         const remappedHits = response.hits.map((hit) => {
           return hit.map((item) => {
             const newItem = { ...item };
+<<<<<<< HEAD
+            ["href", "section", "title", "text"].forEach((keyName) => {
+              const mappedName = indexFields[keyName];
+              if (
+                mappedName &&
+                item[mappedName] !== undefined &&
+                mappedName !== keyName
+              ) {
+                newItem[keyName] = item[mappedName];
+                delete newItem[mappedName];
+              }
+            });
+=======
             ["href", "section", "title", "text", "crumbs"].forEach(
               (keyName) => {
                 const mappedName = indexFields[keyName];
@@ -1218,6 +1311,7 @@ function algoliaSearch(query, limit, algoliaOptions) {
                 }
               }
             );
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
             newItem.text = highlightMatch(query, newItem.text);
             return newItem;
           });
@@ -1228,6 +1322,10 @@ function algoliaSearch(query, limit, algoliaOptions) {
   });
 }
 
+<<<<<<< HEAD
+function fuseSearch(query, fuse, fuseOptions) {
+  return fuse.search(query, fuseOptions).map((result) => {
+=======
 let subSearchTerm = undefined;
 let subSearchFuse = undefined;
 const kFuseMaxWait = 125;
@@ -1256,6 +1354,7 @@ async function fuseSearch(query, fuse, fuseOptions) {
   const now = performance.now();
 
   const results = resultsRaw.map((result) => {
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
     const addParam = (url, name, value) => {
       const anchorParts = url.split("#");
       const baseUrl = anchorParts[0];
@@ -1269,6 +1368,10 @@ async function fuseSearch(query, fuse, fuseOptions) {
       section: result.item.section,
       href: addParam(result.item.href, kQueryArg, query),
       text: highlightMatch(query, result.item.text),
+<<<<<<< HEAD
+    };
+  });
+=======
       crumbs: result.item.crumbs,
     };
   });
@@ -1283,4 +1386,5 @@ async function fuseSearch(query, fuse, fuseOptions) {
     });
   }
   return results;
+>>>>>>> 6688a6e907789b9094627ecbbbcb15445538e3a3
 }
