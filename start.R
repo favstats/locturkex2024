@@ -274,8 +274,14 @@ city_list %>%
   # .[1] %>% 
   walk_progress( ~ {
     city_name <- .x
+    # dir("docs", full.names = T) %>%
+    #   keep( ~ str_detect(.x, "map|blog|about")) %>%
+    #   walk( ~ fs::file_copy(.x, str_replace(
+    #     .x, "docs/", glue::glue("docs/{city_name}/")
+    #   ), overwrite = T))
+    
     dir("docs", full.names = T) %>%
-      keep( ~ str_detect(.x, "map|blog|about")) %>%
+      keep( ~ str_detect(.x, "blog")) %>%
       walk( ~ fs::file_copy(.x, str_replace(
         .x, "docs/", glue::glue("docs/{city_name}/")
       ), overwrite = T))
