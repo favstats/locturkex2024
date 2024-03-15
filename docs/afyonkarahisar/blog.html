@@ -72,9 +72,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -198,7 +198,34 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1710370800000" data-listing-file-modified-sort="1710449339706" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="./posts/landscape-local-elections-microtargeting.html"> <img src="./posts/cand.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./posts/landscape-local-elections-microtargeting.html">
+<h3 class="no-anchor listing-title">
+Analyzing the Landscape of Local Elections in Türkiye: A Deep Dive into Micro-Targeted Advertising on Meta
+</h3>
+<div class="listing-subtitle">
 
+</div>
+<div class="listing-description">
+As we near the two-week countdown to the local elections in Türkiye, the main opposition party, the CHP, has taken the lead in spending on micro-targeted ads across Meta…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/landscape-local-elections-microtargeting.html">
+<div class="listing-date">
+Mar 14, 2024
+</div>
+<div class="listing-author">
+Onurcan Güden
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items

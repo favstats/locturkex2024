@@ -1,7 +1,7 @@
 name: "Meta Logs 30"
 on:
   schedule:
-    - cron: '0 ,0,3,6,9,12,15,18,21 * * *'
+    - cron: '0 0,9,18 * * *'
   push:
     branches:
       - main

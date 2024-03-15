@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "{{< iconify twemoji flag-turkey >}} Turkish Local Elections 2024",
+    "section": "",
+    "text": "Methodology\nIn collaboration with Who Targets Me, we monitored 6254 political advertisers to better understand how campaigns use different targeting methods made available by Meta. To do this, we used data from the Meta Ad Library, using the new ‘Audience’ data which gives some detail on how pages target their ads.\n\n\n\n\n\n\nNote\n\n\n\nMeta only provides 7, 30 and 90 days windows for the targeting data in their Ad Library. Meta’s data also lags by a few days. Report will be updated as soon as new data is available.\n\n\n\n\n\n\n\n\nDisclaimer\n\n\n\nThe data shown in this dashboard is based on the platform’s respective ad libraries which are known to be sometimes incomplete (Edelson et al. 2020; Silva et al. 2020). For this reason the data shown here might not reflect the full picture nor all political ads that were targeted at voters.\n\n\n\n\nAbout the Creators of the Dashboard\n\nOnurcan GüdenFabio Votta\n\n\n\n\n\n\n\n\n\n\n\n\n\nOnurcan Güden is a PhD candidate in Media and Communication Studies at the Galatasaray University and a visiting researcher at the University of Amsterdam. His research focuses on the impact of computational propaganda in shaping digital political agendas in different democracies and its societal consequences.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFabio Votta is a Postdoc at the University of Amsterdam who studies (online) political microtargeting and its usage around the world.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWant to see how political parties target you? Sign up at Who Targets Me and download the gratis browser plugin to see how parties on Facebook use your data:\nhttps://whotargets.me/\n\n\n\n\n\n\n\nWant to retrieve targeting data from the Facebook Ad Library yourself? This dashboard is powered by the R package: metatargetr. Check it out here:\nhttps://github.com/favstats/metatargetr\n\n\n\n\nElection Targeting Dashboards\nA list of election dashboards:\n\n🇳🇱 2021 Dutch parliamentary election (15th-17th March 2021)\n🇩🇪 2021 German federal election (26 September 2021)\n🇸🇪 2022 Swedish general election (11th September 2022)\n🇺🇸 2022 United States midterm elections (8th November 2022)\n🇺🇸 2022 United States midterm elections - Georgia Runoff (6th December 2022)\n🇮🇹 2023 Lazio & Lombardy regional election (12-13th February 2023)\n🇪🇪 2023 Estonian parliamentary election (5th March 2023)\n🇳🇱 2023 Dutch provincial elections (15th March 2023)\n🇲🇪 2023 Montenegrin presidential elections (19th March 2023) - 1st round\n🇦🇺 2023 New South Wales state election (25th March 2023)\n🇫🇮 2023 Finnish parliamentary election (2 April 2023)\n🇹🇷 2023 Turkish general election (14 May 2023) - Round 1\n🇩🇪 2023 Bremen State election (14 May 2023)\n🇬🇷 2023 Greek Legislative election (21 May 2023)\n🇹🇷 2023 Turkish Presidential election (14 May 2023) - Round 2\n🇲🇪 2023 Montenegrin parliamentary elections (11 June 2023)\n🇬🇷 2nd 2023 Greek Legislative election (25 May 2023)\n🇸🇰 2023 Slovak parliamentary election (30 September 2023)\n🇩🇪 2023 Bavarian state election (8 October 2023)\n🇩🇪 2023 Hessian state election (8 October 2023)\n🇳🇿 2023 New Zealand general election (14 October 2023)\n🇵🇱 2023 Polish parliamentary election (15 October 2023)\n🇺🇸 US Presidential Primaries (2023-2024)"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Analyzing the Landscape of Local Elections in Türkiye: A Deep Dive into Micro-Targeted Advertising on Meta\n\n\n\n\n\n\n\n\n\n\n\n\nMar 14, 2024\n\n\nOnurcan Güden\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "demographics.html",
     "href": "demographics.html",
     "title": "Demographics",
@@ -103,6 +117,20 @@
     "title": "Location",
     "section": "Geographical Exclusion",
     "text": "Geographical Exclusion\nThe following graphs depict the geographic locations that certain political advertisements will exclude on Meta, along with the amounts that parties spent on these exclusions.\n\n10 Feb - 10 Mar 2024\n\n\n\nRegionsCities\n\n\n\nThe size of each area in the chart indicates the amount of money spent by each political party on specific locations.\n\n\n\n\n\n\n\n\n\nThe size of each area in the chart indicates the amount of money spent by each political party on specific locations."
+  },
+  {
+    "objectID": "map.html",
+    "href": "map.html",
+    "title": "{{< iconify twemoji flag-turkey >}} Turkish Local Elections 2024",
+    "section": "",
+    "text": "Show all data"
+  },
+  {
+    "objectID": "posts/landscape-local-elections-microtargeting.html",
+    "href": "posts/landscape-local-elections-microtargeting.html",
+    "title": "Analyzing the Landscape of Local Elections in Türkiye: A Deep Dive into Micro-Targeted Advertising on Meta",
+    "section": "",
+    "text": "As we near the two-week countdown to the local elections in Türkiye, the main opposition party, the CHP, has taken the lead in spending on micro-targeted ads across Meta platforms in the country. This represents a significant shift from last year’s presidential and parliamentary elections, during which the CHP lagged far behind the ruling AKP in Meta ad spend.\nOn the other hand, we observe that the AKP is channeling substantial funds into advertising in major cities such as Istanbul, İzmir, Bursa, Antalya, Adana, Ordu, and Hatay. This demonstrates a strategic emphasis on the AKP’s desire to take over municipalities it does not have. In contrast, the CHP outspends AKP in Ankara, Manisa, Aydın, Denizli, and Malatya, indicating a nuanced approach to capturing different regional demographics.\n\n\n\n\nIn Istanbul, where 11,314,516 individuals are set to cast their votes, the AKP candidate, Murat Kurum (on the right), outspends his rival from the CHP, Ekrem İmamoğlu (on the left), by 3.2 times.\n\n\n\nElections become further complicated by the involvement of unofficial accounts, which play a pivotal role in shaping how voters perceive the candidates and issues. Pages like “İstanbul Gerçekleri” specifically target Ekrem İmamoğlu, a prominent figure for the CHP in İstanbul, with direct attack ads. Similarly, “Antalya Gerçekleri” in Antalya and “Yeni Mikrofon” in Ankara are actively engaged in negative campaigning against CHP candidates. On the flip side, “Unutma İstanbul” page seeks to sway voters by recalling the period when Istanbul was under AKP management."
   },
   {
     "objectID": "targeting.html",

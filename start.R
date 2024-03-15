@@ -289,6 +289,10 @@ rmarkdown::render("index.Rmd")
 #   keep(~str_detect(.x, "_libs")) %>%
 #   walk(~fs::dir_copy(.x, "docs/site_libs", overwrite = T))
 # 
-# system("git add -A")
-# system('git commit -m "update"')
-# system("git push")
+
+if(Sys.info()[["sysname"]]=="Windows"){
+  system("git add -A")
+  system('git commit -m "update"')
+  system("git push")
+}
+
