@@ -19,3 +19,14 @@ On the other hand, we observe that the AKP is channeling substantial funds into 
 </center>
 
 Elections become further complicated by the involvement of unofficial accounts, which play a pivotal role in shaping how voters perceive the candidates and issues. Pages like “İstanbul Gerçekleri” specifically target Ekrem İmamoğlu, a prominent figure for the CHP in İstanbul, with direct attack ads. Similarly, “Antalya Gerçekleri” in Antalya and “Yeni Mikrofon” in Ankara are actively engaged in negative campaigning against CHP candidates. On the flip side, “Unutma İstanbul” page seeks to sway voters by recalling the period when Istanbul was under AKP management.
+
+<center>
+
+![The ad on the "İstanbul Gerçekleri" page claims that Ekrem İmamoğlu has been using municipal funds for his own public relations purposes.](blog1.png)
+
+
+</center>
+
+Examining the targeting dimensions of Meta ads reveals a strategy finely tuned to specific groups. The AKP’s focus on parents with children in nursery and elementary schools, alongside the CHP is targeting users with a keen interest in Ottoman history, nationalist music, the “Diriliş Ertuğrul” series, and theology students and graduates.
+
+As the local elections approach, the landscape of political advertising on Meta platforms provides a glimpse into the evolving tactics of voter persuasion in Türkiye. The emergence of unofficial accounts and micro-targeted ads highlights the increasingly nuanced battle for hearts and minds in the digital arena.

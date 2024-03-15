@@ -1,0 +1,19 @@
+---
+title: "Welcome to the 2024 Turkish Local Elections Dashboard"
+description-meta: "Keep track on how political parties and other unlabelled actors use digital advertising on Meta and what audiences they are trying to reach."
+author: "Fabio Votta & Onurcan Güden"
+date: "2024-03-14"
+image: "blog0.png"
+lang: en
+---
+
+
+<center>
+![Keep track on how political parties and other unlabelled actors use digital advertising on Meta and what audiences they are trying to reach.](blog0.png)
+
+
+</center>
+
+Welcome to the 2024 Turkish Local Elections Dashboard. This dashboard is intended to provide an overview of how political parties and various actors are leveraging digital advertising on Meta platforms, targeting specific audiences. Our goal is to create transparency for citizens, journalists, and other interested parties, and helping you understand the strategies behind these digital campaigns as we approach the local elections.
+
+Digital advertising is a powerful tool in modern political campaigns, and this dashboard opens up a window into common strategies. Whether you're interested in the tactics used by different parties or how they're trying to reach potential voters, feel free to explore the data on this dashboard. Stay informed with us as we explore the role of digital advertising in the 2024 Turkish Local Elections.
