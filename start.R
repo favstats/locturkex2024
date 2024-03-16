@@ -272,6 +272,9 @@ dir("_site", full.names = T,recursive = T) %>% keep(~str_detect(.x, "qmd")) %>% 
 # dir("_site", full.names = T) %>% keep(~str_detect(.x, "location")) %>% walk(~render_it(.x, execute_params = params))
 # dir("_site", full.names = T) %>% keep(~str_detect(.x, "targeting")) %>% walk(~render_it(.x, execute_params = params))
 
+
+  
+
 city_list %>%
   # .[1] %>% 
   walk_progress( ~ {
@@ -303,10 +306,17 @@ rmarkdown::render("index.Rmd")
 #   walk(~fs::dir_copy(.x, "docs/site_libs", overwrite = T))
 # 
 
+if(!("docs/map.html"  %in% fs::dir_ls("docs"))){
+  dir("_site", full.names = T,recursive = T) %>% keep(~str_detect(.x, "map")) %>% walk(~render_it(.x, execute_params = params))
+}
+
 if(Sys.info()[["sysname"]]=="Windows"){
   system("git pull")
   system("git add -A")
   system('git commit -m "update"')
   system("git push")
 }
+
+
+
 
