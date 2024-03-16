@@ -304,6 +304,7 @@ rmarkdown::render("index.Rmd")
 # 
 
 if(Sys.info()[["sysname"]]=="Windows"){
+  system("git pull")
   system("git add -A")
   system('git commit -m "update"')
   system("git push")
