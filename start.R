@@ -310,6 +310,7 @@ if(!("docs/map.html"  %in% fs::dir_ls("docs"))){
   dir("_site", full.names = T,recursive = T) %>% keep(~str_detect(.x, "map")) %>% walk(~render_it(.x, execute_params = params))
 }
 
+dir("docs/istanbul", full.names = T) %>% keep(~str_detect(.x, "map")) %>% walk(~file.copy(.x, str_remove(.x, "istanbul/")))
 
 file.copy(from = "docs/istanbul/map.html", to = glue::glue("docs/map.html"), overwrite = T)
 
