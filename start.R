@@ -273,7 +273,7 @@ dir("_site", full.names = T,recursive = T) %>% keep(~str_detect(.x, "qmd")) %>% 
 # dir("_site", full.names = T) %>% keep(~str_detect(.x, "targeting")) %>% walk(~render_it(.x, execute_params = params))
 
 
-  
+
 
 city_list %>%
   # .[1] %>% 
@@ -309,6 +309,9 @@ rmarkdown::render("index.Rmd")
 if(!("docs/map.html"  %in% fs::dir_ls("docs"))){
   dir("_site", full.names = T,recursive = T) %>% keep(~str_detect(.x, "map")) %>% walk(~render_it(.x, execute_params = params))
 }
+
+
+file.copy(from = "docs/istanbul/map.html", to = glue::glue("docs/map.html"), overwrite = T)
 
 if(Sys.info()[["sysname"]]=="Windows"){
   system("git pull")
