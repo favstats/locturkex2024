@@ -176,5 +176,12 @@
     "crumbs": [
       "Spending per Targeting"
     ]
+  },
+  {
+    "objectID": "map.html",
+    "href": "map.html",
+    "title": "{{< iconify twemoji flag-turkey >}} Turkish Local Elections 2024",
+    "section": "",
+    "text": "Show all data"
   }
 ]
