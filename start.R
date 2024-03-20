@@ -58,6 +58,7 @@ city_list <- advertiser_dat %>%
   # print(cntryy)
   counter <- 0
 city_list %>% 
+  keep(~str_detect(.x, "adana")) %>% 
   # .[1:5] %>% 
   walk_progress(~{
     
