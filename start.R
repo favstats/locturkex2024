@@ -278,6 +278,20 @@ dir("_site", full.names = T,recursive = T) %>% keep(~str_detect(.x, "qmd")) %>% 
 
 
 
+if(!("docs/map.html"  %in% fs::dir_ls("docs"))){
+  dir("_site", full.names = T,recursive = T) %>% keep(~str_detect(.x, "map")) %>% walk(~render_it(.x))
+}
+
+
+if(!("docs/map.html"  %in% fs::dir_ls("docs"))){
+  dir("docs/istanbul", full.names = T) %>% keep(~str_detect(.x, "map")) %>% walk(~file.copy(.x, str_remove(.x, "istanbul/")))
+}
+
+
+if(!("docs/map.html"  %in% fs::dir_ls("docs"))){
+  file.copy(from = "docs/istanbul/map.html", to = glue::glue("docs/map.html"), overwrite = T)
+}
+
 
 city_list %>%
   # .[1] %>% 
@@ -310,13 +324,6 @@ rmarkdown::render("index.Rmd")
 #   walk(~fs::dir_copy(.x, "docs/site_libs", overwrite = T))
 # 
 
-if(!("docs/map.html"  %in% fs::dir_ls("docs"))){
-  dir("_site", full.names = T,recursive = T) %>% keep(~str_detect(.x, "map")) %>% walk(~render_it(.x, execute_params = params))
-}
-
-dir("docs/istanbul", full.names = T) %>% keep(~str_detect(.x, "map")) %>% walk(~file.copy(.x, str_remove(.x, "istanbul/")))
-
-file.copy(from = "docs/istanbul/map.html", to = glue::glue("docs/map.html"), overwrite = T)
 
 if (Sys.info()[["effective_user"]] == "fabio") {
   system("git pull")
