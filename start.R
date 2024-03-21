@@ -316,7 +316,7 @@ dir("docs/istanbul", full.names = T) %>% keep(~str_detect(.x, "map")) %>% walk(~
 
 file.copy(from = "docs/istanbul/map.html", to = glue::glue("docs/map.html"), overwrite = T)
 
-if(Sys.info()[["sysname"]]=="Windows"){
+if (Sys.info()[["effective_user"]] == "fabio") {
   system("git pull")
   system("git add -A")
   system('git commit -m "update"')
