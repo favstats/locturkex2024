@@ -37,6 +37,8 @@ full_cntry_list <- read_rds("https://github.com/favstats/meta_ad_reports/raw/mai
 cntryy <- "TR"
 
 render_it <- function(...) {
+  print("Now rendering:")
+  print(...)
   quarto::quarto_render(..., quiet = T)
 }
 render_it <- possibly(render_it, otherwise = NULL, quiet = F)

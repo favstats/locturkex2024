@@ -151,7 +151,7 @@ advertiser_dat <- readr::read_csv("https://docs.google.com/spreadsheets/d/e/2PAC
   # print(thosearethere)
   
   # try({
-    election_dat30 <- arrow::read_parquet(paste0("https://github.com/favstats/meta_ad_targeting/releases/download/", sets$cntry, "-last_", 30,"_days/", thosearethere$ds[3], ".parquet"))
+    election_dat30 <- arrow::read_parquet(paste0("https://github.com/favstats/meta_ad_targeting/releases/download/", sets$cntry, "-last_", 30,"_days/", thosearethere$ds[1], ".parquet"))
   # })
     
 

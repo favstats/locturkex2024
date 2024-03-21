@@ -6,7 +6,7 @@ format:
     toc: true
     toc-location: right
 params:
-  the_city: !expr "all"
+  the_city: "all"
 ---
 
 
