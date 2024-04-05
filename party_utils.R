@@ -106,8 +106,12 @@ scale_color_parties <- function(...){
 # }
 
 advertiser_dat <- readr::read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTVkw2cJ5IqeOTBKOfBXpDZDftW9g_nlN-ZKdqDK42wvcxZYHbkVBKDsxfB8r7V88RVef3zHIxBbDOw/pub?output=csv") %>% 
-  janitor::clean_names()# %>% 
-# count(city, sort = T)
+  janitor::clean_names() %>% 
+  bind_rows(readr::read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTVkw2cJ5IqeOTBKOfBXpDZDftW9g_nlN-ZKdqDK42wvcxZYHbkVBKDsxfB8r7V88RVef3zHIxBbDOw/pub?gid=861990516&single=true&output=csv")%>% 
+              janitor::clean_names()) %>% 
+  distinct(page_id, .keep_all = T) 
+
+advertiser_dat %>% count(type, sort = T)
 
 # if(!exists("election_dat30")){
   out <- sets$cntry %>% 
@@ -151,7 +155,7 @@ advertiser_dat <- readr::read_csv("https://docs.google.com/spreadsheets/d/e/2PAC
   # print(thosearethere)
   
   # try({
-    election_dat30 <- arrow::read_parquet(paste0("https://github.com/favstats/meta_ad_targeting/releases/download/", sets$cntry, "-last_", 30,"_days/", thosearethere$ds[1], ".parquet"))
+    election_dat30 <- arrow::read_parquet(paste0("https://github.com/favstats/meta_ad_targeting/releases/download/", sets$cntry, "-last_", 30,"_days/", "2024-03-31", ".parquet"))
   # })
     
 
@@ -214,7 +218,7 @@ advertiser_dat <- readr::read_csv("https://docs.google.com/spreadsheets/d/e/2PAC
     arrange(desc(ds))
   
   # try({
-  election_dat7 <- arrow::read_parquet(paste0("https://github.com/favstats/meta_ad_targeting/releases/download/", sets$cntry, "-last_", 7,"_days/", thosearethere$ds[1], ".parquet"))
+  election_dat7 <- arrow::read_parquet(paste0("https://github.com/favstats/meta_ad_targeting/releases/download/", sets$cntry, "-last_", 7,"_days/", "2024-03-31", ".parquet"))
   # })
   
   election_dat7 <- election_dat7 %>% 

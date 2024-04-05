@@ -45,13 +45,18 @@ render_it <- possibly(render_it, otherwise = NULL, quiet = F)
 
 
 advertiser_dat <- readr::read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTVkw2cJ5IqeOTBKOfBXpDZDftW9g_nlN-ZKdqDK42wvcxZYHbkVBKDsxfB8r7V88RVef3zHIxBbDOw/pub?output=csv") %>% 
-  janitor::clean_names()# %>% 
+  janitor::clean_names() %>% 
+  bind_rows(readr::read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTVkw2cJ5IqeOTBKOfBXpDZDftW9g_nlN-ZKdqDK42wvcxZYHbkVBKDsxfB8r7V88RVef3zHIxBbDOw/pub?gid=861990516&single=true&output=csv")%>% 
+              janitor::clean_names()) %>% 
+  distinct(page_id, .keep_all = T) 
+  
+# advertiser_dat %>% count()
 
 city_list <- advertiser_dat %>% 
   group_by(city) %>% 
   summarize(spend_30days_bf_march4_2024 = sum(spend_30days_bf_march4_2024)) %>% 
   arrange(desc(spend_30days_bf_march4_2024)) %>% 
-  drop_na() %>% 
+  drop_na(city) %>% 
   pull(city)# %>% .[1]
 
 # city_list <- advertiser_dat$city
