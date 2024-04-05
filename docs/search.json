@@ -1,157 +1,129 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "{{< iconify twemoji flag-turkey >}} Turkish Local Elections 2024",
+    "section": "",
+    "text": "Methodology\nIn collaboration with Who Targets Me, we monitored 7334 political advertisers to better understand how campaigns use different targeting methods made available by Meta. To do this, we used data from the Meta Ad Library, using the new ‘Audience’ data which gives some detail on how pages target their ads.\n\n\n\n\n\n\nNote\n\n\n\nMeta only provides 7, 30 and 90 days windows for the targeting data in their Ad Library. Meta’s data also lags by a few days. Report will be updated as soon as new data is available.\n\n\n\n\n\n\n\n\nDisclaimer\n\n\n\nThe data shown in this dashboard is based on the platform’s respective ad libraries which are known to be sometimes incomplete (Edelson et al. 2020; Silva et al. 2020). For this reason the data shown here might not reflect the full picture nor all political ads that were targeted at voters.\n\n\n\n\nAbout the Creators of the Dashboard\n\nOnurcan GüdenFabio Votta\n\n\n\n\n\n\n\n\n\n\n\n\n\nOnurcan Güden is a PhD candidate in Media and Communication Studies at the Galatasaray University and a visiting researcher at the University of Amsterdam. His research focuses on the impact of computational propaganda in shaping digital political agendas in different democracies and its societal consequences.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFabio Votta is a Postdoc at the University of Amsterdam who studies (online) political microtargeting and its usage around the world.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWant to see how political parties target you? Sign up at Who Targets Me and download the gratis browser plugin to see how parties on Facebook use your data:\nhttps://whotargets.me/\n\n\n\n\n\n\n\nWant to retrieve targeting data from the Facebook Ad Library yourself? This dashboard is powered by the R package: metatargetr. Check it out here:\nhttps://github.com/favstats/metatargetr\n\n\n\n\nElection Targeting Dashboards\nA list of election dashboards:\n\n🇳🇱 2021 Dutch parliamentary election (15th-17th March 2021)\n🇩🇪 2021 German federal election (26 September 2021)\n🇸🇪 2022 Swedish general election (11th September 2022)\n🇺🇸 2022 United States midterm elections (8th November 2022)\n🇺🇸 2022 United States midterm elections - Georgia Runoff (6th December 2022)\n🇮🇹 2023 Lazio & Lombardy regional election (12-13th February 2023)\n🇪🇪 2023 Estonian parliamentary election (5th March 2023)\n🇳🇱 2023 Dutch provincial elections (15th March 2023)\n🇲🇪 2023 Montenegrin presidential elections (19th March 2023) - 1st round\n🇦🇺 2023 New South Wales state election (25th March 2023)\n🇫🇮 2023 Finnish parliamentary election (2 April 2023)\n🇹🇷 2023 Turkish general election (14 May 2023) - Round 1\n🇩🇪 2023 Bremen State election (14 May 2023)\n🇬🇷 2023 Greek Legislative election (21 May 2023)\n🇹🇷 2023 Turkish Presidential election (14 May 2023) - Round 2\n🇲🇪 2023 Montenegrin parliamentary elections (11 June 2023)\n🇬🇷 2nd 2023 Greek Legislative election (25 May 2023)\n🇸🇰 2023 Slovak parliamentary election (30 September 2023)\n🇩🇪 2023 Bavarian state election (8 October 2023)\n🇩🇪 2023 Hessian state election (8 October 2023)\n🇳🇿 2023 New Zealand general election (14 October 2023)\n🇵🇱 2023 Polish parliamentary election (15 October 2023)\n🇺🇸 US Presidential Primaries (2023-2024)"
+  },
+  {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Analyzing the Landscape of Local Elections in Türkiye: A Deep Dive into Micro-Targeted Advertising on Meta\n\n\n\n\n\n\n\n\n\n\n\nMar 14, 2024\n\n\nOnurcan Güden\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome to the 2024 Turkish Local Elections Dashboard\n\n\n\n\n\n\n\n\n\n\n\nMar 14, 2024\n\n\nFabio Votta & Onurcan Güden\n\n\n\n\n\n\nNo matching items"
+    "text": "Analyzing the Landscape of Local Elections in Türkiye: A Deep Dive into Micro-Targeted Advertising on Meta\n\n\n\n\n\n\n\n\n\n\n\n\nMar 14, 2024\n\n\nOnurcan Güden\n\n\n\n\n\n\n  \n\n\n\n\nWelcome to the 2024 Turkish Local Elections Dashboard\n\n\n\n\n\n\n\n\n\n\n\n\nMar 14, 2024\n\n\nFabio Votta & Onurcan Güden\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "demographics.html",
     "href": "demographics.html",
     "title": "Demographics",
     "section": "",
-    "text": "Data for: All",
-    "crumbs": [
-      "Demographics"
-    ]
+    "text": "Data for: All"
   },
   {
     "objectID": "demographics.html#age-targeting",
     "href": "demographics.html#age-targeting",
     "title": "Demographics",
     "section": "Age Targeting",
-    "text": "Age Targeting\nThe following graphs illustrate how parties target different age groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n4 Mar - 2 Apr 202427 Mar - 2 Apr 2024",
-    "crumbs": [
-      "Demographics"
-    ]
+    "text": "Age Targeting\nThe following graphs illustrate how parties target different age groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n1 Mar - 30 Mar 202424 Mar - 30 Mar 2024"
   },
   {
     "objectID": "demographics.html#gender-targeting",
     "href": "demographics.html#gender-targeting",
     "title": "Demographics",
     "section": "Gender Targeting",
-    "text": "Gender Targeting\nDe onderstaande grafieken laten zien hoe partijen gender als focusgroep gebruiken en welk percentage van het budget daaraan werd uitgegeven.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n4 Mar - 2 Apr 202427 Mar - 2 Apr 2024",
-    "crumbs": [
-      "Demographics"
-    ]
+    "text": "Gender Targeting\nDe onderstaande grafieken laten zien hoe partijen gender als focusgroep gebruiken en welk percentage van het budget daaraan werd uitgegeven.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n1 Mar - 30 Mar 202424 Mar - 30 Mar 2024"
   },
   {
     "objectID": "demographics.html#language-targeting",
     "href": "demographics.html#language-targeting",
     "title": "Demographics",
     "section": "Language Targeting",
-    "text": "Language Targeting\nThe following graphs show how parties use different languages as focus groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n4 Mar - 2 Apr 202427 Mar - 2 Apr 2024",
-    "crumbs": [
-      "Demographics"
-    ]
+    "text": "Language Targeting\nThe following graphs show how parties use different languages as focus groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n1 Mar - 30 Mar 202424 Mar - 30 Mar 2024"
   },
   {
     "objectID": "demographics.html#targeting-based-on-employment-or-education-instituation",
     "href": "demographics.html#targeting-based-on-employment-or-education-instituation",
     "title": "Demographics",
     "section": "Targeting based on Employment or Education Instituation",
-    "text": "Targeting based on Employment or Education Instituation\nThe following graphs depict how parties utilize various job sectors and types of education as focus groups and the percentage of the budget allocated to them. The next graph focuses on educational levels.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n4 Mar - 2 Apr 202427 Mar - 2 Apr 2024",
-    "crumbs": [
-      "Demographics"
-    ]
+    "text": "Targeting based on Employment or Education Instituation\nThe following graphs depict how parties utilize various job sectors and types of education as focus groups and the percentage of the budget allocated to them. The next graph focuses on educational levels.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n1 Mar - 30 Mar 202424 Mar - 30 Mar 2024"
   },
   {
     "objectID": "demographics.html#education-levels-targeting",
     "href": "demographics.html#education-levels-targeting",
     "title": "Demographics",
     "section": "Education Levels Targeting",
-    "text": "Education Levels Targeting\nThe graphs below illustrate how parties target various education levels as focus groups and the percentage of the budget allocated to each.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n4 Mar - 2 Apr 202427 Mar - 2 Apr 2024",
-    "crumbs": [
-      "Demographics"
-    ]
+    "text": "Education Levels Targeting\nThe graphs below illustrate how parties target various education levels as focus groups and the percentage of the budget allocated to each.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n1 Mar - 30 Mar 202424 Mar - 30 Mar 2024"
   },
   {
     "objectID": "demographics.html#relationship-status-targeting",
     "href": "demographics.html#relationship-status-targeting",
     "title": "Demographics",
     "section": "Relationship Status Targeting",
-    "text": "Relationship Status Targeting\nThe following graphs reveal how political parties utilize different relationship statuses as focus groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n4 Mar - 2 Apr 202427 Mar - 2 Apr 2024",
-    "crumbs": [
-      "Demographics"
-    ]
+    "text": "Relationship Status Targeting\nThe following graphs reveal how political parties utilize different relationship statuses as focus groups and the percentage of the budget allocated to them.\n\nNote: targeting criteria may overlap, so the total may not necessarily be 100%.\n\n\n1 Mar - 30 Mar 202424 Mar - 30 Mar 2024"
   },
   {
     "objectID": "detailed.html",
     "href": "detailed.html",
     "title": "Detailed Targeting",
     "section": "",
-    "text": "Data for: All",
-    "crumbs": [
-      "Detailed Targeting"
-    ]
+    "text": "Data for: All"
   },
   {
     "objectID": "detailed.html#top-targeted-audiences",
     "href": "detailed.html#top-targeted-audiences",
     "title": "Detailed Targeting",
     "section": "Top Targeted Audiences",
-    "text": "Top Targeted Audiences\nThe chart below displays the most utilized targeting criteria by political parties on Meta, based on the amounts spent.\n\n4 Mar - 2 Apr 202427 Mar - 2 Apr 2024",
-    "crumbs": [
-      "Detailed Targeting"
-    ]
+    "text": "Top Targeted Audiences\nThe chart below displays the most utilized targeting criteria by political parties on Meta, based on the amounts spent.\n\n1 Mar - 30 Mar 202424 Mar - 30 Mar 2024"
   },
   {
     "objectID": "detailed.html#top-excluded-audiences",
     "href": "detailed.html#top-excluded-audiences",
     "title": "Detailed Targeting",
     "section": "Top Excluded Audiences",
-    "text": "Top Excluded Audiences\nAmong the detailed options offered by Meta, the chart below shows the most excluded target audiences per party. The ranking is based on the amounts spent.\n\n4 Mar - 2 Apr 202427 Mar - 2 Apr 2024",
-    "crumbs": [
-      "Detailed Targeting"
-    ]
+    "text": "Top Excluded Audiences\nAmong the detailed options offered by Meta, the chart below shows the most excluded target audiences per party. The ranking is based on the amounts spent.\n\n1 Mar - 30 Mar 202424 Mar - 30 Mar 2024"
   },
   {
     "objectID": "detailed.html#top-contested-audiences",
     "href": "detailed.html#top-contested-audiences",
     "title": "Detailed Targeting",
     "section": "Top Contested Audiences",
-    "text": "Top Contested Audiences\nThe charts below show the target audiences where most competition takes place. For example, the groups in which all parties invest large amounts to reach voters with the same interests.\n\n4 Mar - 2 Apr 202427 Mar - 2 Apr 2024",
-    "crumbs": [
-      "Detailed Targeting"
-    ]
+    "text": "Top Contested Audiences\nThe charts below show the target audiences where most competition takes place. For example, the groups in which all parties invest large amounts to reach voters with the same interests.\n\n1 Mar - 30 Mar 202424 Mar - 30 Mar 2024"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Spending - All",
     "section": "",
-    "text": "Here you can see the expenditures of political parties in the lead-up to the elections according to the latest data.\n\n4 Mar - 2 Apr 202427 Mar - 2 Apr 2024\n\n\nDuring this period, political parties spent a total of ₺118,714,376 and displayed 20227 advertisements on Meta.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumber of Advertisers\nTop Spenders\nNumber of Ads\nTotal Spend\n\n\n\n\nCHP\n51\n1. Cumhuriyet Halk Partisi - CHP (₺31,979,584)2. Ekrem İmamoğlu (₺5,182,929)3. Muhittin Böcek (₺1,934,051)\n5,706\n₺56,772,210\n\n\nAKP\n43\n1. AK Parti (₺6,771,049)2. Murat Kurum (₺4,802,361)3. Hakan Tütüncü (₺3,678,324)\n4,497\n₺30,377,136\n\n\nDEVA\n2\n1. Deva Partisi (₺4,669,842)2. Mehmet Erdoğan (₺252,086)\n698\n₺4,921,928\n\n\nİYİ\n21\n1. Turhan ÇÖMEZ (₺594,750)2. Dr. Ayyüce Türkeş Taş (₺578,271)3. Nebi Hatipoğlu (₺511,608)\n870\n₺4,584,505\n\n\nMHP\n16\n1. Milliyetçi Hareket Partisi (MHP) (₺1,454,009)2. Cengiz Ergün (₺629,555)3. Serdar Soydan (₺377,531)\n1,116\n₺3,871,515\n\n\nPro-AKP & Anti-CHP\n9\n1. Yeni Şafak (₺2,117,235)2. Murat Kurum Fan (₺699,118)3. Manisa Doğru Haber (₺444,250)\n259\n₺3,643,835\n\n\nAnti-CHP\n8\n1. İstanbul Gerçekleri (₺2,217,773)2. Antalya Gerçekleri (₺742,470)3. YeniMikrofon (₺106,677)\n707\n₺3,177,961\n\n\nBAĞIMSIZ TÜRKİYE\n2\n1. Bağımsız Türkiye Partisi (₺2,485,442)2. Antalya BTP (₺344,250)\n290\n₺2,829,692\n\n\nDiğer partiler\n9\n1. Ali Babacan (₺1,915,616)2. Geleceğe Katıl (₺120,954)3. Fethi Yaşar (₺57,388)\n180\n₺2,220,523\n\n\nSAADET\n2\n1. Saadet Partisi İstanbul İl Başkanlığı (₺2,015,137)2. Birol AYDIN (₺96,615)\n270\n₺2,111,752\n\n\nPro-AKP\n16\n1. Balıkesir Yüzyılı (₺397,155)2. Haberimiz Olsun (₺244,638)3. Denizli Haber (₺233,590)\n966\n₺1,680,361\n\n\nPro-CHP\n6\n1. Gündem Ankara (₺606,688)2. 45 HABER (₺136,654)3. Hatırla Antalya (₺95,950)\n169\n₺847,716\n\n\nYENİDEN REFAH\n3\n1. Av. Adem GÜNEY (₺275,355)2. Sedat Yalçın (₺157,446)3. Hayalim Muğla - Mehmet Melih Tatlıcı (₺129,936)\n133\n₺562,737\n\n\nIndependent\n3\n1. Engin Özkan (₺200,693)2. Hülya Kavuzlu (₺85,425)3. Aşkın Tangiz (₺51,394)\n104\n₺337,512\n\n\nAnti-AKP\n1\n1. Unutma İstanbul (₺236,104)\n214\n₺236,104\n\n\nPro-İYİ\n4\n1. Mecbur Değilsin (₺125,204)2. Balıkesir Posta TV (₺31,397)3. Samsun Haber Ajansı SHA (₺4,754)\n261\n₺165,536\n\n\nPro-AKP & Pro-MHP & Anti-CHP\n2\n1. Tek Bayrak (₺52,717)2. Bursa’nın Gündemi (₺50,389)\n80\n₺103,106\n\n\nPro-CHP & Anti-AKP\n1\n1. Balıkesir Haber (₺79,843)\n3,542\n₺79,843\n\n\nPro-İYİ & Anti-CHP\n1\n1. Balıkesirin Gerçekleri (₺75,632)\n47\n₺75,632\n\n\nDEMOKRAT\n1\n1. Kenan Deniz (₺74,657)\n49\n₺74,657\n\n\nAnti-MHP\n1\n1. HABERİNOLSUNMANİSA (₺24,951)\n9\n₺24,951\n\n\nPro-Saadet\n1\n1. Başka Bir İstanbul Mümkün (₺22,143)\n29\n₺22,143\n\n\nPro-Yeniden Refah\n2\n1. Antalyahaber7 (₺8,185)2. 7/24 Gündem (₺1,885)\n26\n₺10,070\n\n\nYeşil Sol Parti\n1\n1. Yeşil Sol Parti (₺5,109)\n6\n₺5,109\n\n\nMemleket Partisi\n1\n1. Muharrem İNCE (₺4,492)\n1\n₺4,492\n\n\n\n\n\n\n\n\n\n\nDuring this period, political parties spent a total of ₺37,148,716 and displayed 6937 advertisements on Meta.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumber of Advertisers\nTop Spenders\nNumber of Ads\nTotal Spend\n\n\n\n\nCHP\n46\n1. Cumhuriyet Halk Partisi - CHP (₺12,804,219)2. Ekrem İmamoğlu (₺971,005)3. Özlem Çerçioğlu (₺717,938)\n2,141\n₺18,936,339\n\n\nAKP\n38\n1. AK Parti (₺2,637,603)2. Murat Kurum (₺838,056)3. Hakan Tütüncü (₺762,650)\n1,332\n₺7,617,539\n\n\nPro-AKP & Anti-CHP\n9\n1. Yeni Şafak (₺1,595,386)2. Biliniyo.com (₺155,836)3. Manisa Doğru Haber (₺149,172)\n87\n₺1,972,095\n\n\nDiğer partiler\n8\n1. Ali Babacan (₺1,735,159)2. Geleceğe Katıl (₺84,452)3. Fethi Yaşar (₺19,756)\n79\n₺1,861,552\n\n\nİYİ\n19\n1. Prof. Dr. Ümit Özlale (₺294,422)2. Dr. Ayyüce Türkeş Taş (₺155,963)3. Nebi Hatipoğlu (₺117,201)\n325\n₺1,357,589\n\n\nBAĞIMSIZ TÜRKİYE\n2\n1. Bağımsız Türkiye Partisi (₺1,119,454)2. Antalya BTP (₺118,271)\n169\n₺1,237,725\n\n\nAnti-CHP\n7\n1. Antalya Gerçekleri (₺621,400)2. İstanbul Gerçekleri (₺270,079)3. YeniMikrofon (₺22,638)\n381\n₺941,719\n\n\nMHP\n13\n1. Milliyetçi Hareket Partisi (MHP) (₺339,852)2. Cengiz Ergün (₺180,246)3. Reha Kars (₺94,319)\n360\n₺897,181\n\n\nSAADET\n2\n1. Saadet Partisi İstanbul İl Başkanlığı (₺778,259)2. Birol AYDIN (₺19,493)\n160\n₺797,752\n\n\nPro-AKP\n16\n1. Haberimiz Olsun (₺206,366)2. Denizli Haber (₺155,198)3. Mustafa Varank (₺131,506)\n362\n₺744,987\n\n\nPro-CHP\n4\n1. Gündem Ankara (₺162,434)2. 45 HABER (₺50,313)3. Hatırla Antalya (₺18,756)\n69\n₺234,580\n\n\nYENİDEN REFAH\n3\n1. Av. Adem GÜNEY (₺74,459)2. Sedat Yalçın (₺50,218)3. Hayalim Muğla - Mehmet Melih Tatlıcı (₺44,642)\n52\n₺169,319\n\n\nIndependent\n3\n1. Engin Özkan (₺68,923)2. Hülya Kavuzlu (₺28,495)3. Aşkın Tangiz (₺5,984)\n26\n₺103,402\n\n\nPro-İYİ\n3\n1. Mecbur Değilsin (₺68,447)2. Balıkesir Posta TV (₺9,170)3. Samsun Haber Ajansı SHA (₺1,230)\n158\n₺78,847\n\n\nPro-AKP & Pro-MHP & Anti-CHP\n2\n1. Tek Bayrak (₺27,354)2. Bursa’nın Gündemi (₺25,963)\n58\n₺53,317\n\n\nDEVA\n1\n1. Mehmet Erdoğan (₺38,727)\n7\n₺38,727\n\n\nPro-İYİ & Anti-CHP\n1\n1. Balıkesirin Gerçekleri (₺33,509)\n20\n₺33,509\n\n\nPro-CHP & Anti-AKP\n1\n1. Balıkesir Haber (₺24,551)\n1,083\n₺24,551\n\n\nDEMOKRAT\n1\n1. Kenan Deniz (₺24,444)\n25\n₺24,444\n\n\nAnti-AKP\n1\n1. Unutma İstanbul (₺10,585)\n3\n₺10,585\n\n\nAnti-MHP\n1\n1. HABERİNOLSUNMANİSA (₺5,000)\n1\n₺5,000\n\n\nYeşil Sol Parti\n1\n1. Yeşil Sol Parti (₺3,607)\n4\n₺3,607\n\n\nPro-Yeniden Refah\n2\n1. Antalyahaber7 (₺2,078)2. 7/24 Gündem (₺684)\n6\n₺2,762\n\n\nPro-Saadet\n1\n1. Başka Bir İstanbul Mümkün (₺1,588)\n29\n₺1,588\n\n\n\n\n\n\n\n\n\n\n\n\nOver Time"
+    "text": "Here you can see the expenditures of political parties in the lead-up to the elections according to the latest data.\n\n1 Mar - 30 Mar 202424 Mar - 30 Mar 2024\n\n\nDuring this period, political parties spent a total of ₺123,090,268 and displayed 21395 advertisements on Meta.\n\n\n\n\n\n\n  \n    \n    \n      \n      Number of Advertisers\n      Top Spenders\n      Number of Ads\n      Total Spend\n    \n  \n  \n    CHP\n\n52\n\n1. Cumhuriyet Halk Partisi - CHP (₺32,514,495)2. Ekrem İmamoğlu (₺5,214,824)3. Muhittin Böcek (₺1,986,419)\n\n6,072\n\n₺58,287,755\n\n    AKP\n\n45\n\n1. AK Parti (₺6,807,732)2. Murat Kurum (₺5,226,686)3. Hakan Tütüncü (₺3,942,140)\n\n4,838\n\n₺32,459,876\n\n    DEVA\n\n2\n\n1. Deva Partisi (₺4,857,281)2. Mehmet Erdoğan (₺252,086)\n\n734\n\n₺5,109,367\n\n    İYİ\n\n21\n\n1. Turhan ÇÖMEZ (₺613,882)2. Dr. Ayyüce Türkeş Taş (₺594,215)3. Nebi Hatipoğlu (₺479,628)\n\n926\n\n₺4,677,412\n\n    MHP\n\n16\n\n1. Milliyetçi Hareket Partisi (MHP) (₺1,454,009)2. Cengiz Ergün (₺706,496)3. Serdar Soydan (₺400,825)\n\n1,219\n\n₺4,056,415\n\n    Anti-CHP\n\n8\n\n1. İstanbul Gerçekleri (₺2,356,735)2. Antalya Gerçekleri (₺710,974)3. YeniMikrofon (₺116,949)\n\n709\n\n₺3,298,202\n\n    Pro-AKP & Anti-CHP\n\n8\n\n1. Yeni Şafak (₺2,117,235)2. Murat Kurum Fan (₺738,421)3. Biliniyo.com (₺160,934)\n\n162\n\n₺3,249,591\n\n    BAĞIMSIZ TÜRKİYE\n\n2\n\n1. Bağımsız Türkiye Partisi (₺2,595,597)2. Antalya BTP (₺360,854)\n\n303\n\n₺2,956,451\n\n    Diğer partiler\n\n9\n\n1. Ali Babacan (₺1,915,616)2. Geleceğe Katıl (₺156,199)3. Fethi Yaşar (₺59,940)\n\n182\n\n₺2,257,389\n\n    SAADET\n\n2\n\n1. Saadet Partisi İstanbul İl Başkanlığı (₺2,080,533)2. Birol AYDIN (₺119,646)\n\n306\n\n₺2,200,179\n\n    Pro-AKP\n\n16\n\n1. Balıkesir Yüzyılı (₺431,547)2. Yücel Yılmaz Sevenleri (₺273,897)3. Haberimiz Olsun (₺241,861)\n\n972\n\n₺1,757,080\n\n    Pro-CHP\n\n6\n\n1. Gündem Ankara (₺606,688)2. Hatırla Antalya (₺235,393)3. 45 HABER (₺147,210)\n\n179\n\n₺998,548\n\n    YENİDEN REFAH\n\n3\n\n1. Av. Adem GÜNEY (₺347,890)2. Sedat Yalçın (₺157,446)3. Hayalim Muğla - Mehmet Melih Tatlıcı (₺126,852)\n\n155\n\n₺632,188\n\n    Independent\n\n3\n\n1. Engin Özkan (₺212,154)2. Hülya Kavuzlu (₺96,699)3. Aşkın Tangiz (₺52,492)\n\n108\n\n₺361,345\n\n    Anti-AKP\n\n1\n\n1. Unutma İstanbul (₺250,302)\n\n291\n\n₺250,302\n\n    Pro-İYİ\n\n4\n\n1. Mecbur Değilsin (₺127,810)2. Balıkesir Posta TV (₺28,587)3. Samsun Haber Ajansı SHA (₺5,401)\n\n275\n\n₺166,166\n\n    Pro-AKP & Pro-MHP & Anti-CHP\n\n2\n\n1. Tek Bayrak (₺55,132)2. Bursa’nın Gündemi (₺52,993)\n\n80\n\n₺108,125\n\n    Pro-CHP & Anti-AKP\n\n2\n\n1. Balıkesir Haber (₺83,318)2. Lütfü Savaş Sevdalıları (₺21,183)\n\n3,683\n\n₺104,501\n\n    Pro-İYİ & Anti-CHP\n\n1\n\n1. Balıkesirin Gerçekleri (₺77,423)\n\n47\n\n₺77,423\n\n    DEMOKRAT\n\n1\n\n1. Kenan Deniz (₺77,207)\n\n57\n\n₺77,207\n\n    Pro-Saadet\n\n1\n\n1. Başka Bir İstanbul Mümkün (₺29,884)\n\n49\n\n₺29,884\n\n    Anti-MHP\n\n1\n\n1. HABERİNOLSUNMANİSA (₺24,951)\n\n9\n\n₺24,951\n\n    Pro-Yeniden Refah\n\n2\n\n1. Antalyahaber7 (₺9,405)2. 7/24 Gündem (₺2,293)\n\n36\n\n₺11,698\n\n    Memleket Partisi\n\n1\n\n1. Muharrem İNCE (₺4,492)\n\n1\n\n₺4,492\n\n    Yeşil Sol Parti\n\n1\n\n1. Yeşil Sol Parti (₺4,351)\n\n6\n\n₺4,351\n\n  \n  \n  \n\n\n\n\n\n\nDuring this period, political parties spent a total of ₺51,299,616 and displayed 9042 advertisements on Meta.\n\n\n\n\n\n\n  \n    \n    \n      \n      Number of Advertisers\n      Top Spenders\n      Number of Ads\n      Total Spend\n    \n  \n  \n    CHP\n\n48\n\n1. Cumhuriyet Halk Partisi - CHP (₺18,646,398)2. Ekrem İmamoğlu (₺1,095,500)3. Özlem Çerçioğlu (₺940,738)\n\n2,706\n\n₺26,771,228\n\n    AKP\n\n40\n\n1. AK Parti (₺3,295,799)2. Murat Kurum (₺1,520,921)3. Hakan Tütüncü (₺961,062)\n\n1,843\n\n₺10,530,414\n\n    Diğer partiler\n\n9\n\n1. Ali Babacan (₺1,915,616)2. Geleceğe Katıl (₺106,414)3. Fethi Yaşar (₺28,019)\n\n109\n\n₺2,094,771\n\n    Pro-AKP & Anti-CHP\n\n8\n\n1. Yeni Şafak (₺1,641,080)2. Murat Kurum Fan (₺165,816)3. Biliniyo.com (₺159,512)\n\n95\n\n₺2,010,072\n\n    BAĞIMSIZ TÜRKİYE\n\n2\n\n1. Bağımsız Türkiye Partisi (₺1,648,910)2. Antalya BTP (₺157,137)\n\n186\n\n₺1,806,047\n\n    İYİ\n\n20\n\n1. Prof. Dr. Ümit Özlale (₺319,242)2. Dr. Ayyüce Türkeş Taş (₺236,222)3. Soner Çetin (₺150,255)\n\n422\n\n₺1,773,733\n\n    MHP\n\n13\n\n1. Milliyetçi Hareket Partisi (MHP) (₺621,327)2. Cengiz Ergün (₺221,829)3. Serdar Soydan (₺111,225)\n\n442\n\n₺1,378,200\n\n    Anti-CHP\n\n7\n\n1. İstanbul Gerçekleri (₺621,904)2. Antalya Gerçekleri (₺591,675)3. YeniMikrofon (₺38,582)\n\n428\n\n₺1,298,199\n\n    SAADET\n\n2\n\n1. Saadet Partisi İstanbul İl Başkanlığı (₺916,025)2. Birol AYDIN (₺28,204)\n\n167\n\n₺944,229\n\n    DEVA\n\n2\n\n1. Deva Partisi (₺765,307)2. Mehmet Erdoğan (₺61,240)\n\n118\n\n₺826,547\n\n    Pro-AKP\n\n16\n\n1. Haberimiz Olsun (₺222,859)2. Denizli Haber (₺151,490)3. Mustafa Varank (₺82,447)\n\n448\n\n₺774,295\n\n    Pro-CHP\n\n4\n\n1. Gündem Ankara (₺299,393)2. 45 HABER (₺79,014)3. Hatırla Antalya (₺31,583)\n\n88\n\n₺413,958\n\n    YENİDEN REFAH\n\n3\n\n1. Av. Adem GÜNEY (₺110,915)2. Sedat Yalçın (₺80,000)3. Hayalim Muğla - Mehmet Melih Tatlıcı (₺58,578)\n\n66\n\n₺249,493\n\n    Independent\n\n3\n\n1. Engin Özkan (₺94,540)2. Hülya Kavuzlu (₺28,495)3. Aşkın Tangiz (₺12,288)\n\n31\n\n₺135,323\n\n    Pro-İYİ\n\n4\n\n1. Mecbur Değilsin (₺72,611)2. Balıkesir Posta TV (₺7,320)3. Radyo Güven (₺1,758)\n\n163\n\n₺83,436\n\n    Pro-AKP & Pro-MHP & Anti-CHP\n\n2\n\n1. Tek Bayrak (₺29,546)2. Bursa’nın Gündemi (₺27,590)\n\n58\n\n₺57,136\n\n    Pro-CHP & Anti-AKP\n\n2\n\n1. Balıkesir Haber (₺36,080)2. Lütfü Savaş Sevdalıları (₺6,909)\n\n1,493\n\n₺42,989\n\n    Pro-İYİ & Anti-CHP\n\n1\n\n1. Balıkesirin Gerçekleri (₺41,195)\n\n24\n\n₺41,195\n\n    Anti-AKP\n\n1\n\n1. Unutma İstanbul (₺29,959)\n\n86\n\n₺29,959\n\n    DEMOKRAT\n\n1\n\n1. Kenan Deniz (₺18,659)\n\n26\n\n₺18,659\n\n    Anti-MHP\n\n1\n\n1. HABERİNOLSUNMANİSA (₺8,301)\n\n2\n\n₺8,301\n\n    Pro-Saadet\n\n1\n\n1. Başka Bir İstanbul Mümkün (₺4,251)\n\n29\n\n₺4,251\n\n    Pro-Yeniden Refah\n\n2\n\n1. Antalyahaber7 (₺3,069)2. 7/24 Gündem (₺909)\n\n7\n\n₺3,978\n\n    Yeşil Sol Parti\n\n1\n\n1. Yeşil Sol Parti (₺3,203)\n\n5\n\n₺3,203\n\n  \n  \n  \n\n\n\n\n\n\n\n\nOver Time"
   },
   {
     "objectID": "location.html",
     "href": "location.html",
     "title": "Location",
     "section": "",
-    "text": "Data for: All",
-    "crumbs": [
-      "Location"
-    ]
+    "text": "Data for: All"
   },
   {
     "objectID": "location.html#geographical-targeting",
     "href": "location.html#geographical-targeting",
     "title": "Location",
     "section": "Geographical Targeting",
-    "text": "Geographical Targeting\nThe chart below displays the geographical targeting of that political parties on Meta platforms.\n\n4 Mar - 2 Apr 2024\n\n\n\nRegionsCities\n\n\n\nThe size of each area in the chart indicates the amount of money spent by each political party on specific locations.\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe size of each area in the chart indicates the amount of money spent by each political party on specific locations.",
-    "crumbs": [
-      "Location"
-    ]
+    "text": "Geographical Targeting\nThe chart below displays the geographical targeting of that political parties on Meta platforms.\n\n1 Mar - 30 Mar 2024\n\n\n\nRegionsCities\n\n\n\nThe size of each area in the chart indicates the amount of money spent by each political party on specific locations.\n\n\n\n\n\n\n\n\n\nThe size of each area in the chart indicates the amount of money spent by each political party on specific locations."
   },
   {
     "objectID": "location.html#geographical-exclusion",
     "href": "location.html#geographical-exclusion",
     "title": "Location",
     "section": "Geographical Exclusion",
-    "text": "Geographical Exclusion\nThe following graphs depict the geographic locations that certain political advertisements will exclude on Meta, along with the amounts that parties spent on these exclusions.\n\n4 Mar - 2 Apr 2024\n\n\n\nRegionsCities\n\n\n\nThe size of each area in the chart indicates the amount of money spent by each political party on specific locations.\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe size of each area in the chart indicates the amount of money spent by each political party on specific locations.",
-    "crumbs": [
-      "Location"
-    ]
+    "text": "Geographical Exclusion\nThe following graphs depict the geographic locations that certain political advertisements will exclude on Meta, along with the amounts that parties spent on these exclusions.\n\n1 Mar - 30 Mar 2024\n\n\n\nRegionsCities\n\n\n\nThe size of each area in the chart indicates the amount of money spent by each political party on specific locations.\n\n\n\n\n\n\n\n\n\nThe size of each area in the chart indicates the amount of money spent by each political party on specific locations."
+  },
+  {
+    "objectID": "map.html",
+    "href": "map.html",
+    "title": "{{< iconify twemoji flag-turkey >}} Turkish Local Elections 2024",
+    "section": "",
+    "text": "Show all data"
   },
   {
     "objectID": "posts/landscape-local-elections-microtargeting.html",
@@ -172,9 +144,6 @@
     "href": "targeting.html",
     "title": "Spending per Targeting",
     "section": "",
-    "text": "Data for: All\nThese charts show the groups that political parties target with their advertisements leading up to the elections, according to the latest data. The focus is on Meta’s platforms (Facebook and Instagram) because they offer the most detailed targeting options for political advertisements.\nHow much did the campaigns of political parties spend on different audiences? The charts below show both the total and the expenditures per party.\n\nNote: Different targeting criteria may overlap, so the outcome may not necessarily add up to 100%.\n\n\n4 Mar - 2 Apr 202427 Mar - 2 Apr 2024\n\n\n\nTotalBy Party\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTotalBy Party",
-    "crumbs": [
-      "Spending per Targeting"
-    ]
+    "text": "Data for: All\nThese charts show the groups that political parties target with their advertisements leading up to the elections, according to the latest data. The focus is on Meta’s platforms (Facebook and Instagram) because they offer the most detailed targeting options for political advertisements.\nHow much did the campaigns of political parties spend on different audiences? The charts below show both the total and the expenditures per party.\n\nNote: Different targeting criteria may overlap, so the outcome may not necessarily add up to 100%.\n\n\n1 Mar - 30 Mar 202424 Mar - 30 Mar 2024\n\n\n\nTotalBy Party\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTotalBy Party"
   }
 ]
