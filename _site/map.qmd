@@ -67,7 +67,10 @@ library(tidyverse)
 
 
 advertiser_dat <- readr::read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTVkw2cJ5IqeOTBKOfBXpDZDftW9g_nlN-ZKdqDK42wvcxZYHbkVBKDsxfB8r7V88RVef3zHIxBbDOw/pub?output=csv") %>% 
-  janitor::clean_names()# %>% 
+  janitor::clean_names() %>% 
+  bind_rows(readr::read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTVkw2cJ5IqeOTBKOfBXpDZDftW9g_nlN-ZKdqDK42wvcxZYHbkVBKDsxfB8r7V88RVef3zHIxBbDOw/pub?gid=861990516&single=true&output=csv")%>% 
+              janitor::clean_names()) %>% 
+  distinct(page_id, .keep_all = T) 
 
 cityyyy <- advertiser_dat %>% 
   group_by(city) %>% 
@@ -77,47 +80,47 @@ cityyyy <- advertiser_dat %>%
   mutate(city = str_to_title(city))
 
 
-      out <- "TR" %>% 
-        map(~{
-          .x %>% 
-            paste0(c("-last_30_days"))
-        }) %>% 
-        unlist() %>% 
-        # keep(~str_detect(.x, tf)) %>% 
-        # .[100:120] %>% 
-        map_dfr_progress(~{
-          the_assets <- httr::GET(paste0("https://github.com/favstats/meta_ad_targeting/releases/expanded_assets/", .x))
-          
-          the_assets %>% httr::content() %>% 
-            rvest::html_elements(".Box-row") %>% 
-            rvest::html_text()  %>%
-            tibble(raw = .)   %>%
-            # Split the raw column into separate lines
-            mutate(raw = strsplit(as.character(raw), "\n")) %>%
-            # Extract the relevant lines for filename, file size, and timestamp
-            transmute(
-              filename = sapply(raw, function(x) trimws(x[3])),
-              file_size = sapply(raw, function(x) trimws(x[6])),
-              timestamp = sapply(raw, function(x) trimws(x[7]))
-            ) %>% 
-            filter(filename != "Source code") %>% 
-            mutate(release = .x) %>% 
-            mutate_all(as.character)
-        })
-      
-      thosearethere <- out %>% 
-        rename(tag = release,
-               file_name = filename)  %>% 
-        arrange(desc(tag)) %>% 
-        separate(tag, into = c("cntry", "tframe"), remove = F, sep = "-") %>%
-        # filter(cntry == sets$cntry) %>% 
-        mutate(ds  = str_remove(file_name, "\\.rds|\\.zip|\\.parquet")) %>% 
-        distinct(cntry, ds, tframe) %>% 
-        drop_na(ds) %>% 
-        arrange(desc(ds))
+      # out <- "TR" %>% 
+      #   map(~{
+      #     .x %>% 
+      #       paste0(c("-last_30_days"))
+      #   }) %>% 
+      #   unlist() %>% 
+      #   # keep(~str_detect(.x, tf)) %>% 
+      #   # .[100:120] %>% 
+      #   map_dfr_progress(~{
+      #     the_assets <- httr::GET(paste0("https://github.com/favstats/meta_ad_targeting/releases/expanded_assets/", .x))
+      #     
+      #     the_assets %>% httr::content() %>% 
+      #       rvest::html_elements(".Box-row") %>% 
+      #       rvest::html_text()  %>%
+      #       tibble(raw = .)   %>%
+      #       # Split the raw column into separate lines
+      #       mutate(raw = strsplit(as.character(raw), "\n")) %>%
+      #       # Extract the relevant lines for filename, file size, and timestamp
+      #       transmute(
+      #         filename = sapply(raw, function(x) trimws(x[3])),
+      #         file_size = sapply(raw, function(x) trimws(x[6])),
+      #         timestamp = sapply(raw, function(x) trimws(x[7]))
+      #       ) %>% 
+      #       filter(filename != "Source code") %>% 
+      #       mutate(release = .x) %>% 
+      #       mutate_all(as.character)
+      #   })
+      # 
+      # thosearethere <- out %>% 
+      #   rename(tag = release,
+      #          file_name = filename)  %>% 
+      #   arrange(desc(tag)) %>% 
+      #   separate(tag, into = c("cntry", "tframe"), remove = F, sep = "-") %>%
+      #   # filter(cntry == sets$cntry) %>% 
+      #   mutate(ds  = str_remove(file_name, "\\.rds|\\.zip|\\.parquet")) %>% 
+      #   distinct(cntry, ds, tframe) %>% 
+      #   drop_na(ds) %>% 
+      #   arrange(desc(ds))
       
       # try({
-      elex <- arrow::read_parquet(paste0("https://github.com/favstats/meta_ad_targeting/releases/download/", "TR", "-last_", 30,"_days/", thosearethere$ds[1], ".parquet"))  %>% 
+      elex <- arrow::read_parquet(paste0("https://github.com/favstats/meta_ad_targeting/releases/download/", "TR", "-last_", 30,"_days/", "2024-03-31", ".parquet"))  %>% 
       left_join(advertiser_dat %>% select(page_id, party2 = party, official, page_type, city, notes) %>% mutate(page_id = as.character(page_id)) %>% 
                   distinct(page_id, .keep_all = T)) %>% 
       mutate(party = ifelse(is.na(party2), party, party2)) %>% 

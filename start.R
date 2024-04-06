@@ -66,7 +66,7 @@ city_list <- advertiser_dat %>%
   counter <- 0
 city_list %>% 
   # keep(~str_detect(.x, "adana")) %>% 
-  # .[1:5] %>% 
+  .[1] %>%
   walk_progress(~{
     
     the_city <- .x
@@ -102,51 +102,51 @@ city_list %>%
       }
       
       if(!already_happened){
-        out <- sets$cntry %>% 
-          map(~{
-            .x %>% 
-              paste0(c("-last_30_days"))
-          }) %>% 
-          unlist() %>% 
-          # keep(~str_detect(.x, tf)) %>% 
-          # .[100:120] %>% 
-          map_dfr_progress(~{
-            the_assets <- httr::GET(paste0("https://github.com/favstats/meta_ad_targeting/releases/expanded_assets/", .x))
-            
-            the_assets %>% httr::content() %>% 
-              rvest::html_elements(".Box-row") %>% 
-              rvest::html_text()  %>%
-              tibble(raw = .)   %>%
-              # Split the raw column into separate lines
-              mutate(raw = strsplit(as.character(raw), "\n")) %>%
-              # Extract the relevant lines for filename, file size, and timestamp
-              transmute(
-                filename = sapply(raw, function(x) trimws(x[3])),
-                file_size = sapply(raw, function(x) trimws(x[6])),
-                timestamp = sapply(raw, function(x) trimws(x[7]))
-              ) %>% 
-              filter(filename != "Source code") %>% 
-              mutate(release = .x) %>% 
-              mutate_all(as.character)
-          })
-        
-        thosearethere <- out %>% 
-          rename(tag = release,
-                 file_name = filename)  %>% 
-          arrange(desc(tag)) %>% 
-          separate(tag, into = c("cntry", "tframe"), remove = F, sep = "-") %>%
-          filter(cntry == sets$cntry) %>% 
-          mutate(ds  = str_remove(file_name, "\\.rds|\\.zip|\\.parquet")) %>% 
-          distinct(cntry, ds, tframe) %>% 
-          drop_na(ds) %>% 
-          arrange(desc(ds))
-        
-        print(thosearethere)
-        
-        if(is.na(thosearethere$ds[1])){
-          print("go next")
-          next
-        } 
+        # out <- sets$cntry %>% 
+        #   map(~{
+        #     .x %>% 
+        #       paste0(c("-last_30_days"))
+        #   }) %>% 
+        #   unlist() %>% 
+        #   # keep(~str_detect(.x, tf)) %>% 
+        #   # .[100:120] %>% 
+        #   map_dfr_progress(~{
+        #     the_assets <- httr::GET(paste0("https://github.com/favstats/meta_ad_targeting/releases/expanded_assets/", .x))
+        #     
+        #     the_assets %>% httr::content() %>% 
+        #       rvest::html_elements(".Box-row") %>% 
+        #       rvest::html_text()  %>%
+        #       tibble(raw = .)   %>%
+        #       # Split the raw column into separate lines
+        #       mutate(raw = strsplit(as.character(raw), "\n")) %>%
+        #       # Extract the relevant lines for filename, file size, and timestamp
+        #       transmute(
+        #         filename = sapply(raw, function(x) trimws(x[3])),
+        #         file_size = sapply(raw, function(x) trimws(x[6])),
+        #         timestamp = sapply(raw, function(x) trimws(x[7]))
+        #       ) %>% 
+        #       filter(filename != "Source code") %>% 
+        #       mutate(release = .x) %>% 
+        #       mutate_all(as.character)
+        #   })
+        # 
+        # thosearethere <- out %>% 
+        #   rename(tag = release,
+        #          file_name = filename)  %>% 
+        #   arrange(desc(tag)) %>% 
+        #   separate(tag, into = c("cntry", "tframe"), remove = F, sep = "-") %>%
+        #   filter(cntry == sets$cntry) %>% 
+        #   mutate(ds  = str_remove(file_name, "\\.rds|\\.zip|\\.parquet")) %>% 
+        #   distinct(cntry, ds, tframe) %>% 
+        #   drop_na(ds) %>% 
+        #   arrange(desc(ds))
+        # 
+        # print(thosearethere)
+        # 
+        # if(is.na(thosearethere$ds[1])){
+        #   print("go next")
+        #   next
+        # } 
         # try({
         election_dat30 <- arrow::read_parquet(paste0("https://github.com/favstats/meta_ad_targeting/releases/download/", sets$cntry, "-last_", 30,"_days/", thosearethere$ds[1], ".parquet"))
         # })
@@ -299,7 +299,7 @@ if(!("docs/map.html"  %in% fs::dir_ls("docs"))){
 
 
 city_list %>%
-  # .[1] %>% 
+  .[1] %>%
   walk_progress( ~ {
     city_name <- .x
     dir("docs", full.names = T) %>%
