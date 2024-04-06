@@ -66,7 +66,7 @@ city_list <- advertiser_dat %>%
   counter <- 0
 city_list %>% 
   # keep(~str_detect(.x, "adana")) %>% 
-  .[1] %>%
+  # .[1] %>%
   walk_progress(~{
     
     the_city <- .x
@@ -299,7 +299,7 @@ if(!("docs/map.html"  %in% fs::dir_ls("docs"))){
 
 
 city_list %>%
-  .[1] %>%
+  # .[1] %>%
   walk_progress( ~ {
     city_name <- .x
     dir("docs", full.names = T) %>%
