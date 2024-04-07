@@ -111,46 +111,46 @@ advertiser_dat <- readr::read_csv("https://docs.google.com/spreadsheets/d/e/2PAC
               janitor::clean_names()) %>% 
   distinct(page_id, .keep_all = T) 
 
-advertiser_dat %>% count(type, sort = T)
+# advertiser_dat %>% count(type, sort = T)
 
 # if(!exists("election_dat30")){
-  out <- sets$cntry %>% 
-    map(~{
-      .x %>% 
-        paste0(c("-last_30_days"))
-    }) %>% 
-    unlist() %>% 
-    # keep(~str_detect(.x, tf)) %>% 
-    # .[100:120] %>% 
-    map_dfr_progress(~{
-      the_assets <- httr::GET(paste0("https://github.com/favstats/meta_ad_targeting/releases/expanded_assets/", .x))
-      
-      the_assets %>% httr::content() %>% 
-        rvest::html_elements(".Box-row") %>% 
-        rvest::html_text()  %>%
-        tibble(raw = .)   %>%
-        # Split the raw column into separate lines
-        mutate(raw = strsplit(as.character(raw), "\n")) %>%
-        # Extract the relevant lines for filename, file size, and timestamp
-        transmute(
-          filename = sapply(raw, function(x) trimws(x[3])),
-          file_size = sapply(raw, function(x) trimws(x[6])),
-          timestamp = sapply(raw, function(x) trimws(x[7]))
-        ) %>% 
-        filter(filename != "Source code") %>% 
-        mutate(release = .x) %>% 
-        mutate_all(as.character)
-    })
-  
-  thosearethere <- out %>% 
-    rename(tag = release,
-           file_name = filename) %>% 
-    arrange(desc(tag)) %>% 
-    separate(tag, into = c("cntry", "tframe"), remove = F, sep = "-") %>% 
-    mutate(ds  = str_remove(file_name, "\\.rds|\\.zip|\\.parquet")) %>% 
-    distinct(cntry, ds, tframe) %>% 
-    drop_na(ds) %>% 
-    arrange(desc(ds))
+  # out <- sets$cntry %>% 
+  #   map(~{
+  #     .x %>% 
+  #       paste0(c("-last_30_days"))
+  #   }) %>% 
+  #   unlist() %>% 
+  #   # keep(~str_detect(.x, tf)) %>% 
+  #   # .[100:120] %>% 
+  #   map_dfr_progress(~{
+  #     the_assets <- httr::GET(paste0("https://github.com/favstats/meta_ad_targeting/releases/expanded_assets/", .x))
+  #     
+  #     the_assets %>% httr::content() %>% 
+  #       rvest::html_elements(".Box-row") %>% 
+  #       rvest::html_text()  %>%
+  #       tibble(raw = .)   %>%
+  #       # Split the raw column into separate lines
+  #       mutate(raw = strsplit(as.character(raw), "\n")) %>%
+  #       # Extract the relevant lines for filename, file size, and timestamp
+  #       transmute(
+  #         filename = sapply(raw, function(x) trimws(x[3])),
+  #         file_size = sapply(raw, function(x) trimws(x[6])),
+  #         timestamp = sapply(raw, function(x) trimws(x[7]))
+  #       ) %>% 
+  #       filter(filename != "Source code") %>% 
+  #       mutate(release = .x) %>% 
+  #       mutate_all(as.character)
+  #   })
+  # 
+  # thosearethere <- out %>% 
+  #   rename(tag = release,
+  #          file_name = filename) %>% 
+  #   arrange(desc(tag)) %>% 
+  #   separate(tag, into = c("cntry", "tframe"), remove = F, sep = "-") %>% 
+  #   mutate(ds  = str_remove(file_name, "\\.rds|\\.zip|\\.parquet")) %>% 
+  #   distinct(cntry, ds, tframe) %>% 
+  #   drop_na(ds) %>% 
+  #   arrange(desc(ds))
   
   # print(thosearethere)
   
